@@ -5,7 +5,6 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 //navigation
-import Navbar from "@/components/general/NavBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

@@ -28,21 +28,21 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, [isPaused]);
 
-  const goToPrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
+  // const goToPrevious = () => {
+  //   setCurrentIndex((prevIndex) =>
+  //     prevIndex === 0 ? images.length - 1 : prevIndex - 1
+  //   );
+  // };
 
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+  // const goToNext = () => {
+  //   setCurrentIndex((prevIndex) =>
+  //     prevIndex === images.length - 1 ? 0 : prevIndex + 1
+  //   );
+  // };
 
-  const togglePause = () => {
-    setIsPaused((prev) => !prev);
-  };
+  // const togglePause = () => {
+  //   setIsPaused((prev) => !prev);
+  // };
 
 
   return (

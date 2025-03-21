@@ -1,13 +1,7 @@
 // components/DestinationGallery.tsx
-import Image from 'next/image';
 
 const ExploreCR = () => {
-  const destinations = [
-    { src: '/home/destination1.jpeg', alt: 'Waterfall in Costa Rica' },
-    { src: '/home/destination2.jpeg', alt: 'Tropical beach in Costa Rica' },
-    { src: '/home/destination3.jpeg', alt: 'Palm trees at sunset' },
-    { src: '/home/destination4.jpeg', alt: 'Ocean sunset in Costa Rica' },
-  ];
+
 
 
   return (

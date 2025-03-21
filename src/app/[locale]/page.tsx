@@ -1,5 +1,4 @@
-import { useTranslations } from "next-intl";
-import { Metadata } from 'next';
+
 import Navbar from '@/components/general/NavBar';
 import Hero from '@/components/home/Hero';
 import BuildVacation from '@/components/home/BuildVacation';
@@ -31,7 +30,7 @@ export default function Home() {
         <DestinationGallery />
         <ExploreCR />
         <Specialties />
-        {/* <WhatsAppButton /> */}
+        <WhatsAppButton />
       </div>
     </main>
   );
