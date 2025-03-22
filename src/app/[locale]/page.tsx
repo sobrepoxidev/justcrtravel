@@ -36,7 +36,7 @@ export default function Home() {
         <GridImage />
         <FlightSearch />
         <Footer />
-        {/* <WhatsAppButton /> */}
+        <WhatsAppButton />
       </div>
     </main>
   );
