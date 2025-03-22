@@ -22,7 +22,7 @@ const ExploreCR = () => {
       {/* Contenedor central para el texto */}
       <div className="flex-grow flex items-center justify-center">
         <div className="max-w-3xl">
-          <h2 className="text-4xl font-light text-white font-bold  text-center">
+          <h2 className="text-4xl text-white font-thin text-center">
             We want you to explore Costa Rica and create a travel relationship with us!
           </h2>
         </div>
