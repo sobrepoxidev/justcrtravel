@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FaHome } from "react-icons/fa";
 import { useTranslations } from 'next-intl';
+import ToursDropdown from './ToursDropdow';
+import ServicesDropdown from './ServicesDropdown';
 import LocaleSwitcher from '../locale/LocaleSwitcher';
 
 const Navbar = () => {
@@ -24,21 +26,11 @@ const Navbar = () => {
           <Link href="/es" className="text-white hover:text-orange-300 px-3 py-2 flex items-center gap-x-1">
             <FaHome />{t("home")}
           </Link>
-          <div className="relative group">
-            <button className="text-white hover:text-orange-300 px-3 py-2 flex items-center">
-              {t("tours")} <span className="ml-1">▼</span>
-            </button>
-            {/* Dropdown menu */}
-          </div>
+          <ToursDropdown />
           <Link href="/es/destinations" className="text-white hover:text-orange-300 px-3 py-2">
           {t("destinations")}
           </Link>
-          <div className="relative group">
-            <button className="text-white hover:text-orange-300 px-3 py-2 flex items-center">
-            {t("services")} <span className="ml-1">▼</span>
-            </button>
-            {/* Dropdown menu */}
-          </div>
+          <ServicesDropdown />
           <Link href="/es/about" className="text-white hover:text-orange-300 px-3 py-2">
           {t("about")}
           </Link>
