@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Footer() {
     return (
-        <div className="grid grid-cols-1 bg-white">
+        <div className="grid grid-cols-1 bg-white p-16">
             <div className="">
                 <div className="grid grid-cols-3 items-start justify-center text-center">
                     <div className="flex  items-start justify-center">
@@ -18,7 +18,7 @@ export default function Footer() {
 
                     </div>
                     <div className="flex justify-center">
-                        <Link href="/build-your-vacation">
+                        <Link href="/en/build-your-vacation">
                             <Image
                                 src="/home/buildyourvacation2.gif"
                                 alt="Just Costa Rica Travel"

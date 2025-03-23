@@ -29,21 +29,21 @@ export default function ToursDropdown() {
             {isToursOpen && (
                 <div className="absolute left-0 top-full mt-1 w-32 bg-black text-white shadow-lg rounded">
                     <Link
-                        href="/es/tours/adventure"
+                        href="/en/adventure"
                         className="block px-3 py-2 hover:bg-gray-700"
                         onClick={() => setIsToursOpen(false)}
                     >
                         Adventure
                     </Link>
                     <Link
-                        href="/es/tours/cultural"
+                        href="/en/cultural"
                         className="block px-3 py-2 hover:bg-gray-700"
                         onClick={() => setIsToursOpen(false)}
                     >
                         Cultural
                     </Link>
                     <Link
-                        href="/es/tours/marine"
+                        href="/en/marine"
                         className="block px-3 py-2 hover:bg-gray-700"
                         onClick={() => setIsToursOpen(false)}
                     >

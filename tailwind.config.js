@@ -9,7 +9,17 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        drawCircle: {
+          '0%': { strokeDashoffset: '200' },
+          '100%': { strokeDashoffset: '0' },
+        },
+      },
+      animation: {
+        drawCircle: 'drawCircle 1.5s ease forwards',
+      },
+    },
   },
   plugins: [],
 }
