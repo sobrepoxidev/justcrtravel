@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
 
     // 1) Buscar la orden en Supabase para conocer el total
     const { data: orderData, error: orderError } = await supabase
-      .from("orders")
+      .from("TravelOrders")
       .select("*")
       .eq("id", orderId)
       .single();

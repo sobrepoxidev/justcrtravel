@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
 
     // 2) Actualizar la orden en la BD a 'paid'
     const { error: updateOrderError } = await supabase
-      .from("orders")
+      .from("TravelOrders")
       .update({
         payment_status: "paid",
         payment_reference: paypalOrderId
