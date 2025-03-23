@@ -1,7 +1,6 @@
 // components/payments/TravelPackButton.jsx
 "use client"
 import React from "react";
-import Step3_PayPal from "./StepPaypal";
 
 
 export default function TravelPackButton({ color, amount, createOrder }: { color: string, amount: number, createOrder: (amount: number) => void }) {

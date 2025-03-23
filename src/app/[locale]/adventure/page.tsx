@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Navbar from "@/components/general/NavBar";
 import Footer from "@/components/general/Footer";
-import { it } from "node:test";
 
 export default function Adventure() {
     const adventures = [
