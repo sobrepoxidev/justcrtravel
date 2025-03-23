@@ -3,7 +3,7 @@ import Navbar from "@/components/general/NavBar";
 import Footer from "@/components/general/Footer";
 
 // 1) Server Action en el mismo archivo (gracias a "use server")
-export async function handleVacationForm(formData: FormData) {
+async function handleVacationForm(formData: FormData) {
   "use server"; // Esto indica que la acción se ejecuta en el servidor
 
   // Lee cada campo por su "name" en el formulario
