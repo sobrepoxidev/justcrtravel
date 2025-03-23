@@ -2,10 +2,9 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { FaHome, FaSearch } from "react-icons/fa";
-import ToursDropdown from './ToursDropdow';
-import ServicesDropdown from './ServicesDropdown';
 import LocaleSwitcher from '../locale/LocaleSwitcher';
 import { useTranslations } from 'next-intl';
+
 
 const MobileMenu = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -70,13 +69,18 @@ const MobileMenu = () => {
                     </div>
 
                     <div className="flex flex-col items-left mt-1 space-y-2">
-                        <Link
+                       <div className="flex flex-row items-center justify-center space-x-6 ">
+                       <Link
                             href="/"
-                            className="text-white hover:text-orange-300 pl-24 flex items-center text-xl"
+                            className="text-white hover:text-orange-300 flex  text-xl "
                             onClick={() => setIsMenuOpen(false)}
                         >
-                            <FaHome className="mr-2" /> {t("home")}
+                            <FaHome className="mr-1 justify-center text-center mt-1" /> {t("home")}
                         </Link>
+                     
+                            <LocaleSwitcher />
+                       </div>
+                  
 
                         {/* Mobile Tours Section */}
                         <div className="mobile-dropdown w-full text-left ">
