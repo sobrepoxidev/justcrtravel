@@ -27,7 +27,7 @@ export default function Destinations() {
                     key={idx}
                     className="border border-gray-300 py-3 px-4"
                 // Para que uno de los items aparezca inicialmente abierto, usa: defaultOpen
-                // defaultOpen={idx === 0}
+                    open={idx === 0}
                 >
                     <summary className="cursor-pointer flex items-center text-blue-600 text-lg font-semibold uppercase">
                         {/* Ícono +/− opcionalmente podría hacerse con CSS 
@@ -44,6 +44,7 @@ export default function Destinations() {
                                 width={1000}
                                 height={0}
                                 className="max-w-full"
+                                priority={idx < 6}
                             />
                         </div>
                         <p className="mt-2 text-justify whitespace-pre-line ">
