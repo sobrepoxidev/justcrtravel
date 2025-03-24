@@ -14,7 +14,7 @@ const BuildVacation = () => {
       <div className="relative flex flex-col items-center justify-center h-full text-white text-center">
         <h2 className="text-4xl font-bold mb-4">BUILD YOUR VACATION</h2>
         <p className="text-xl mb-6">Design your package holiday</p>
-        <Link href="/es/build-vacation" className="border-2 border-white hover:bg-white hover:text-blue-500 transition-colors duration-300 px-8 py-3">
+        <Link href="/en/build-your-vacation" className="border-2 border-white hover:bg-white hover:text-blue-500 transition-colors duration-300 px-8 py-3">
           Click Here
         </Link>
       </div>

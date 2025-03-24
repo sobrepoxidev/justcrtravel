@@ -43,7 +43,7 @@ export default function Rentals() {
 
                         {/* Botones */}
                         <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
-                            <Link href="/es/build-vacation" className="border-2 border-green-400 text-green-400 hover:bg-green-300/20 hover:text-green-500 transition-colors duration-300 px-8 py-3">
+                            <Link href="/en/contact" className="border-2 border-green-400 text-green-400 hover:bg-green-300/20 hover:text-green-500 transition-colors duration-300 px-8 py-3">
                                 More Info
                             </Link>
                         </div>

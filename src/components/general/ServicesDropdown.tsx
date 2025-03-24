@@ -36,21 +36,21 @@ export default function ServicesDropdown() {
                         Rentals
                     </Link>
                     <Link
-                        href="/es/tours/cultural"
+                        href="/en//transportation"
                         className="block px-3 py-2 hover:bg-gray-700"
                         onClick={() => setIsToursOpen(false)}
                     >
-                        Transformation
+                        Transportation
                     </Link>
                     <Link
-                        href="/es/tours/marine"
+                        href="/en/business"
                         className="block px-3 py-2 hover:bg-gray-700"
                         onClick={() => setIsToursOpen(false)}
                     >
                         Business
                     </Link>
                     <Link
-                        href="/es/tours/marine"
+                        href="/en/other-services"
                         className="block px-3 py-2 hover:bg-gray-700"
                         onClick={() => setIsToursOpen(false)}
                     >

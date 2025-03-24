@@ -75,12 +75,25 @@ export default function Adventure() {
 
                 {/* Sección que recorre cada aventura */}
                 <div className="w-full max-w-4xl mx-auto px-4 pb-12">
+                <div className="w-full h-12 relative overflow-hidden">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 1000 100"
+                                        preserveAspectRatio="none"
+                                        className={`absolute bottom-0 left-0 w-full h-full `}
+                                    >
+                                        <path
+                                            d="M0,6V0h1000v100L0,6z"
+                                            className={`fill-current text-green-100`}
+                                        ></path>
+                                    </svg>
+                                </div>
                     {adventures.map((adventure, index) => {
                         // Alternamos la rotación
-                        const rotation = index % 2 === 1 ? "" : "transform rotate-180";
+                        const rotation = index % 2 === 1 ? "" : "transform scale-x-[-1]";
 
                         // Alternamos los colores para el triángulo SVG
-                        const colors = ["text-blue-100", "text-green-100", "text-amber-100"];
+                        const colors = ["text-blue-100", "text-red-100", "text-amber-100", "text-green-100" ,];
                         const fillColorClass = colors[index % colors.length];
 
                         return (

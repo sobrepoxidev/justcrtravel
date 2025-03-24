@@ -25,7 +25,7 @@ const specialties = [
 ];
 const just = [
     {
-        src: '/home/just1.png',
+        src: '/home/just1.webp',
         name: 'HEALTH',
         description: 'With us you can integrate your medical, beauty and mental needs.We offer wellness to your body and mind with accredited professional physicians.'
     },
@@ -46,7 +46,7 @@ const just = [
     }
 ];
 
-const srcMainImage = '/home/mainspeciaist.jpg';
+const srcMainImage = '/home/mainspeciaist.webp';
 
 export default function Specialties() {
     return (
