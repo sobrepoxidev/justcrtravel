@@ -44,7 +44,7 @@ export default function Destinations() {
                                 width={1000}
                                 height={0}
                                 className="max-w-full"
-                                priority={idx < 6}
+                                priority
                             />
                         </div>
                         <p className="mt-2 text-justify whitespace-pre-line ">
