@@ -24,6 +24,7 @@ const Navbar = () => {
             width={90} 
             height={90} 
             className="rounded-full"
+            priority
           />
         </Link>
         
