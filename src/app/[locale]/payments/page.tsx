@@ -3,8 +3,7 @@ import Navbar from "@/components/general/NavBar";
 import Footer from "@/components/general/Footer";
 import TravelPackButton from "@/components/payments/TravelPackButton";
 import AnimatedBlobShape from '@/components/payments/BlobShape';
-import { supabase } from "@/lib/supabaseClient";
-import { useState } from "react";
+
 
 
 
