@@ -71,7 +71,7 @@ export default function LocaleSwitcherSelect({
                   >
                     {children}
                   </select>
-                  <span
+                  <button
                     className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 text-xs"
                     onClick={(e) => {
                       // Find the select element and trigger a click
@@ -84,7 +84,7 @@ export default function LocaleSwitcherSelect({
                     ) : (
                       <span>▼</span>
                     )}
-                  </span>
+                  </button>
                 </>
               );
             })()}
