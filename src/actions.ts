@@ -3,7 +3,8 @@
 
 import { sendMail } from '@/lib/email';
 
-export async function handleVacationForm(_: any, formData: FormData) {
+export async function handleVacationForm(_: unknown, formData: FormData) {
+
   const data = {
     what: formData.get("what"),
     where: formData.get("where"),
