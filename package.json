@@ -11,10 +11,12 @@
   "dependencies": {
     "@paypal/react-paypal-js": "^8.8.2",
     "@supabase/supabase-js": "^2.49.1",
+    "@types/nodemailer": "^6.4.17",
     "clsx": "^2.1.1",
     "lucide-react": "^0.483.0",
     "next": "15.2.3",
     "next-intl": "^4.0.2",
+    "nodemailer": "^6.10.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0"

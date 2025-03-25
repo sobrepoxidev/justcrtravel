@@ -1,44 +1,15 @@
-import { redirect } from "next/navigation";   // Para redirigir en el servidor
+//src\app\[locale]\build-your-vacation\page.tsx
+'use client';
+import { useActionState } from 'react';
+import { handleVacationForm } from "../../../actions";
+
 import Navbar from "@/components/general/NavBar";
 import Footer from "@/components/general/Footer";
 import WhatsAppButton from "@/components/general/WhatsAppButton";
 
-// 1) Server Action en el mismo archivo (gracias a "use server")
-async function handleVacationForm(formData: FormData) {
-  "use server"; // Esto indica que la acción se ejecuta en el servidor
-
-  // Lee cada campo por su "name" en el formulario
-  const what = formData.get("what");
-  const where = formData.get("where");
-  const arrival = formData.get("arrival");
-  const departure = formData.get("departure");
-  const adults = formData.get("adults");
-  const kids = formData.get("kids");
-  const firstName = formData.get("firstName");
-  const lastName = formData.get("lastName");
-  const phone = formData.get("phone");
-  const email = formData.get("email");
-
-  // Aquí podrías guardar en DB, llamar a un servicio de email, etc.
-  console.log("Form data del Server Action:", {
-    what,
-    where,
-    arrival,
-    departure,
-    adults,
-    kids,
-    firstName,
-    lastName,
-    phone,
-    email,
-  });
-
-  // Redirige a donde gustes:
-  redirect("/thank-you");
-}
-
 // 2) Server Component que incluye el formulario
 export default function BuildYourVacations() {
+  const [state, formAction] = useActionState(handleVacationForm, null);
   return (
     <div>
       <Navbar />
@@ -50,7 +21,7 @@ export default function BuildYourVacations() {
 
         {/* Formulario que apunta a la Server Action definida arriba */}
         <form
-          action={handleVacationForm}
+          action={formAction}
           className="grid grid-cols-2 gap-6"
         >
           {/* Columna Izquierda */}
@@ -145,6 +116,11 @@ export default function BuildYourVacations() {
             </button>
           </div>
         </form>
+        {state && (
+          <p className={state.success ? 'text-green-600' : 'text-red-600'}>
+            {state.message}
+          </p>
+        )}
       </div>
 
       <Footer />
