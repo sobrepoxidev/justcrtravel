@@ -10,7 +10,7 @@ export async function sendMail(subject: string, html: string) {
   });
 
   const mailOptions = {
-    from: `"Tu Proyecto" <${process.env.EMAIL_USER}>`,
+    from: `"Just Costa Rica Travel" <${process.env.EMAIL_USER}>`,
     to: 'Info@justcostaricatravel.com',
     subject,
     html,

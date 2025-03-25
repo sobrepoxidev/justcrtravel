@@ -34,7 +34,7 @@ export async function handleVacationForm(_: unknown, formData: FormData) {
   `;
 
   try {
-    await sendMail('Nueva Solicitud de Vacaciones', html);
+    await sendMail('Nueva Solicitud de Vacaciones - Just CR Travel', html);
     return { success: true, message: 'Correo enviado con éxito' };
   } catch (error: unknown) {
     console.error("Error enviando correo:", error);
