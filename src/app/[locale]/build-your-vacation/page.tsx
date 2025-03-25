@@ -105,6 +105,13 @@ export default function BuildYourVacations() {
               className="border w-full mb-4 p-2"
             />
           </div>
+          <div className="flex flex-col items-center justify-center">
+          {state && (
+          <p className={state.success ? 'text-green-600' : 'text-red-600'}>
+            {state.message}
+          </p>
+        )}
+          </div>
 
           {/* Botón de Submit */}
           <div className="col-span-2 flex justify-end">
@@ -116,11 +123,7 @@ export default function BuildYourVacations() {
             </button>
           </div>
         </form>
-        {state && (
-          <p className={state.success ? 'text-green-600' : 'text-red-600'}>
-            {state.message}
-          </p>
-        )}
+        
       </div>
 
       <Footer />
