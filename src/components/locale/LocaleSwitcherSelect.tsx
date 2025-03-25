@@ -21,6 +21,7 @@ export default function LocaleSwitcherSelect({
   const [isPending, startTransition] = useTransition();
   const pathname = usePathname();
   const params = useParams();
+  const [isOpen, setIsOpen] = useState(false);
 
   function onSelectChange(event: ChangeEvent<HTMLSelectElement>) {
     const nextLocale = event.target.value as Locale;
@@ -56,7 +57,7 @@ export default function LocaleSwitcherSelect({
           <div className="relative inline-flex items-center">
             {/* Add state to control open/closed state */}
             {(() => {
-              const [isOpen, setIsOpen] = useState(false);
+              
               
               return (
                 <>
