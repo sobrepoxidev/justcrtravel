@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/general/NavBar";
 import Footer from "@/components/general/Footer";
+import WhatsAppButton from "@/components/general/WhatsAppButton";
 
 export default function Rentals() {
     return (
@@ -53,6 +54,7 @@ export default function Rentals() {
                
             </section>
             <Footer />
+            <WhatsAppButton />
         </div>
     )
 }

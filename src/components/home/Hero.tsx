@@ -131,7 +131,7 @@ const Hero = () => {
       {/* Botón Play/Pause */}
       <button
       onClick={togglePause}
-      className="absolute bottom-16 right-4 sm:bottom-10 sm:right-6 p-1.5 sm:p-2 rounded-full bg-black/30 text-white hover:bg-black/50 focus:bg-black/50 transition-all opacity-0 group-hover:opacity-100 focus:opacity-100 focus:outline-none"
+      className="absolute bottom-16 right-4 sm:bottom-14 sm:right-6 p-1.5 sm:p-2 rounded-full bg-black/30 text-white hover:bg-black/50 focus:bg-black/50 transition-all opacity-0 group-hover:opacity-100 focus:opacity-100 focus:outline-none"
       aria-label={isPaused ? "Play slideshow" : "Pause slideshow"}
       >
       {isPaused ? (
