@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";   // Para redirigir en el servidor
 import Navbar from "@/components/general/NavBar";
 import Footer from "@/components/general/Footer";
+import WhatsAppButton from "@/components/general/WhatsAppButton";
 
 // 1) Server Action en el mismo archivo (gracias a "use server")
 async function handleVacationForm(formData: FormData) {
@@ -147,6 +148,7 @@ export default function BuildYourVacations() {
       </div>
 
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }

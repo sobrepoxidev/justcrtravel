@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "@/components/general/NavBar";
 import Footer from "@/components/general/Footer";
+import WhatsAppButton from "@/components/general/WhatsAppButton";
 
 export default function Adventure() {
     const adventures = [
@@ -149,6 +150,7 @@ export default function Adventure() {
                 </div>
             </div>
             <Footer />
+            <WhatsAppButton />
         </div>
     );
 }

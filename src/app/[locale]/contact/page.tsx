@@ -1,5 +1,6 @@
 import Navbar from "@/components/general/NavBar";
 import Footer from "@/components/general/Footer";
+import WhatsAppButton from "@/components/general/WhatsAppButton";
 // Importamos íconos (si usas Heroicons):
 
 import { FaPhoneSquareAlt, FaStar  } from "react-icons/fa";
@@ -46,6 +47,7 @@ export default function Contact() {
         </div>
       </div>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }

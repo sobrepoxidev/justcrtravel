@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "@/components/general/NavBar";
 import Footer from "@/components/general/Footer";
+import WhatsAppButton from "@/components/general/WhatsAppButton";
 
 export default function Marine() {
     const marines = [
@@ -101,6 +102,7 @@ export default function Marine() {
                 </div>
             </div>
             <Footer />
+            <WhatsAppButton />
         </div>
     );
 }

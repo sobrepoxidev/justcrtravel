@@ -1,6 +1,8 @@
 import Navbar from "@/components/general/NavBar";
 import Footer from "@/components/general/Footer";
 import Link from "next/link";
+import WhatsAppButton from "@/components/general/WhatsAppButton";
+
 export default function OtherServices() {
     return (
         <main className="relative min-h-screen">
@@ -97,6 +99,7 @@ export default function OtherServices() {
                     </div>
                 </div>
                 <Footer />
+                <WhatsAppButton />
             </div>
 
         </main>

@@ -1,6 +1,7 @@
 import Navbar from "@/components/general/NavBar";
 import Destinations from "@/components/destinations/destinations";
 import Footer from "@/components/general/Footer";
+import WhatsAppButton from "@/components/general/WhatsAppButton";
 
 export default function DestinationsPage() {
   return (
@@ -8,6 +9,7 @@ export default function DestinationsPage() {
       <Navbar />
       <Destinations />
       <Footer />
+      <WhatsAppButton />
     </main>
   );
 };

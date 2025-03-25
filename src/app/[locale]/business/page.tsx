@@ -1,6 +1,7 @@
 import Navbar from "@/components/general/NavBar";
 import Footer from "@/components/general/Footer";
 import Link from "next/link";
+import WhatsAppButton from "@/components/general/WhatsAppButton";
 
 export default function Business() {
   // Tu segunda imagen, la de las mesas
@@ -53,6 +54,7 @@ export default function Business() {
       </div>
 
       <Footer />
+      <WhatsAppButton />
     </main>
   );
 }

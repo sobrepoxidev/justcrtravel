@@ -3,9 +3,7 @@ import Navbar from "@/components/general/NavBar";
 import Footer from "@/components/general/Footer";
 import TravelPackButton from "@/components/payments/TravelPackButton";
 import AnimatedBlobShape from '@/components/payments/BlobShape';
-
-
-
+import WhatsAppButton from "@/components/general/WhatsAppButton";
 
 export default function Payments() {
 
@@ -33,6 +31,7 @@ export default function Payments() {
       
       </div>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
