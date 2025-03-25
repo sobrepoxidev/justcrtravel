@@ -44,7 +44,7 @@ const MobileMenu = () => {
 
             {/* Mobile menu overlay */}
             {isMenuOpen && (
-                <div className="fixed inset-0 bg-black/95 z-50 flex flex-col">
+                <div className="fixed min-h-screen inset-0 bg-black/95 z-50 flex flex-col">
                     <div className="flex justify-start pl-4 pt-4">
                         <button
                             onClick={() => setIsMenuOpen(false)}
@@ -92,21 +92,21 @@ const MobileMenu = () => {
                             <div className="flex flex-col items-left pl-28  text-gray-300 text-lg">
                                 <Link
                                     href="/adventure"
-                                    className="hover:text-orange-300 py-1"
+                                    className="hover:text-orange-300 py-0"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     {t("adventure")}
                                 </Link>
                                 <Link
                                     href="/cultural"
-                                    className="hover:text-orange-300 py-1"
+                                    className="hover:text-orange-300 py-0"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     {t("cultural")}
                                 </Link>
                                 <Link
                                     href="/marine"
-                                    className="hover:text-orange-300 py-1"
+                                    className="hover:text-orange-300 py-0"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     {t("marine")}

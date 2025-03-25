@@ -44,11 +44,13 @@ const Navbar = () => {
           <Link href="/en/contact" className="hover:text-orange-400">
           {t("contact")}
           </Link>
-          <LocaleSwitcher />
+          
         </div>
+        
 
         {/* Social Media Icons - Desktop */}
         <div className="flex items-center space-x-4 text-white">
+        <LocaleSwitcher />
           <Link href="https://www.facebook.com/justcostaricatravel" aria-label="Facebook" target="_blank" className="hover:text-blue-500 transition">
             <FaFacebook className="w-5 h-5" />
           </Link>
