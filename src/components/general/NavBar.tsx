@@ -15,50 +15,54 @@ const Navbar = () => {
   const t = useTranslations("navbar");
 
   return (
-    <nav className="absolute w-full z-10 bg-black/45 border-b border-orange-400">
-      <div className="container mx-auto px-2 py-3 flex justify-between items-center">
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/home/logo-just-costarica-travel.png"
-            alt="Just Costa Rica Travel"
-            width={90}
-            height={90}
-            className="rounded-full"
-            priority
-          />
+    <nav className="absolute w-full h-28 sm:h-36 z-10 bg-black/45 border-b border-orange-400">
+      <div className="mx-auto sm:px-10 flex items-center ">
+        <Link href="/" className="flex mt-0">
+          <div className="relative">
+            <Image
+              src="/home/logo-just-costarica-travel.webp"
+              alt="Just Costa Rica Travel"
+              width={200}
+              height={200}
+              className="rounded-full sm:w-[170px] sm:h-[140px] mt-0"
+              priority
+            
+            />
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-1">
-          <Link href="/" className="text-white hover:text-orange-300 px-3 py-2 flex items-center gap-x-1">
+        <div className="hidden md:flex flex-row items-center justify-center w-full space-x-1 ">
+          <Link href="/" className="text-white hover:text-orange-300 px-3 flex items-center gap-x-1">
             <FaHome />{t("home")}
           </Link>
           <ToursDropdown />
-          <Link href="/en/destinations" className="text-white hover:text-orange-300 px-3 py-2">
+          <Link href="/en/destinations" className="text-white hover:text-orange-300 px-3">
             {t("destinations")}
           </Link>
           <ServicesDropdown />
-          <Link href="/en/about-us" className="text-white hover:text-orange-300 px-3 py-2">
+          <Link href="/en/about-us" className="text-white hover:text-orange-300 px-3">
             {t("about")}
           </Link>
-          <Link href="/en/payments" className="text-white hover:text-orange-300 px-3 py-2">
+          <Link href="/en/payments" className="text-white hover:text-orange-300 px-3">
             {t("payments")}
           </Link>
-          <Link href="/en/contact" className="text-white hover:text-orange-300 px-3 py-2">
+          <Link href="/en/contact" className="text-white hover:text-orange-300 px-3">
             {t("contact")}
           </Link>
           <LocaleSwitcher />
         </div>
 
         {/* Social Media Icons - Desktop */}
-        <div className="hidden md:flex items-center space-x-2 text-white">
+        <div className="flex flex-row sm:items-center space-x-2 text-white ">
           {/* <Link href="/search" aria-label="Search">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
           </Link> */}
+          
           <Link href="https://www.facebook.com/justcostaricatravel" aria-label="Facebook" target="_blank">
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg className="w-5 h-5 mx-1.5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9 21.58 18.04 20.39 19.63 18.64C21.22 16.89 22.17 14.66 22.17 12.36C22.17 6.83 17.67 2.34 12.17 2.34L12 2.04Z" />
             </svg>
           </Link>
@@ -75,12 +79,14 @@ const Navbar = () => {
             </svg>
           </Link>
           <Link href="https://www.tiktok.com" aria-label="TikTok" target="_blank">
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg className="w-5 h-5 " fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M16.667 1.333h-3.06v13.12c0 1.92-1.56 3.48-3.48 3.48a3.487 3.487 0 0 1-3.48-3.48 3.487 3.487 0 0 1 3.48-3.48v-3.08a6.56 6.56 0 0 0-6.56 6.56A6.56 6.56 0 0 0 10.127 21c3.62 0 6.54-2.92 6.54-6.54V7.947a8.44 8.44 0 0 0 5.666 2.08v-3.08a5.387 5.387 0 0 1-5.666-5.614Z" />
             </svg>
           </Link>
+          <LocaleSwitcher />
 
         </div>
+        
 
         {/* Mobile Menu Toggle Button */}
         <div className="flex md:hidden">

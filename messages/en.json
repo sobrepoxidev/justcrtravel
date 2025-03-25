@@ -6,117 +6,18 @@
     "services": "Services",
     "about": "About Us",
     "payments": "Payments",
-    "contact": "Contact"
-  },
-  "home": {
-    "title": "Just Costa Rica Travel"
+    "contact": "Contact",
+    "adventure": "Adventure",
+    "cultural": "Cultural",
+    "marine": "Marine",
+    "rentals": "Rentals",
+    "transportation": "Transportation",
+    "business": "Business",
+    "otherServices": "Other Services"
   },
   "LocaleSwitcher": {
     "label": "Change language",
     "locale": "{locale, select, es {🇪🇸 Español} en {🇺🇸 English} other {Unknown}}"
-  },
-  "header": {
-    "brand": "Sobrepoxi",
-    "navLinks": {
-      "home": "Home",
-      "about": "About Us",
-      "gallery": "Gallery",
-      "poxicards": "PoxiCards",
-      "contact": "Contact Us"
-    },
-    "guestLinks": {
-      "login": "Log In",
-      "register": "Register"
-    },
-    "logout": "Log Out",
-    "toggleMenu": "Toggle Menu"
-  },
-  "footer": {
-    "copyright": "© {year} - <bold>Sobrepoxi</bold>",
-    "allRightsReserved": "All rights reserved.",
-    "termsAndConditions": "Terms & Conditions",
-    "followUs": "Follow us on",
-    "socialLinks": {
-      "facebook": "Facebook",
-      "instagram": "Instagram",
-      "whatsapp": "WhatsApp"
-    }
-  },
-  "aboutPage": {
-    "heroTitle": "About Us",
-    "heroSubtitle": "We create furniture and spaces that tell stories.",
-    "historyTitle": "Our History",
-    "historyParagraph1": "Sobrepoxi was born from a small workshop with a huge dream: to show that design and functionality can merge to create unique pieces. From the very first sketch to the final finishing touch, every detail embodies our passion and dedication. Over the years, we've evolved in techniques, materials, and styles, but always keep one key ingredient: a <strong>relentless commitment to quality</strong>.",
-    "historyParagraph2": "Today, our multidisciplinary team of designers, artisans, and visionaries continues to push boundaries. We believe every piece of furniture is a canvas where we blend trends and an innovative spirit, without losing that personal touch that turns an object into a companion for everyday stories.",
-    "missionTitle": "Mission",
-    "missionText": "To design and craft unique pieces that transform spaces into vibrant places, where aesthetics and practicality come together to enhance everyone's experience.",
-    "visionTitle": "Vision",
-    "visionText": "To become a benchmark of innovation and excellence in the world of furniture, promoting solutions that embrace the future without sacrificing the warmth of handmade craftsmanship.",
-    "valuesTitle": "Values",
-    "valuesList": {
-      "creativity": "<strong>Creativity:</strong> we constantly explore new ideas and trends.",
-      "quality": "<strong>Quality:</strong> we're stubborn about perfection.",
-      "sustainability": "<strong>Sustainability:</strong> we select eco-friendly materials and processes.",
-      "passion": "<strong>Passion:</strong> we pour our heart into every project, big or small."
-    },
-    "philosophyTitle": "Our Philosophy",
-    "philosophyParagraph1": "At Sobrepoxi, we're driven by the idea that every space has its own soul. Our job is to listen to that essence and shape it through original solutions that not only impress at first glance, but also retain their charm as time goes by.",
-    "philosophyParagraph2": "We believe in a close relationship with our customers: <em>we create partnerships, not just furniture.</em> We love exploring trends and combining them with high-quality materials, always in tune with sustainability. After all, what good is beautiful furniture if the planet pays the price?",
-    "readyTitle": "Ready to learn more?",
-    "readyParagraph": "If you'd like to see how we turn our ideas into tangible realities, be sure to browse our projects and gallery sections. We promise you'll find inspiration and plenty of motivation to refresh your space!"
-  },
-  "ticketsPage": {
-    "mainTitle": "Get your PoxiCard and win <span>amazing prizes</span>! 🎁🔥",
-    "mainSubtitle": "Purchase your <strong>PoxiCard</strong> and get a free entry into our giveaway. You could win <highlight>incredible products</highlight>!",
-    "btnBuy": "Buy PoxiCard",
-    "step1Title": "1. Purchase Your PoxiCards 🛒",
-    "step1Desc": "Get a <strong>digital PoxiCard</strong> for just ₡1000.",
-    "step2Title": "2. Receive Your Number 🎟️",
-    "step2Desc": "After payment, you'll be able to choose <strong>a number</strong> to enter our giveaway.",
-    "step3Title": "3. Personalize and Download 🎨",
-    "step3Desc": "Customize your PoxiCard with your chosen number and download it to share on social media.",
-    "step4Title": "4. Win Prizes! 🎁",
-    "step4Desc": "If your number matches the lottery draw, you win the prize!",
-    "legalWarning": "Buying a digital PoxiCard does not imply purchasing an entry to the giveaway. By acquiring a PoxiCard, you automatically receive a free courtesy entry."
-  },
-  "gallery": {
-    "title": "Projects Gallery",
-    "subtitle": "Discover the magic of our creations and let yourself be inspired by innovation."
-
-  },
-  "contact": {
-    "hero": {
-      "title": "Let's Talk!",
-      "subtitle": "We're here to transform your ideas into real projects."
-    },
-    "info": {
-      "heading": "Get in Touch",
-      "description": "Are you looking for custom furniture, design consultancy, or just a quick decoration tip? We're excited to help you! Remember, the first consultation is completely free."
-    },
-    "contactDetails": {
-      "phone": "+506 8585-0000",
-      "email": "info@sobrepoxi.cr",
-      "location": "San José, Costa Rica"
-    },
-    "form": {
-      "heading": "Send Us Your Message",
-      "labels": {
-        "name": "Name",
-        "email": "Email",
-        "subject": "Subject",
-        "message": "Message"
-      },
-      "placeholders": {
-        "name": "Your full name",
-        "email": "your@email.com",
-        "subject": "Consultancy, Custom Furniture, etc.",
-        "message": "Tell us what you're thinking..."
-      },
-      "button": "Send Message"
-    },
-    "footer": {
-      "heading": "We Love Meeting Creative People",
-      "description": "Would you like to share a crazy idea and see how we bring it to life? This is the place! Remember: the best way to start something great is by saying 'Hello'."
-    }
   }
+
 }

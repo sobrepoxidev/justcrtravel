@@ -6,122 +6,18 @@
     "services": "Servicios",
     "about": "Sobre Nosotros",
     "payments": "Pagos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "adventure": "Aventura",
+    "cultural": "Cultural",
+    "marine": "Marino",
+    "rentals": "Alquileres",
+    "transportation": "Transporte",
+    "business": "Negocios",
+    "otherServices": "Otros Servicios"
   },
-  
-  "home": {
-    "title": "Just Costa Rica Travel"
-  },
-
   "LocaleSwitcher": {
     "label": "Cambiar idioma",
     "locale": "{locale, select, es {🇪🇸 Español} en {🇺🇸 Inglés} other {Desconocido}}"
-
-  },
-
-  "header": {
-    "brand": "Sobrepoxi",
-    "navLinks": {
-      "home": "Inicio",
-      "about": "Sobre nosotros",
-      "gallery": "Galería",
-      "poxicards": "PoxiCards",
-      "contact": "Contáctanos"
-    },
-    "guestLinks": {
-      "login": "Iniciar Sesión",
-      "register": "Registrarse"
-    },
-    "logout": "Cerrar Sesión",
-    "toggleMenu": "Abrir/Cerrar Menú"
-  },
-  "footer": {
-    "copyright":
-      "© {year} - <bold>Sobrepoxi</bold>",
-    "allRightsReserved": "Todos los derechos reservados.",
-    "termsAndConditions": "Términos y Condiciones",
-    "followUs": "Síguenos en",
-    "socialLinks": {
-      "facebook": "Facebook",
-      "instagram": "Instagram",
-      "whatsapp": "WhatsApp"
-    }
-  },
-  "aboutPage": {
-    "heroTitle": "Sobre Nosotros",
-    "heroSubtitle": "Creamos muebles y espacios que cuentan historias.",
-    "historyTitle": "Nuestra Historia",
-    "historyParagraph1": "Sobrepoxi nació de un taller pequeño con un sueño enorme: demostrar que el diseño y la funcionalidad pueden fusionarse para crear piezas únicas. Desde el primer boceto hasta la última pincelada de acabado, cada detalle representa nuestra pasión y dedicación. Con el paso de los años, hemos evolucionado en técnicas, materiales y estilos, pero manteniendo siempre un ingrediente infaltable: la <strong>obsesión por la calidad</strong>.",
-    "historyParagraph2": "Hoy, nuestro equipo multidisciplinario de diseñadores, artesanos y visionarios sigue ampliando fronteras. Creemos que cada mueble es un lienzo donde plasmamos tendencias y espíritu innovador, sin perder ese toque personal que convierte un objeto en un compañero de historias cotidianas.",
-    "missionTitle": "Misión",
-    "missionText": "Diseñar y elaborar piezas únicas que transformen espacios en lugares llenos de vida, donde la estética y la practicidad se unan para mejorar la experiencia de cada persona que las habita.",
-    "visionTitle": "Visión",
-    "visionText": "Convertirnos en referente de innovación y excelencia en el mundo del mobiliario, promoviendo soluciones que dialoguen con el futuro, sin sacrificar la calidez de lo hecho a mano.",
-    "valuesTitle": "Valores",
-    "valuesList": {
-      "creativity": "<strong>Creatividad:</strong> exploramos nuevas ideas y tendencias constantemente.",
-      "quality": "<strong>Calidad:</strong> nos gusta ser tercos con la perfección.",
-      "sustainability": "<strong>Sostenibilidad:</strong> seleccionamos materiales y procesos eco-amigables.",
-      "passion": "<strong>Pasión:</strong> ponemos el corazón en cada proyecto, grande o pequeño."
-    },
-    "philosophyTitle": "Nuestra Filosofía",
-    "philosophyParagraph1": "En Sobrepoxi nos mueve la idea de que cada espacio tiene un alma propia. Nuestra labor consiste en escuchar esa esencia y darle forma a través de soluciones originales que no solo impresionen a primera vista, sino que conserven su encanto con el paso del tiempo.",
-    "philosophyParagraph2": "Creemos en una relación cercana con nuestros clientes: <em>más que muebles, creamos complicidades.</em> Nos encanta explorar tendencias y fusionarlas con materiales de alta calidad, siempre en sintonía con la sostenibilidad. A fin de cuentas, ¿de qué sirve un mueble hermoso si el planeta paga la factura?",
-    "readyTitle": "¿Listo para conocer más?",
-    "readyParagraph": "Si querés ver de cerca cómo convertimos nuestras ideas en realidades tangibles, no dudes en navegar por nuestras secciones de proyectos y galería. ¡Te prometemos inspiración y muchas ganas de renovar tu espacio!"
-  },
-  "ticketsPage": {
-    "mainTitle": "¡Adquiere tu PoxiCard, participa por <span>premios increíbles</span>! 🎁🔥",
-    "mainSubtitle": "Compra tu <strong>PoxiCard</strong> y participa de cortesía en un sorteo. ¡Podrías ganar <highlight>productos increíbles</highlight>!",
-    "btnBuy": "Comprar PoxiCard",
-    "step1Title": "1. Compra tus PoxiCards 🛒",
-    "step1Desc": "Adquiere un <strong>PoxiCard digital</strong> por solo ₡1000.",
-    "step2Title": "2. Recibe tu Número 🎟️",
-    "step2Desc": "Tras realizar tu pago, podrás escoger <strong>un número</strong> para participar en un sorteo.",
-    "step3Title": "3. Personaliza y descarga tu PoxiCard 🎨",
-    "step3Desc": "Puedes personalizar tu PoxiCard con tu número y descargarla para compartir en redes sociales.",
-    "step4Title": "4. ¡Gana Premios! 🎁",
-    "step4Desc": "Si tu número coincide con el de la lotería, ¡te llevas el premio!",
-    "legalWarning": "La compra del PoxiCard digital no implica la compra de una participación en el sorteo. Al adquirir el PoxiCard, recibes automáticamente una entrada gratuita como cortesía."
-  },
-  "gallery":{
-      "title": "Galería de proyectos",
-      "subtitle": "Descubre la magia de nuestras creaciones y déjate llevar por la innovación"
-  },
-  "contact": {
-    "hero": {
-      "title": "¡Hablemos!",
-      "subtitle": "Estamos aquí para transformar tus ideas en proyectos reales."
-    },
-    "info": {
-      "heading": "Ponte en contacto",
-      "description": "¿Buscás muebles personalizados, consultoría de diseño o simplemente un consejo rápido sobre decoración? ¡Estamos ansiosos por ayudarte! Recordá que la primera consulta es completamente gratis."
-    },
-    "contactDetails": {
-      "phone": "+506 8585-0000",
-      "email": "info@sobrepoxi.cr",
-      "location": "San José, Costa Rica"
-    },
-    "form": {
-      "heading": "Déjanos tu mensaje",
-      "labels": {
-        "name": "Nombre",
-        "email": "Correo Electrónico",
-        "subject": "Asunto",
-        "message": "Mensaje"
-      },
-      "placeholders": {
-        "name": "Tu nombre completo",
-        "email": "tu@correo.com",
-        "subject": "Consultoría, Mueble a Medida, etc.",
-        "message": "Contanos lo que tenés en mente..."
-      },
-      "button": "Enviar Mensaje"
-    },
-    "footer": {
-      "heading": "Nos encanta conocer gente creativa",
-      "description": "¿Te gustaría darnos una idea loca y ver cómo la hacemos realidad? ¡Éste es el lugar! Recordá: la mejor manera de empezar algo genial es decir 'Hola'."
-    }
   }
 
 }

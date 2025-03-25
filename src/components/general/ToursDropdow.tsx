@@ -5,15 +5,13 @@ import { useTranslations } from 'next-intl';
 
 export default function ToursDropdown() {
     const t = useTranslations("navbar");
-    // Estado para manejar el menú de "Tours"
-  const [isToursOpen, setIsToursOpen] = useState(false);
+    const [isToursOpen, setIsToursOpen] = useState(false);
 
-  // Maneja el click en el botón "Tours"
-  const handleToursClick = () => {
-    setIsToursOpen(!isToursOpen);
-  };
+    const handleToursClick = () => {
+        setIsToursOpen(!isToursOpen);
+    };
+
     return (
-
         <div className="relative">
             <button
                 onClick={handleToursClick}
@@ -21,36 +19,36 @@ export default function ToursDropdown() {
             >
                 {t("tours")}
                 {isToursOpen ? (
-                <span className="ml-1">▲</span>
-                ): (
+                    <span className="ml-1">▲</span>
+                ) : (
                     <span className="ml-1">▼</span>
                 )}
             </button>
             {isToursOpen && (
                 <div className="absolute left-0 top-full mt-1 w-32 bg-black text-white shadow-lg rounded">
                     <Link
-                        href="/en/adventure"
+                        href="/adventure"
                         className="block px-3 py-2 hover:bg-gray-700"
                         onClick={() => setIsToursOpen(false)}
                     >
-                        Adventure
+                        {t("adventure")}
                     </Link>
                     <Link
-                        href="/en/cultural"
+                        href="/cultural"
                         className="block px-3 py-2 hover:bg-gray-700"
                         onClick={() => setIsToursOpen(false)}
                     >
-                        Cultural
+                        {t("cultural")}
                     </Link>
                     <Link
-                        href="/en/marine"
+                        href="/marine"
                         className="block px-3 py-2 hover:bg-gray-700"
                         onClick={() => setIsToursOpen(false)}
                     >
-                        Marine
+                        {t("marine")}
                     </Link>
                 </div>
             )}
         </div>
-    )
+    );
 }

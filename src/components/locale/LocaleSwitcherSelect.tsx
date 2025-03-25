@@ -3,7 +3,7 @@
 import clsx from 'clsx';
 import { useParams } from 'next/navigation';
 import { Locale } from 'next-intl';
-import { ChangeEvent, ReactNode, useTransition } from 'react';
+import { ChangeEvent, ReactNode, useTransition, useState } from 'react';
 import { usePathname, useRouter } from '@/i18n/navigation';
 
 type Props = {
@@ -53,15 +53,41 @@ export default function LocaleSwitcherSelect({
         <Image src="/flags/en.svg" alt="English" width={20} height={20} />
       )}
     </span> */}
-          <select
-            className="inline-flex appearance-none bg-transparent" // Ajusta el padding-left para dejar espacio al ícono
-            defaultValue={defaultValue}
-            disabled={isPending}
-            onChange={onSelectChange}
-          >
-            {children}
-          </select>
-          <span className="pointer-events-none absolute">▼</span>
+          <div className="relative inline-flex items-center">
+            {/* Add state to control open/closed state */}
+            {(() => {
+              const [isOpen, setIsOpen] = useState(false);
+              
+              return (
+                <>
+                  <select
+                    className="inline-flex appearance-none bg-transparent pr-3" // Added padding-right for the arrow
+                    defaultValue={defaultValue}
+                    disabled={isPending}
+                    onChange={onSelectChange}
+                    onClick={() => setIsOpen(true)}
+                    onBlur={() => setIsOpen(false)}
+                  >
+                    {children}
+                  </select>
+                  <span
+                    className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 text-xs"
+                    onClick={(e) => {
+                      // Find the select element and trigger a click
+                      const select = e.currentTarget.previousElementSibling as HTMLSelectElement;
+                      select?.click();
+                    }}
+                  >
+                    {isOpen ? (
+                      <span>▲</span>
+                    ) : (
+                      <span>▼</span>
+                    )}
+                  </span>
+                </>
+              );
+            })()}
+          </div>
         </div>
       </label>
     </div>
