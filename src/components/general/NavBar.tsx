@@ -48,7 +48,7 @@ const Navbar = () => {
         </div>
 
         {/* Social Media Icons - Desktop */}
-        <div className="hidden sm:flex items-center space-x-4 text-white">
+        <div className="flex items-center space-x-4 text-white">
           <Link href="https://www.facebook.com/justcostaricatravel" aria-label="Facebook" target="_blank" className="hover:text-blue-500 transition">
             <FaFacebook className="w-5 h-5" />
           </Link>
