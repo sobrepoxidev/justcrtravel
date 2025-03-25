@@ -3,7 +3,7 @@
 import React from "react";
 
 
-export default function TravelPackButton({ color, amount, createOrder }: { color: string, amount: number, createOrder: (amount: number) => void }) {
+export default function TravelPackButton({ color, amount }: { color: string, amount: number }) {
   // -------------- state --------------
  
   return (
