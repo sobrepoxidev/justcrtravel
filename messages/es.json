@@ -18,6 +18,97 @@
   "LocaleSwitcher": {
     "label": "Cambiar idioma",
     "locale": "{locale, select, es {🇪🇸 Español} en {🇺🇸 Inglés} other {Desconocido}}"
+  },
+  "buildvacation": {
+    "title": "Arma tus Vacaciones",
+    "description": "Diseña tu paquete vacacional perfecto adaptado a tus preferencias",
+    "cta": "Comenzar",
+    "ariaLabel": "Empieza a construir tu paquete vacacional",
+    "imageAlt": "Aguas del océano"
+  },
+  "destinationGallery": {
+    "heading": "¡Garantizamos los precios más atractivos y diversión! Contáctanos para más información y crea tu paquete personalizado.",
+    "destination1": {
+      "alt": "Cascada en Costa Rica",
+      "label": "Cascada en Costa Rica"
+    },
+    "destination2": {
+      "alt": "Playa tropical en Costa Rica",
+      "label": "Playa tropical en Costa Rica"
+    },
+    "destination3": {
+      "alt": "Palmeras al atardecer",
+      "label": "Palmeras al atardecer"
+    },
+    "destination4": {
+      "alt": "Atardecer oceánico en Costa Rica",
+      "label": "Atardecer oceánico en Costa Rica"
+    }
+  },
+  "exploreCR": {
+    "title": "¡Queremos que explores Costa Rica y crees una relación de viaje con nosotros!",
+    "description": "Descubre las maravillas naturales y experiencias únicas que te esperan.",
+    "cta": "Comienza a Explorar",
+    "ariaLabel": "Empieza a construir tu paquete vacacional"
+  },
+  "specialties": {
+    "mainImageAlt": "Especialidad principal de Costa Rica",
+    "titlePrefix": "Además de un gran viaje a nuestro país",
+    "titleSuffix": "ofrecemos otras especialidades de nuestra empresa.",
+    "justTitle": "ofrece turismo enfocado en salud y bienestar.",
+    "thisIs": "Esto es",
+    "costaRica": "Costa Rica",
+
+    "sports": {
+      "name": "DEPORTE PARA VIAJEROS",
+      "description": "Viajeros disfrutando de deportes activos en los mejores lugares de Costa Rica"
+    },
+    "fishHikeFlySwim": {
+      "name": "PESCA - CAMINATA - VUELO Y NADO",
+      "description": "Descubre nuevas técnicas de pesca en agua salada y destinos con vistas panorámicas. Ideal para amantes de deportes extremos y la naturaleza."
+    },
+    "football": {
+      "name": "FÚTBOL",
+      "description": "El fútbol es el deporte más popular en Costa Rica. El país ha sido históricamente exportador de futbolistas hacia Centroamérica y Europa."
+    },
+    "surf": {
+      "name": "SURF",
+      "description": "Costa Rica cuenta con dos costas — el Océano Pacífico y el Mar Caribe — ofreciendo rompientes perfectas para surfistas."
+    },
+    "health": {
+      "name": "SALUD",
+      "description": "Con nosotros puedes integrar tus necesidades médicas, estéticas y mentales. Ofrecemos bienestar para cuerpo y mente con médicos profesionales acreditados."
+    },
+    "beautyWellness": {
+      "name": "BELLEZA Y BIENESTAR ESTÉTICO",
+      "description": "Just Costa Rica Travel quiere que pruebes estas exquisitas combinaciones en nuestros mejores entornos naturales, caracterizados por su clima único y paisajes."
+    },
+    "dental": {
+      "name": "TRATAMIENTOS DENTALES",
+      "description": "Contamos con los servicios profesionales de una de las clínicas dentales más importantes del país, ubicada en San José, a solo 45 minutos del aeropuerto internacional."
+    },
+    "medical": {
+      "name": "TRATAMIENTOS MÉDICOS",
+      "description": "También puedes contar con los servicios de los mejores hospitales y cirujanos privados de Costa Rica. Cotiza aquí una valoración médica."
+    }
+  },
+  "flightSearch": {
+    "title": "Búsqueda de Vuelos",
+    "description": "Si deseas comprar tus vuelos directamente en Skyscanner, haz clic en el enlace a continuación. Luego regresa a",
+    "descriptionSuffix": "para más ofertas.",
+    "cta": "Comprar vuelos en Skyscanner",
+    "ariaLabel": "Comprar vuelos en Skyscanner"
+  },
+
+
+  
+
+  "footer": {
+    "buildVacation": "Arma tus Vacaciones",
+    "rights": "Just Costa Rica Travel",
+    "builtBy": "Desarrollado por",
+    "office": "Oficina",
+    "tollFree": "Llamada gratuita desde EE.UU./Canadá"
   }
 
 }

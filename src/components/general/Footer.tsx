@@ -1,8 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaFacebook, FaInstagram, FaTwitter, FaTiktok, FaArrowRight } from 'react-icons/fa';
+import { useTranslations } from 'next-intl';
 
 export default function Footer() {
+  const t = useTranslations('footer');
+
   return (
     <footer className="bg-white px-4 py-8 md:p-16">
       <div className="container mx-auto">
@@ -25,26 +28,31 @@ export default function Footer() {
               href="/en/build-your-vacation"
               className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full flex items-center gap-2 transition-transform hover:scale-105"
             >
-              Build Your Vacation <FaArrowRight />
+              {t("buildVacation")} <FaArrowRight />
             </Link>
           </div>
 
           {/* Contact info */}
           <div className="text-sm font-light text-center md:text-right px-4">
             <p className="max-w-xs mx-auto md:ml-auto md:mr-0">
-              Just Costa Rica Travel © 2025. Built by{' '}
-              <Link href="https://sobrepoxi.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:underline text-orange-500">
+              {t("rights")} © 2025. {t("builtBy")}{' '}
+              <Link
+                href="https://sobrepoxi.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline text-orange-500"
+              >
                 Sobrepoxi IT
               </Link>
             </p>
             <p className="mt-2 max-w-xs mx-auto md:ml-auto md:mr-0">
-              Office: <a href="tel:+50685850000" className="hover:underline">(+506) 8585-0000</a>
+              {t("office")}: <a href="tel:+50685850000" className="hover:underline">(+506) 8585-0000</a>
             </p>
             <p className="max-w-xs mx-auto md:ml-auto md:mr-0">
-              Whatsapp: <a href="https://wa.me/50672966451" className="hover:underline">(+506) 7296-6451</a>
+              WhatsApp: <a href="https://wa.me/50672966451" className="hover:underline">(+506) 7296-6451</a>
             </p>
             <p className="max-w-xs mx-auto md:ml-auto md:mr-0">
-              US/Canada Toll Free: <a href="tel:8663196020" className="hover:underline">866-319-6020</a>
+              {t("tollFree")}: <a href="tel:8663196020" className="hover:underline">866-319-6020</a>
             </p>
           </div>
         </div>

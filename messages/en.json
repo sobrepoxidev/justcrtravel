@@ -18,6 +18,96 @@
   "LocaleSwitcher": {
     "label": "Change language",
     "locale": "{locale, select, es {🇪🇸 Español} en {🇺🇸 English} other {Unknown}}"
-  }
+  },
+  "buildvacation": {
+    "title": "Build Your Vacation",
+    "description": "Design your perfect package holiday tailored to your preferences",
+    "cta": "Get Started",
+    "ariaLabel": "Start building your vacation package",
+    "imageAlt": "Ocean waters"
+  },
+  "destinationGallery": {
+    "heading": "We guarantee the most attractive prices and fun!.... Contact us for more information and for your own personalized package!",
+    "destination1": {
+      "alt": "Waterfall in Costa Rica",
+      "label": "Waterfall in Costa Rica"
+    },
+    "destination2": {
+      "alt": "Tropical beach in Costa Rica",
+      "label": "Tropical beach in Costa Rica"
+    },
+    "destination3": {
+      "alt": "Palm trees at sunset",
+      "label": "Palm trees at sunset"
+    },
+    "destination4": {
+      "alt": "Ocean sunset in Costa Rica",
+      "label": "Ocean sunset in Costa Rica"
+    }
+  },
+  "exploreCR": {
+    "title": "We want you to explore Costa Rica and create a travel relationship with us!",
+    "description": "Discover the natural wonders and unique experiences waiting for you.",
+    "cta": "Start Exploring",
+    "ariaLabel": "Start building your vacation package"
+  },
+  "specialties": {
+    "mainImageAlt": "Costa Rica main specialty",
+    "titlePrefix": "In addition to a great trip to our country",
+    "titleSuffix": "we offer other specialties of our company.",
+    "justTitle": "offered tourism focused on health and wellness.",
+    "thisIs": "This is",
+    "costaRica": "Costa Rica",
 
+    "sports": {
+      "name": "SPORTS FOR TRAVELLERS",
+      "description": "Travellers enjoying active sports in the best places of Costa Rica"
+    },
+    "fishHikeFlySwim": {
+      "name": "FISH - HIKE - FLY AND SWIN",
+      "description": "Discover fresh new saltwater-fishing techniques and destinations with incredible panoramic views. Great for extreme sports and nature lovers."
+    },
+    "football": {
+      "name": "FOOTBALL",
+      "description": "Football is the most popular sport in Costa Rica. Costa Rica has long been considered an exporter of footballers within Central America and Europe."
+    },
+    "surf": {
+      "name": "SURF",
+      "description": "Costa Rica has two distinct coasts — Pacific Ocean and the Caribbean Sea — offering one great surf break after another."
+    },
+    "health": {
+      "name": "HEALTH",
+      "description": "With us you can integrate your medical, beauty and mental needs.We offer wellness to your body and mind with accredited professional physicians."
+    },
+    "beautyWellness": {
+      "name": "ESTHETIC BEAUTY AND WELLNESS",
+      "description": "Just Costa Rica Travel want you to probe these exquisite combinations at our best nature privilege spot characterized by its unique climate and sightseeing..."
+    },
+    "dental": {
+      "name": "DENTAL TREATMENTS",
+      "description": "We count with the professional services of one of the most important dental practicing in the country located at San Jose, just at 45 minutes from the International Airport."
+    },
+    "medical": {
+      "name": "MEDICAL TREATMENTS",
+      "description": "You can also count with the services of Costa Rica best private hospitals, and surgeons. Quote here for a medical valuation."
+    }
+  },
+  "flightSearch": {
+    "title": "Flight Search",
+    "description": "If you wish to purchase your flights directly on Skyscanner, click the link below. Then return to",
+    "descriptionSuffix": "for more deals.",
+    "cta": "Buy flights on Skyscanner",
+    "ariaLabel": "Buy flights on Skyscanner"
+  },
+
+
+
+  
+  "footer": {
+    "buildVacation": "Build Your Vacation",
+    "rights": "Just Costa Rica Travel",
+    "builtBy": "Built by",
+    "office": "Office",
+    "tollFree": "US/Canada Toll Free"
+  }
 }

@@ -9,6 +9,7 @@ import GridImage from '@/components/home/GridImage';
 import FlightSearch from '@/components/home/FlightSearch';
 import Footer from '@/components/general/Footer';
 import WhatsAppButton from '@/components/general/WhatsAppButton';
+import { useTranslations } from 'next-intl';
 
 export default function Home() {
 
