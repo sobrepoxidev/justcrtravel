@@ -58,9 +58,9 @@ export default function Payments() {
         {/* Sección con los “travel packs” */}
         <div className="flex flex-row justify-center gap-8">
 
-          <TravelPackButton color="#00d4ff" amount={50} createOrder={createOrder} />
-          <TravelPackButton color="#57ff00" amount={100} createOrder={createOrder} />
-          <TravelPackButton color="#ffc400" amount={500} createOrder={createOrder} />
+          <TravelPackButton color="#00d4ff" amount={50}  />
+          <TravelPackButton color="#57ff00" amount={100} />
+          <TravelPackButton color="#ffc400" amount={500} />
 
         </div>
         <div className=" w-full max-w-full flex flex-col items-center justify-center">
