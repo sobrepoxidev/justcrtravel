@@ -2,7 +2,6 @@
 import Navbar from "@/components/general/NavBar";
 import Footer from "@/components/general/Footer";
 import TravelPackButton from "@/components/payments/TravelPackButton";
-import Step3_PayPal from "@/components/payments/StepPaypal";
 import AnimatedBlobShape from '@/components/payments/BlobShape';
 import { supabase } from "@/lib/supabaseClient";
 import { useState } from "react";
@@ -10,7 +9,6 @@ import { useState } from "react";
 
 
 export default function Payments() {
-  const [createdOrderId, setCreatedOrderId] = useState(null);
   const [ amount, setAmount ] = useState(0);
   // -------------- createOrder() y resto --------------
   const createOrder = async (amount: number) => {
@@ -35,7 +33,6 @@ export default function Payments() {
     }
 
     // 3) Guardamos orderId en el state
-    setCreatedOrderId(orderInsert.id);
     setAmount(totalAmount);
 
     // 4) (Opcional) No vaciamos el carrito todavía, porque no está pagado
@@ -63,21 +60,7 @@ export default function Payments() {
           <TravelPackButton color="#ffc400" amount={500} />
 
         </div>
-        <div className=" w-full max-w-full flex flex-col items-center justify-center">
-          {createdOrderId && (
-            <Step3_PayPal
-              createdOrderId={createdOrderId}
-              amount={amount}
-              onPaymentSuccess={() => {
-                alert("Pago completado!");
-              }}
-              onPaymentError={(msg) => {
-                alert(msg);
-              }}
-            />
-          )
-          }
-        </div>
+      
       </div>
       <Footer />
     </div>
