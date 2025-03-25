@@ -9,35 +9,7 @@ import { useState } from "react";
 
 
 export default function Payments() {
-  const [ amount, setAmount ] = useState(0);
-  // -------------- createOrder() y resto --------------
-  const createOrder = async (amount: number) => {
-    // 1) Crear la orden en BD
-    const totalAmount = amount;
 
-    console.log("Creating order for amount: ", totalAmount);
-
-    // Creamos la orden con estado "pending"
-    const { data: orderInsert, error: orderError } = await supabase
-      .from("TravelOrders")
-      .insert({
-        payment_status: "pending",
-        total_amount: totalAmount
-      })
-      .select()
-      .single();
-
-    if (orderError || !orderInsert) {
-      alert("Error creando la orden en la BD");
-      return;
-    }
-
-    // 3) Guardamos orderId en el state
-    setAmount(totalAmount);
-
-    // 4) (Opcional) No vaciamos el carrito todavía, porque no está pagado
-    // Esperamos a la confirmación final en PayPal
-  };
   return (
     <div>
       <Navbar />
@@ -58,7 +30,6 @@ export default function Payments() {
           <TravelPackButton color="#00d4ff" amount={50}  />
           <TravelPackButton color="#57ff00" amount={100} />
           <TravelPackButton color="#ffc400" amount={500} />
-
         </div>
       
       </div>
