@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaHome, FaFacebook, FaInstagram, FaTwitter, FaTiktok } from "react-icons/fa";
+import { FaHome, FaFacebook, FaInstagram} from "react-icons/fa";
 import dynamic from 'next/dynamic';
 import LocaleSwitcher from '../locale/LocaleSwitcher';
 import { useTranslations } from 'next-intl';
@@ -57,12 +57,12 @@ const Navbar = () => {
           <Link href="https://www.instagram.com/just_c.r_travel_com/" aria-label="Instagram" target="_blank" className="hover:text-pink-500 transition">
             <FaInstagram className="w-5 h-5" />
           </Link>
-          <Link href="https://www.x.com" aria-label="Twitter/X" target="_blank" className="hover:text-gray-300 transition">
+          {/* <Link href="https://www.x.com" aria-label="Twitter/X" target="_blank" className="hover:text-gray-300 transition">
             <FaTwitter className="w-5 h-5" />
           </Link>
           <Link href="https://www.tiktok.com" aria-label="TikTok" target="_blank" className="hover:text-gray-300 transition">
             <FaTiktok className="w-5 h-5" />
-          </Link>
+          </Link> */}
         </div>
 
         {/* Mobile Menu Toggle Button */}
