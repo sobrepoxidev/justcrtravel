@@ -1,5 +1,5 @@
 {
-  "navbar":{
+  "navbar": {
     "home": "Inicio",
     "tours": "Tours",
     "destinations": "Destinos",
@@ -58,7 +58,6 @@
     "justTitle": "ofrece turismo enfocado en salud y bienestar.",
     "thisIs": "Esto es",
     "costaRica": "Costa Rica",
-
     "sports": {
       "name": "DEPORTE PARA VIAJEROS",
       "description": "Viajeros disfrutando de deportes activos en los mejores lugares de Costa Rica"
@@ -102,10 +101,78 @@
   "WAButton": {
     "label": "Conversemos en WhatsApp"
   },
-
-
-
-
+  "adventure": {
+    "title": "AVENTURA",
+    "atv": {
+      "name": "Cuadraciclos",
+      "description": "Este es un tour lleno de diversión por kilómetros de ruta en nuestras playas, perfecto para hacer amigos, disfrutar en familia y liberar tu lado salvaje en la naturaleza. El tour se puede dividir en etapas con obstáculos, curvas y miradores. También podrás hacer paradas para disfrutar vistas al océano y montañas mientras degustas comida típica. ¡No te lo podés perder!",
+      "items": []
+    },
+    "bikeKayak": {
+      "name": "Bicicleta y Kayak",
+      "description": "Este tour te da la oportunidad de experimentar dos deportes de adrenalina en un entorno natural y paisajístico único. Diseñado para parejas, familias, grupos de amigos o estudiantes. No se requiere una condición física fuera de lo común. Disponible en Fortuna y Puerto Viejo.",
+      "items": [
+        "Equipo",
+        "Agua",
+        "Transporte y frutas"
+      ]
+    },
+    "bungee": {
+      "name": "Puenting",
+      "description": "¿Te animás a saltar desde un lugar muy alto? Tranquilo, estarás sujeto a una cuerda larga y resistente que te mantendrá a salvo. Al hacerlo sentirás una libertad increíble y una alegría inmensa por estar vivo. Es uno de nuestros deportes de adrenalina favoritos en Costa Rica.",
+      "items": []
+    },
+    "canopy": {
+      "name": "Canopy",
+      "description": "Una experiencia única llena de adrenalina, donde podés volar entre árboles gigantes, balancearte sobre bosques nublados, ver volcanes y vistas del Golfo de Nicoya. El tour incluye 5 cables o más, todo con equipo seguro y guías profesionales. También podés pedir el tour nocturno para descubrir los misterios de la noche.",
+      "items": []
+    },
+    "waterfalls": {
+      "name": "Cascadas y Cañonismo",
+      "description": "Costa Rica ofrece más de 50 escenarios de aguas cristalinas donde podés combinar tus aventuras favoritas como canopy, puentes colgantes, rappel y cañonismo. Elegí tu lugar favorito:",
+      "items": [
+        "Arenal – Fortuna Alajuela",
+        "Caribe Sur y Puerto Viejo",
+        "Incluye tour de fábrica de chocolate"
+      ]
+    },
+    "caves": {
+      "name": "Tour de Cavernas",
+      "description": "Una experiencia física y de adrenalina única en su atractivo. Estas cavernas cuentan una historia de más de 70 millones de años. Disponible en el Parque Nacional Barra Honda y Cavernas del Venado.",
+      "items": [
+        "Transporte",
+        "Snacks saludables",
+        "Equipo si es necesario"
+      ]
+    },
+    "bridges": {
+      "name": "Puentes Colgantes",
+      "description": "Un tour en teleférico que te permite explorar la cima del bosque lluvioso, disfrutar vistas panorámicas, ver el Lago y Volcán Arenal. Se realiza con guía naturalista que te enseñará sobre la riqueza del bosque tropical. Un tour mágico y refrescante.",
+      "items": []
+    },
+    "hiking": {
+      "name": "Senderismo",
+      "description": "Descubrí la magia del bosque nuboso caminando por senderos en Santa Elena, la Reserva Curi-Cancha en Monteverde, o disfrutando tours de café y caminatas nocturnas. Observá aves en Arenal, colibríes y más. También podés hacer senderismo en el Río Celeste, famoso por su color azul puro gracias al volcán Tenorio. Nuestros guías te explicarán sobre la agricultura, economía y cultura local.",
+      "items": []
+    },
+    "horse": {
+      "name": "Cabalgata",
+      "description": "Recorré la naturaleza de Costa Rica a caballo, como un verdadero sabanero. Este tour incluye guía, vistas increíbles y aprenderás sobre ecología e historia local. También podés vivir los famosos 'topes', donde la gente se reúne y desfila con sus caballos, muy comunes en Liberia y Cañas, Guanacaste.",
+      "items": []
+    },
+    "skyBoard": {
+      "name": "Sky Board",
+      "description": "Probá esta nueva y divertida actividad de 25 minutos llenos de adrenalina, rodeado de naturaleza y paisajes hermosos. Podrás hacer sky surf sobre una tabla ligera. En menos de 5 minutos estarás en el aire disfrutando una experiencia única.",
+      "items": []
+    },
+    "skyDiving": {
+      "name": "Paracaidismo",
+      "description": "¡Te damos la bienvenida a volar como humano acompañado de profesionales sobre playas, ríos, islas o montañas! Seguridad y el mejor equipo del mercado garantizados.",
+      "items": [
+        "Incluye: transporte y snacks saludables"
+      ]
+    }
+  },
   "footer": {
     "buildVacation": "Arma tus Vacaciones",
     "rights": "Just Costa Rica Travel",
@@ -113,5 +180,4 @@
     "office": "Oficina",
     "tollFree": "Llamada gratuita desde EE.UU./Canadá"
   }
-
 }

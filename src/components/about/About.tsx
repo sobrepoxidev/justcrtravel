@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+
 export default function About() {
   const paola = "/about/paola.png";
   const jorge = "/about/jorge.jpg";

@@ -58,7 +58,6 @@
     "justTitle": "offered tourism focused on health and wellness.",
     "thisIs": "This is",
     "costaRica": "Costa Rica",
-
     "sports": {
       "name": "SPORTS FOR TRAVELLERS",
       "description": "Travellers enjoying active sports in the best places of Costa Rica"
@@ -99,14 +98,81 @@
     "cta": "Buy flights on Skyscanner",
     "ariaLabel": "Buy flights on Skyscanner"
   },
-
   "WAButton": {
     "label": "Chat with us on WhatsApp"
   },
-
-
-
-  
+  "adventure": {
+    "title": "ADVENTURE",
+    "atv": {
+      "name": "ATV",
+      "description": "This is a fun ride tour in track kilometers length at our different beaches perfect for making friends, enjoy with family and get wild on the nature, the tour can be divided in stages with obstacles, curves, and viewpoints, also you can made a rest stop at our ocean and mountain view at our typical food restaurants. You won’t miss this tour!!",
+      "items": []
+    },
+    "bikeKayak": {
+      "name": "Bike and Kayak",
+      "description": "This tour offers the opportunity to experience two adrenaline sports in an atmosphere of unique nature and landscape. Designed for couples, families, groups of friends or students is not require a physical condition out of ordinary. At Fortuna y Puerto Viejo.",
+      "items": [
+        "Equipment",
+        "Water",
+        "Transportation and fruits"
+      ]
+    },
+    "bungee": {
+      "name": "Bungee Jumping",
+      "description": "Do you dare to jump from a very high place? Don’t worry you will be attached to a strong, long rope that stretches and that keeps you from hitting the ground, when you practice this definitively will taste freedom and extra joy of living, one of our best adrenaline sports at Costa Rica.",
+      "items": []
+    },
+    "canopy": {
+      "name": "Canopy",
+      "description": "A unique experience full of adrenaline, where you can fly around beautiful large trees, you can swing to swing over cloudy forest, volcanoes surrounds and views over the Gulf of Nicoya Guanacaste. Canopy tour consist of flying over 5 cables or more, all equipment is safety guarantee handle only by professionals, training and equipment will be provided all times. Also you can ask for canopy tour at night and discover the mysteries of the night.",
+      "items": []
+    },
+    "waterfalls": {
+      "name": "Waterfalls and Canyoning",
+      "description": "Costa Rica offers more than 50 beautiful crystal water scenes, where you can combine and practice your favorite adrenaline adventure such as: canopy, hanging bridge, rappel and canyoning Choose your favorite place:",
+      "items": [
+        "Arenal – Fortuna Alajuela",
+        "South Caribbean and Puerto Viejo",
+        "Chocolate factory tour included"
+      ]
+    },
+    "caves": {
+      "name": "Caves Tour",
+      "description": "Beautiful adrenaline and physical experience, unique in attractiveness, itself tells the story over of 70 million years. At National Park Barra Honda, Venado Caves.",
+      "items": [
+        "Transportation",
+        "Healthy snacks",
+        "Equipment if necessary"
+      ]
+    },
+    "bridges": {
+      "name": "Hanging Bridges",
+      "description": "Aerial tram tour that allows you to explore the top of the rainforest, enjoy panoramic views, see the Arenal Lake and Volcano, the tour takes place accompanied by a naturalist guide who will teach you about the richness of the tropical Rainforest. A magical and refreshment tour.",
+      "items": []
+    },
+    "hiking": {
+      "name": "Hiking",
+      "description": "Discover the magic of our cloudy forest, travelling through the paths inside the forest You can guided Walk in Santa Elena Cloud Forest, Curi-Cancha Reserve at Monteverde. Made Coffee tours and also enjoy Night Walk Cloud forest tour Enjoy Arenal bird observation Walk, hummingbird sanctuary and more. And get to know Celeste River hiking this beautiful place, known for its pure light blue color made by Tenorio volcano Our guide will indicate the different farming fields of each area and their main socio-economic and cultural.",
+      "items": []
+    },
+    "horse": {
+      "name": "Horseback Ridding",
+      "description": "Ride up across Costa Rica nature on horseback, like a real “Sabanero”, this tour will included a tour guide and beautiful views also you will be able to learn about Costa Rica ecological and local people history. Also Costa Rica offer the famous “topes” a tradition where local people are gathered with their horses and ride over the streets, very common in Liberia, Cañas Guanacaste.",
+      "items": []
+    },
+    "skyBoard": {
+      "name": "Sky Board",
+      "description": "Try this new fun 25 minutes of pure Adrenaline pumping with all its natural surroundings that give beautiful sceneries. You will be able to sky surf over a light weight board. Participants will take less than a 5 minute to raise in the air and enjoy an innovative and unparalleled activity.",
+      "items": []
+    },
+    "skyDiving": {
+      "name": "Sky Diving",
+      "description": "We welcome you to try the human fly accompanied with professionals over beauty beaches. Rivers, islands or mountains Safety and best equipment of the market guarantee",
+      "items": [
+        "Include: transportation and healthy snacks"
+      ]
+    }
+  },
   "footer": {
     "buildVacation": "Build Your Vacation",
     "rights": "Just Costa Rica Travel",
