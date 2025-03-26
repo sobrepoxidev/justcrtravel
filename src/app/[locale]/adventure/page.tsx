@@ -25,7 +25,7 @@ export default function Adventure() {
             <Navbar />
             {/* Contenedor principal */}
             <div className="container max-w-5xl mx-auto pt-36">
-                <h1 className="text-5xl font-bold mb-8">ADVENTURE</h1>
+                <h1 className="text-5xl font-bold mb-8">{t("title")}</h1>
 
                 {/* Sección que recorre cada aventura */}
                 <div className="w-full max-w-4xl mx-auto px-4 pb-12">

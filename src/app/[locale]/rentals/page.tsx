@@ -3,8 +3,10 @@ import Link from "next/link";
 import Navbar from "@/components/general/NavBar";
 import Footer from "@/components/general/Footer";
 import WhatsAppButton from "@/components/general/WhatsAppButton";
+import { useTranslations } from 'next-intl';
 
 export default function Rentals() {
+    const t = useTranslations("rentals");
     return (
         <div>
             <Navbar />
@@ -13,7 +15,7 @@ export default function Rentals() {
                 <div className="absolute inset-0 overflow-hidden">
                     <Image
                         src="/rentals/rentals.jpg"
-                        alt="Muebles exclusivos"
+                        alt={t("title")}
                         fill
                         style={{ objectFit: "cover", objectPosition: "center" }}
                         quality={30}
@@ -25,36 +27,35 @@ export default function Rentals() {
                 {/* Capa de gradiente + contenido */}
                 <div className="absolute inset-0 bg-gradient-to-b 
                       from-black/20 via-black/25 to-black/15 
-                      flex flex-col justify-center items-center px-2  text-white">
-                    <div className="w-full max-w-full sm:max-w-5xl  " style={{ backdropFilter: "blur(1px)" }}>
-                        <div className="flex flex-col text-end font-mono ">Rentals</div>
-                        <h1 className="text-2xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight text-white">
-
-                            House / condos / apartments
-
+                      flex flex-col justify-center items-center px-2 text-white">
+                    <div className="w-full max-w-full sm:max-w-5xl" style={{ backdropFilter: "blur(1px)" }}>
+                        <div className="flex flex-col text-end font-mono">
+                            {t("title")}
+                        </div>
+                        <h1 className="text-2xl md:text-5xl font-extrabold mb-4 leading-tight text-white">
+                            {t("subtitle")}
                         </h1>
-                        <p className="text-base md:text-lg  mb-3 max-w-5xl mx-auto backdrop-blur-3xl  text-white">
-
-                            We offer you condos and apartments for your family or private getaway on the best sites at Costa Rica.
+                        <p className="text-base font-semibold md:text-lg mb-3 max-w-5xl mx-auto backdrop-blur-4xl text-white">
+                            {t("description")}
                         </p>
-                        <p className="text-sm md:text-base  mb-6 max-w-5xl mx-auto backdrop-blur-3xl   text-white">
-
-                        Ask for your favorite location at:  Tamarindo – Conchal – Papagayo area – Flamingo beach – Jaco beach – Puerto viejo beach – Playa chiquita - Manzanillo beach
+                        <p className="text-sm font-semibold md:text-base mb-6 max-w-5xl mx-auto backdrop-blur-3xl text-white">
+                            {t("locations")}
                         </p>
 
-                        {/* Botones */}
+                        {/* Botón */}
                         <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
-                            <Link href="/en/contact" className="border-2 border-green-400 text-green-400 hover:bg-green-300/20 hover:text-green-500 transition-colors duration-300 px-8 py-3">
-                                More Info
+                            <Link
+                                href="/en/contact"
+                                className="border-2 border-green-400 text-green-400 hover:bg-green-300/20 hover:text-green-500 transition-colors duration-300 px-8 py-3"
+                            >
+                                {t("moreInfo")}
                             </Link>
                         </div>
                     </div>
                 </div>
-
-               
             </section>
             <Footer />
             <WhatsAppButton />
         </div>
-    )
+    );
 }
