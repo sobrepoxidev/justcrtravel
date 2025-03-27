@@ -53,10 +53,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       title: pageTitle,
       description: pageDescription,
       url: `${baseUrl}/${locale}/about-us`,
-      images: [
-        // Ajusta la ruta de imagen si tienes un cover especial para "About Us"
-        `${baseUrl}/images/about-us-cover.jpg`
-      ],
+     
     },
     // Opcionalmente, define "twitter" si quieres tarjetas Twitter
     twitter: {
