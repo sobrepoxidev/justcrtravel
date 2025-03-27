@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 //locale
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
@@ -42,7 +43,7 @@ export default async function RootLayout({
 
             {children}
             
-         
+            <SpeedInsights />
         </NextIntlClientProvider>
       </body>
     </html>
