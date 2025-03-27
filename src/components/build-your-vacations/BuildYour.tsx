@@ -5,10 +5,6 @@ import { motion } from 'framer-motion';
 import { FaSpinner, FaCommentDots } from 'react-icons/fa';
 import { Listbox, Transition } from '@headlessui/react';
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid';
-
-import Navbar from "@/components/general/NavBar";
-import Footer from "@/components/general/Footer";
-import WhatsAppButton from "@/components/general/WhatsAppButton";
 import { useTranslations } from "next-intl";
 
 // Predefined lists with more detailed options (optional i18n if you want localized descriptions/icons too)
