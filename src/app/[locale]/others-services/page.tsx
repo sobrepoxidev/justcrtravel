@@ -24,7 +24,7 @@ export default function OtherServices() {
   ];
 
   return (
-    <main className="relative min-h-screen">
+    <main className="relative min-h-scree bg-gradient-to-br from-blue-50 to-white">
 
       <Navbar />
 
