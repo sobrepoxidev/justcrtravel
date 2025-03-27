@@ -149,7 +149,7 @@ export default function BuildYourVacations() {
         transition={{ duration: 0.5 }}
         className="max-w-6xl mx-auto px-4 pt-20 sm:pt-36 pb-0"
       >
-        <h1 className="text-lg sm:text-5xl font-bold text-gray-800 mb-4 tracking-tight">
+        <h1 className="text-xl sm:text-5xl font-bold text-gray-800 mb-4 tracking-tight">
           {t("title")}
         </h1>
 

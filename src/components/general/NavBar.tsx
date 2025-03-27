@@ -13,14 +13,14 @@ const Navbar = () => {
   const t = useTranslations("navbar");
   return (
     <nav className="absolute w-full z-20 bg-black bg-opacity-60 backdrop-blur-sm border-b border-orange-400">
-      <div className="mx-auto px-4 sm:px-8 flex items-center justify-between h-20 sm:h-24">
-        <Link href="/" className="flex items-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 sm:h-20 md:h-24 lg:h-28">
+      <Link href="/" className="flex items-center">
           <Image
             src="/home/logo-just-costarica-travel.webp"
             alt="Just Costa Rica Travel"
             width={120}
             height={120}
-            className="rounded-full object-contain"
+            className="rounded-full object-contain w-16 sm:w-20 md:w-24 lg:w-28 h-16 sm:h-20 md:h-24 lg:h-28"
             priority
           />
         </Link>
