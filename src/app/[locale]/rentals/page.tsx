@@ -6,7 +6,6 @@ import WhatsAppButton from "@/components/general/WhatsAppButton";
 import { useTranslations } from "next-intl";
 
 export default function Rentals() {
-  const b = useTranslations("business");
   const t = useTranslations("rentals");
   const imgsrc = "/rentals/rentals.jpg";
 
@@ -30,7 +29,7 @@ export default function Rentals() {
                 href="/en/contact"
                 className="border-2 border-green-400 text-green-400 hover:bg-green-300/20 hover:text-green-500 transition-colors duration-300 px-8 py-3"
               >
-                {b("moreInfo")}
+                {t("moreInfo")}
               </Link>
             </div>
           </div>
@@ -39,7 +38,7 @@ export default function Rentals() {
           <div className="md:w-1/2 w-full flex flex-col justify-center items-center">
             <Image
               src={imgsrc}
-              alt={b("altImage")}
+              alt={t("altImage")}
               width={800}
               height={600}
               className="w-full h-auto rounded shadow-md"

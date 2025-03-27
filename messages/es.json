@@ -278,7 +278,8 @@
     "subtitle": "Casas, condominios, apartamentos",
     "description": "Ofrecemos condominios y apartamentos para tu familia o escapada privada en los mejores sitios de Costa Rica.",
     "locations": "Consulta por tu ubicación favorita en: Tamarindo – Conchal – Área de Papagayo – Playa Flamingo – Playa Jacó – Playa Puerto Viejo – Playa Chiquita – Playa Manzanillo",
-    "moreInfo": "Más información"
+    "moreInfo": "Más información",
+    "altImage": "Automóvil de alquiler"
   },
   "transportation": {
     "title": "TRANSPORTE",
@@ -319,6 +320,7 @@
   },
   "about": {
     "altCover": "Sobre nosotros",
+    "buildVacation": "Crea tus Vacaciones",
     "title": "Sobre la compañía",
     "description": {
       "part1": "Somos simplemente dos ticos que tuvimos una idea hace algunos años: mostrar nuestro país a viajeros. En ese momento no teníamos la experiencia ni la preparación que tenemos ahora.",
@@ -333,17 +335,17 @@
       "title": "Visión",
       "description": "Nuestro principal objetivo es proporcionar un servicio turístico de alto estándar, siendo una agencia de viajes multitarea que promueve la belleza natural y la cultura de Costa Rica, dejando una huella inolvidable en la memoria de nuestros clientes."
     },
-    "teamTitle": "NUESTRO EQUIPO",
+    "teamTitle": "Nuestro Equipo",
     "teamSubtitle": "Las personas que hacen posible tu visita a Costa Rica",
     "team": {
       "paola": {
-        "name": "PAOLA PASTOR VILLALOBOS",
-        "role": "GERENTE GENERAL",
+        "name": "Paola Pastor Villalobos",
+        "role": "Gerente general",
         "bio": "Paola es graduada de la Universidad Latina Costa Rica en Turismo con énfasis en hotelería y restaurantes. Posee experiencia en organización de congresos nacionales turísticos y empresariales."
       },
       "jorge": {
-        "name": "JORGE ANTONIO ZAVALETA FALLAS",
-        "role": "GERENTE FINANCIERO",
+        "name": "Jorge Antonio Zavaleta Fallas",
+        "role": "Gerente financiero",
         "bio": "Jorge es técnico en computación y redes, con estudios avanzados en ingeniería electrónica, conocimientos que ha utilizado para asesorar oficinas empresariales en Costa Rica. Tiene 17 años de experiencia en atención al cliente."
       }
     }

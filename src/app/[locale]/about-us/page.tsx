@@ -55,7 +55,7 @@ export async function generateMetadata(props: { params: tParams }): Promise<Meta
 
 export default function AboutPage() {
   return (
-    <main className="relative min-h-screen">
+    <main className="relative min-h-screen bg-gradient-to-br from-blue-50 to-white">
       <Navbar />
       <About />
       <Footer />

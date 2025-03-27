@@ -287,7 +287,8 @@
     "subtitle": "House, condos, apartments",
     "description": "We offer you condos and apartments for your family or private getaway on the best sites at Costa Rica.",
     "locations": "Ask for your favorite location at: Tamarindo – Conchal – Papagayo area – Flamingo beach – Jaco beach – Puerto Viejo beach – Playa Chiquita - Manzanillo beach",
-    "moreInfo": "More Info"
+    "moreInfo": "More Info",
+    "altImage": "Car rental"
   },
   "transportation": {
     "title": "Transportation",
@@ -328,6 +329,8 @@
   },
   "about": {
     "altCover": "About us",
+    "buidVacations": "Build Your Vacation",
+   
     "title": "About the company",
     "description": {
       "part1": "We are just two Ticos who had an idea a few years ago: to show our country to travelers. At that time, we didn’t have the experience and preparation that we have now.",
@@ -342,17 +345,17 @@
       "title": "Vision",
       "description": "Our primary objective is to provide a high-standard service as a multitasking travel agency, promoting Costa Rica’s natural beauty and culture, leaving an unforgettable impression in our clients' memories."
     },
-    "teamTitle": "ABOUT TEAM",
+    "teamTitle": "About the Team",
     "teamSubtitle": "The people who make your visit to Costa Rica possible",
     "team": {
       "paola": {
-        "name": "PAOLA PASTOR VILLALOBOS",
-        "role": "GENERAL MANAGER",
+        "name": "Paola Pastor Villalobos",
+        "role": "General manager",
         "bio": "Paola graduated from Universidad Latina Costa Rica with a degree in Tourism, specializing in hospitality and restaurants. She is experienced in organizing national tourism congresses and business events."
       },
       "jorge": {
-        "name": "JORGE ANTONIO ZAVALETA FALLAS",
-        "role": "FINANCIAL MANAGER",
+        "name": "Jorge Antonio Zavaleta Fallas",
+        "role": "Financial manager",
         "bio": "Jorge is a computer and networking technician with advanced studies in electronic engineering, skills he has used to support various business offices in Costa Rica. He has 17 years of customer service experience."
       }
     }
