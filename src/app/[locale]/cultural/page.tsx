@@ -17,13 +17,13 @@ export default function Cultural() {
     ];
 
     return (
-        <div>
+        <div className="relative min-h-screen bg-gradient-to-br from-blue-50 to-white">
             <Navbar />
-            <div className="container max-w-5xl mx-auto pt-36">
-                <h1 className="text-5xl font-bold mb-8">{t("title")}</h1>
+            <div className="max-w-6xl mx-auto px-4 pt-20 sm:pt-36 pb-0">
+                <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4 text-gray-950">{t("title")}</h1>
 
-                <div className="w-full max-w-4xl mx-auto px-4 pb-12">
-                    <div className="w-full h-12 relative overflow-hidden">
+                <div className="w-full max-w-5xl mx-auto">
+                    <div  className="w-full h-7 sm:h-12 relative overflow-hidden">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 1000 100"
@@ -43,23 +43,23 @@ export default function Cultural() {
                         const items = t.raw(`${key}.items`);
 
                         return (
-                            <div key={key} className="relative mb-20">
-                                <div className={`flex flex-col md:flex-row items-start mb-14 ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}>
-                                    <div className="md:w-1/2 mb-4 md:mb-0">
+                            <div key={key}  className="relative max-w-full">
+                                <div className={`flex flex-col md:flex-row items-start ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}>
+                                    <div className="max-w-full w-full md:w-1/2 py-2 flex flex-col items-center ">
                                         <Image
                                             src={images[index]}
                                             alt={t(`${key}.name`)}
                                             width={600}
                                             height={400}
-                                            className="w-full h-auto object-cover"
+                                            className="max-w-full"
                                         />
                                     </div>
                                     <div className="md:w-1/2 md:px-8">
-                                        <h2 className="text-3xl font-extrabold mb-4">{t(`${key}.name`)}</h2>
-                                        <p className="leading-relaxed mb-3">{t(`${key}.description`)}</p>
+                                        <h2 className="text-2xl sm:text-4xl font-semibold tracking-tight">{t(`${key}.name`)}</h2>
+                                        <p className="text-justify whitespace-pre-line text-lg font-thin">{t(`${key}.description`)}</p>
 
                                         {Array.isArray(items) && items.length > 0 && (
-                                            <ul className="list-disc list-inside ml-4">
+                                            <ul className="list-disc list-inside text-justify whitespace-pre-line text-lg font-thin ml-1">
                                                 {items.map((item: string) => (
                                                     <li key={item}>{item}</li>
                                                 ))}
@@ -68,7 +68,7 @@ export default function Cultural() {
                                     </div>
                                 </div>
 
-                                <div className="w-full h-12 relative overflow-hidden">
+                                <div className="w-full h-7 sm:h-12 relative overflow-hidden">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 1000 100"

@@ -22,7 +22,9 @@ export default function Adventure() {
 
     return (
         <div className="relative min-h-screen bg-gradient-to-br from-blue-50 to-white ">
+            
             <Navbar />
+          
             {/* Contenedor principal */}
             <div className="max-w-6xl mx-auto px-4 pt-20 sm:pt-36 pb-0">
                 <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4 text-gray-950">{t("title")}</h1>
@@ -101,7 +103,8 @@ export default function Adventure() {
                             </div>
                         );
                     })}
-                </div>
+                
+            </div>
             </div>
             <Footer />
             <WhatsAppButton />
