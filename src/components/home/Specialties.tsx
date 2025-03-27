@@ -97,8 +97,8 @@ export default function Specialties() {
           </div>
         </div>
         <h3 className="text-4xl text-gray-900 text-center mt-4">
-          <span className="font-bold text-gray-800">{t("thisIs")} </span>
-          <span className="text-pretty">{t("costaRica")}</span>
+          <span className=" text-pretty text-gray-800">{t("thisIs")} </span>
+          <span className="font-semibold">{t("costaRica")}</span>
         </h3>
       </div>
     </div>
