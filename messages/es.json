@@ -383,6 +383,38 @@
       "number": "(506) 7252-0958"
     }
   },
+  "buildVacation": {
+    "title": "Crea tu Vacación",
+
+    "activities": {
+      "label": "Actividades",
+      "multi": "(Selección múltiple)",
+      "placeholder": "Elige Actividades"
+    },
+
+    "destinations": {
+      "label": "Destinos",
+      "multi": "(Selección múltiple)",
+      "placeholder": "Elige Destinos"
+    },
+
+    "arrival": "Llegada",
+    "departure": "Salida",
+    "adults": "Adultos",
+    "kids": "Niños",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "phone": "Teléfono",
+    "email": "Correo",
+
+    "comments": {
+      "label": "Notas Adicionales / Peticiones Especiales",
+      "placeholder": "Comparte detalles adicionales, restricciones alimenticias, necesidades de accesibilidad u otras peticiones..."
+    },
+
+    "submit": "Enviar Solicitud",
+    "submitting": "Enviando..."
+  },
   "footer": {
     "buildVacation": "Crea tus Vacaciones",
     "rights": "Just Costa Rica Travel",

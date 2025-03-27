@@ -392,6 +392,38 @@
       "number": "(506) 7252-0958"
     }
   },
+  "buildVacation": {
+    "title": "Build Your Vacation",
+
+    "activities": {
+      "label": "Activities",
+      "multi": "(Multi-select)",
+      "placeholder": "Select Activities"
+    },
+
+    "destinations": {
+      "label": "Destinations",
+      "multi": "(Multi-select)",
+      "placeholder": "Select Destinations"
+    },
+
+    "arrival": "Arrival",
+    "departure": "Departure",
+    "adults": "Adults",
+    "kids": "Kids",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phone": "Phone",
+    "email": "Email",
+
+    "comments": {
+      "label": "Additional Notes / Special Requests",
+      "placeholder": "Share any additional details, dietary restrictions, accessibility needs, or special requests..."
+    },
+
+    "submit": "Submit Request",
+    "submitting": "Submitting..."
+  },
   
   "footer": {
     "buildVacation": "Build Your Vacation",
