@@ -25,7 +25,7 @@ export default function Rentals() {
             <p className="text-justify whitespace-pre-line text-sm font-thin md:pr-2">{t("locations")}</p>
 
             {/* Botón */}
-            <div className="flex flex-col sm:flex-row justify-center items-center max-md:py-3">
+            <div className="flex flex-col sm:flex-row justify-center items-center max-md:py-3 md:py-6">
               <Link
                 href="/en/contact"
                 className="border-2 border-green-400 text-green-400 hover:bg-green-300/20 hover:text-green-500 transition-colors duration-300 px-8 py-3"

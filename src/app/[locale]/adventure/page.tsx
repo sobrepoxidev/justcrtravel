@@ -22,11 +22,11 @@ export default function Adventure() {
 
     return (
         <div className="relative min-h-screen bg-gradient-to-br from-blue-50 to-white ">
-            
+
             <Navbar />
-          
+
             {/* Contenedor principal */}
-            <div className="max-w-6xl mx-auto px-4 pt-20 sm:pt-36 pb-0">
+            <div className="max-w-6xl mx-auto px-4 pt-20 sm:pt-36 pb-0 ">
                 <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4 text-gray-950">{t("title")}</h1>
 
                 {/* Sección que recorre cada aventura */}
@@ -53,7 +53,7 @@ export default function Adventure() {
                         const fillColorClass = colors[index % colors.length];
 
                         return (
-                            <div key={t(`${adventure.key}.name`)} className="relative max-w-full">
+                            <div key={t(`${adventure.key}.name`)} className="relative max-w-full flex flex-col space-y-4">
                                 <div
                                     className={`flex flex-col md:flex-row items-start
                                                 ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}
@@ -103,8 +103,8 @@ export default function Adventure() {
                             </div>
                         );
                     })}
-                
-            </div>
+
+                </div>
             </div>
             <Footer />
             <WhatsAppButton />

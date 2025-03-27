@@ -39,7 +39,7 @@ export default function Marine() {
                         const fillColorClass = colors[index % colors.length];
 
                         return (
-                            <div key={adventure.key} className="relative max-w-full">
+                            <div key={adventure.key} className="relative max-w-full flex flex-col space-y-4">
                                 <div
                                     className={`flex flex-col md:flex-row items-start
                                                 ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}

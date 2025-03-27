@@ -57,7 +57,7 @@ export default function OtherServices() {
                     <h1 className="text-3xl sm:text-5xl font-bold mb-2 tracking-tight text-gray-950">{t(`${section.key}.title`)}</h1>
                     <p className="text-justify whitespace-pre-line text-base font-thin md:pr-2">{t(`${section.key}.description`)}</p>
 
-                    <div className="flex flex-col sm:flex-row justify-center items-center py-2">
+                    <div className="flex flex-col sm:flex-row justify-center items-center py-2 md:py-6">
                       <Link href="/en/contact" className="border-2 border-green-400 text-green-400 hover:bg-green-300/20 hover:text-green-500 transition-colors duration-300 px-8 py-3">
                         {t("moreInfo")}
                       </Link>

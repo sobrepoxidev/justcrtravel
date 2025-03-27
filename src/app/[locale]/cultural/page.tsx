@@ -43,7 +43,7 @@ export default function Cultural() {
                         const items = t.raw(`${key}.items`);
 
                         return (
-                            <div key={key}  className="relative max-w-full">
+                            <div key={key} className="relative max-w-full flex flex-col space-y-4">
                                 <div className={`flex flex-col md:flex-row items-start ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}>
                                     <div className="max-w-full w-full md:w-1/2 pt-2 flex flex-col items-center ">
                                         <Image
