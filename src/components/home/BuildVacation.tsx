@@ -24,7 +24,7 @@ const BuildVacation = () => {
           {t("description")}
         </p>
         <Link 
-          href="/en/build-your-vacation"
+          href="/build-your-vacation"
           className="border-2 border-white hover:bg-white hover:text-blue-600 focus:bg-white focus:text-blue-600 transition-colors duration-300 px-6 md:px-8 py-2 md:py-3 rounded-md font-medium transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
           aria-label={t("ariaLabel")}
         >

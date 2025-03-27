@@ -25,7 +25,7 @@ export default function Footer() {
           {/* Build your vacation button */}
           <div className="flex justify-center">
             <Link
-              href="/en/build-your-vacation"
+              href="/build-your-vacation"
               className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full flex items-center gap-2 transition-transform hover:scale-105"
             >
               {t("buildVacation")} <FaArrowRight />

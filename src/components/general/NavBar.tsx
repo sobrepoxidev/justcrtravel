@@ -31,17 +31,17 @@ const Navbar = () => {
             <FaHome />{t("home")}
           </Link>
           <ToursDropdown />
-          <Link href="/en/destinations" className="hover:text-orange-400">
+          <Link href="/destinations" className="hover:text-orange-400">
             {t("destinations")}
           </Link>
           <ServicesDropdown />
-          <Link href="/en/about-us" className="hover:text-orange-400">
+          <Link href="/about-us" className="hover:text-orange-400">
             {t("about")}
           </Link>
-          <Link href="/en/payments" className="hover:text-orange-400">
+          <Link href="/payments" className="hover:text-orange-400">
             {t("payments")}
           </Link>
-          <Link href="/en/contact" className="hover:text-orange-400">
+          <Link href="/contact" className="hover:text-orange-400">
             {t("contact")}
           </Link>
 

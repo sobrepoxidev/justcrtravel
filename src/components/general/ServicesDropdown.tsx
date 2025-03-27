@@ -27,7 +27,7 @@ export default function ServicesDropdown() {
             {isToursOpen && (
                 <div className="absolute left-0 top-full mt-1 w-32 bg-black text-white shadow-lg rounded">
                     <Link
-                        href="/en/rentals"
+                        href="/rentals"
                         className="block px-3 py-2 hover:bg-gray-700"
                         onClick={() => setIsToursOpen(false)}
                     >
@@ -41,14 +41,14 @@ export default function ServicesDropdown() {
                         {t("transportation")}
                     </Link>
                     <Link
-                        href="/en/business"
+                        href="/business"
                         className="block px-3 py-2 hover:bg-gray-700"
                         onClick={() => setIsToursOpen(false)}
                     >
                         {t("business")}
                     </Link>
                     <Link
-                        href="/en/other-services"
+                        href="/other-services"
                         className="block px-3 py-2 hover:bg-gray-700"
                         onClick={() => setIsToursOpen(false)}
                     >
