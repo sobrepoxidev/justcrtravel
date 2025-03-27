@@ -18,8 +18,8 @@ export default function Destinations() {
     ];
 
     return (
-        <div className="max-w-5xl mx-auto pt-36">
-            <h1 className="text-5xl font-bold text-start mb-8">{t('title')}</h1>
+        <div className="max-w-6xl mx-auto px-4 pt-20 sm:pt-36 pb-0">
+            <h1 className="text-3xl sm:text-5xl font-bold mb-4 tracking-tight text-gray-950">{t('title')}</h1>
 
             {keys.map((key, idx) => (
                 <details

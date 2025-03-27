@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaHome, FaFacebook, FaInstagram} from "react-icons/fa";
+import { FaHome, FaFacebook, FaInstagram } from "react-icons/fa";
 import dynamic from 'next/dynamic';
 import LocaleSwitcher from '../locale/LocaleSwitcher';
 import { useTranslations } from 'next-intl';
@@ -12,9 +12,9 @@ const MobileMenu = dynamic(() => import('@/components/general/MobileMenu'));
 const Navbar = () => {
   const t = useTranslations("navbar");
   return (
-    <nav className="absolute w-full z-20 bg-black bg-opacity-60 backdrop-blur-sm border-b border-orange-400">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 sm:h-20 md:h-24 lg:h-28">
-      <Link href="/" className="flex items-center">
+    <nav className="absolute flex flex-col max-w-full w-full z-20 bg-green-950 bg-opacity-60 backdrop-blur-sm border-b border-orange-400">
+      <div className="px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 sm:h-20 md:h-24 lg:h-28">
+        <Link href="/" className="flex items-center">
           <Image
             src="/home/logo-just-costarica-travel.webp"
             alt="Just Costa Rica Travel"
@@ -26,31 +26,31 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-6 text-white font-medium">
+        <div className="hidden lg:flex items-center space-x-3 text-white font-medium">
           <Link href="/" className="hover:text-orange-400 flex items-center gap-1">
             <FaHome />{t("home")}
           </Link>
           <ToursDropdown />
           <Link href="/en/destinations" className="hover:text-orange-400">
-          {t("destinations")}
+            {t("destinations")}
           </Link>
           <ServicesDropdown />
           <Link href="/en/about-us" className="hover:text-orange-400">
-          {t("about")}
+            {t("about")}
           </Link>
           <Link href="/en/payments" className="hover:text-orange-400">
-          {t("payments")}
+            {t("payments")}
           </Link>
           <Link href="/en/contact" className="hover:text-orange-400">
-          {t("contact")}
+            {t("contact")}
           </Link>
-          
+
         </div>
-        
+
 
         {/* Social Media Icons - Desktop */}
         <div className="flex items-center space-x-4 text-white">
-        <LocaleSwitcher />
+          <LocaleSwitcher />
           <Link href="https://www.facebook.com/justcostaricatravel" aria-label="Facebook" target="_blank" className="hover:text-blue-500 transition">
             <FaFacebook className="w-5 h-5" />
           </Link>
@@ -66,7 +66,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Toggle Button */}
-        <div className="flex md:hidden">
+        <div className="flex lg:hidden">
           <MobileMenu />
         </div>
       </div>
