@@ -48,7 +48,7 @@ export default function ServicesDropdown() {
                         {t("business")}
                     </Link>
                     <Link
-                        href="/other-services"
+                        href="/others-services"
                         className="block px-3 py-2 hover:bg-gray-700"
                         onClick={() => setIsToursOpen(false)}
                     >

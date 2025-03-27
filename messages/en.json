@@ -13,7 +13,7 @@
     "rentals": "Rentals",
     "transportation": "Transportation",
     "business": "Business",
-    "otherServices": "Other Services"
+    "otherServices": "Others Services"
   },
   "LocaleSwitcher": {
     "label": "Change language",
@@ -284,7 +284,7 @@
   },
   "rentals": {
     "title": "Rentals",
-    "subtitle": "House / condos / apartments",
+    "subtitle": "House, condos, apartments",
     "description": "We offer you condos and apartments for your family or private getaway on the best sites at Costa Rica.",
     "locations": "Ask for your favorite location at: Tamarindo – Conchal – Papagayo area – Flamingo beach – Jaco beach – Puerto Viejo beach – Playa Chiquita - Manzanillo beach",
     "moreInfo": "More Info"

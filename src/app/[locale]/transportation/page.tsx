@@ -10,25 +10,25 @@ export default function Transportation() {
   const imgsrc = "/transportation/transportation.jpg";
 
   return (
-    <main className="relative min-h-screen">
+    <main className="relative min-h-screen bg-gradient-to-br from-blue-50 to-white">
       <Navbar />
 
-      <div className="max-w-5xl mx-auto pt-36 px-4">
+      <div className="max-w-6xl mx-auto px-4 pt-20 sm:pt-36 ">
         {/* Sección con texto + imagen */}
-        <div className="flex flex-col md:flex-row items-start gap-6 mb-12">
+        <div className="flex flex-col md:flex-row items-start ga">
           {/* Texto en la mitad izquierda */}
           <div className="md:w-1/2">
-            <h1 className="text-5xl font-bold text-start mb-4">
+            <h1 className="text-3xl sm:text-5xl font-bold mb-2 tracking-tight text-gray-950">
               {t("title")}
             </h1>
 
-            <ul className="list-disc pl-6 space-y-2 mb-6">
+            <ul className="list-disc list-inside text-justify whitespace-pre-line text-lg font-thin ml-1">
               {t.raw("services").map((service: string, index: number) => (
                 <li key={index}>{service}</li>
               ))}
             </ul>
 
-            <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
+            <div className="flex flex-col sm:flex-row justify-center items-center max-md:py-3">
               <Link
                 href="/en/contact"
                 className="border-2 border-green-400 text-green-400 hover:bg-green-300/20 hover:text-green-500 transition-colors duration-300 px-8 py-3"
@@ -39,7 +39,7 @@ export default function Transportation() {
           </div>
 
           {/* Imagen en la mitad derecha */}
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 w-full flex flex-col justify-center items-center">
             <Image
               src={imgsrc}
               alt={t("altImage")}

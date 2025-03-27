@@ -38,11 +38,11 @@ export default function Destinations() {
                                 alt={t(`${key}.title`)}
                                 width={1000}
                                 height={0}
-                                className="max-w-full"
+                                className="w-full h-auto rounded shadow-m"
                                 priority
                             />
                         </div>
-                        <p className="mt-2 text-justify whitespace-pre-line ">
+                        <p className="mt-1 text-justify whitespace-pre-line text-base font-thin ">
                             {t(`${key}.description`)}
                         </p>
                     </div>

@@ -152,7 +152,7 @@ const MobileMenu = () => {
                                     {t("business")}
                                 </Link>
                                 <Link
-                                    href="/other-services"
+                                    href="/others-services"
                                     className="hover:text-orange-300"
                                     onClick={() => setIsMenuOpen(false)}
                                 >

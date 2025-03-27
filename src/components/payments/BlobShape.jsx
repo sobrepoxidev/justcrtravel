@@ -3,7 +3,7 @@ import React from 'react';
 
 const BlobShape = () => {
   return (
-    <div className="relative w-[100px] h-[100px] flex flex-col items-center justify-center ">
+    <div className="relative w-[100px] h-[100px] flex flex-col items-center justify-center bg-fuchsia-300">
       <svg 
         xmlns="http://www.w3.org/2000/svg" 
         viewBox="0 0 300 300" 

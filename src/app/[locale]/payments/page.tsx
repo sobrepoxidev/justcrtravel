@@ -2,7 +2,7 @@
 import Navbar from "@/components/general/NavBar";
 import Footer from "@/components/general/Footer";
 import TravelPackButton from "@/components/payments/TravelPackButton";
-import AnimatedBlobShape from '@/components/payments/BlobShape';
+//import AnimatedBlobShape from '@/components/payments/BlobShape';
 import WhatsAppButton from "@/components/general/WhatsAppButton";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
@@ -13,17 +13,17 @@ export default function Payments() {
   return (
     <div className="bg-gradient-to-br from-blue-50 to-white min-h-screen">
       <Navbar />
-      <div className="container max-w-6xl mx-auto px-4 pt-36 pb-16">
+      <div className="max-w-6xl mx-auto px-4 pt-20 sm:pt-36 pb-0">
         {/* Header Section with Blob and Text */}
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="grid md:grid-cols-2 items-center mb-16 space-y-8 md:space-y-0 md:space-x-12"
+          className="grid md:grid-cols-1 items-center mb-4 sm:mb-8 space-y-8 md:space-y-0 md:space-x-12"
         >
-          <div className="flex justify-center">
+          {/* <div className="flex max-sm:flex-col items-center justify-start sm:justify-center ">
             <AnimatedBlobShape />
-          </div>
+          </div> */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
               {t("title")}

@@ -45,21 +45,21 @@ export default function Cultural() {
                         return (
                             <div key={key}  className="relative max-w-full">
                                 <div className={`flex flex-col md:flex-row items-start ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}>
-                                    <div className="max-w-full w-full md:w-1/2 py-2 flex flex-col items-center ">
+                                    <div className="max-w-full w-full md:w-1/2 pt-2 flex flex-col items-center ">
                                         <Image
                                             src={images[index]}
                                             alt={t(`${key}.name`)}
                                             width={600}
                                             height={400}
-                                            className="max-w-full"
+                                            className="w-full h-auto rounded shadow-m"
                                         />
                                     </div>
                                     <div className="md:w-1/2 md:px-8">
                                         <h2 className="text-2xl sm:text-4xl font-semibold tracking-tight">{t(`${key}.name`)}</h2>
-                                        <p className="text-justify whitespace-pre-line text-lg font-thin">{t(`${key}.description`)}</p>
+                                        <p className="text-justify whitespace-pre-line text-base font-thin">{t(`${key}.description`)}</p>
 
                                         {Array.isArray(items) && items.length > 0 && (
-                                            <ul className="list-disc list-inside text-justify whitespace-pre-line text-lg font-thin ml-1">
+                                            <ul className="list-disc list-inside text-justify whitespace-pre-line text-base font-thin ml-1">
                                                 {items.map((item: string) => (
                                                     <li key={item}>{item}</li>
                                                 ))}

@@ -59,24 +59,24 @@ export default function Adventure() {
                                                 ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}
                                 >
                                     {/* Imagen */}
-                                    <div className="max-w-full w-full md:w-1/2 py-2 flex flex-col items-center ">
+                                    <div className="max-w-full w-full md:w-1/2 pt-2 flex flex-col items-center ">
                                         <Image
                                             src={adventure.image}
                                             alt={t(`${adventure.key}.name`)}
                                             width={600}
                                             height={0}
-                                            className="max-w-full"
+                                            className="w-full h-auto rounded shadow-m"
                                         />
                                     </div>
 
                                     {/* Texto */}
                                     <div className="md:w-1/2 md:px-8">
                                         <h2 className="text-2xl sm:text-4xl font-semibold tracking-tight">{t(`${adventure.key}.name`)}</h2>
-                                        <p className="text-justify whitespace-pre-line text-lg font-thin"> {t(`${adventure.key}.description`)}</p>
+                                        <p className="text-justify whitespace-pre-line text-base font-thin"> {t(`${adventure.key}.description`)}</p>
 
                                         {/* Si existe itemsItems, lo mostramos en una lista */}
                                         {t.raw(`${adventure.key}.items`) && (
-                                            <ul className="list-disc list-inside text-justify whitespace-pre-line text-lg font-thin ml-1">
+                                            <ul className="list-disc list-inside text-justify whitespace-pre-line text-base font-thin ml-1">
                                                 {Array.isArray(t.raw(`${adventure.key}.items`)) &&
                                                     t.raw(`${adventure.key}.items`).map((item: string) => (
                                                         <li key={item}>{item}</li>
