@@ -6,22 +6,12 @@ import WhatsAppButton from "@/components/general/WhatsAppButton";
 import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
 
-interface AboutPageProps {
-  // "params" vendrá con "locale" por tener [locale] en la ruta
-  params: {
-    locale: string;
-  };
-  // "searchParams" también puede existir; no es obligatorio usarlo, pero Next.js lo incluye
-  searchParams?: {
-    [key: string]: string | string[] | undefined;
-  };
-}
 
-export async function generateMetadata(
-  { params }: AboutPageProps
-): Promise<Metadata> {
+
+type tParams = Promise<{ locale: string }>;
+export async function generateMetadata(props: { params: tParams }): Promise<Metadata> {
   // Extraer "locale"
-  const { locale } = params;
+  const { locale } = await props.params;
 
   const t = await getTranslations('about');
 
