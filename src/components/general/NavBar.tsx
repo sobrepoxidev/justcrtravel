@@ -12,7 +12,7 @@ const MobileMenu = dynamic(() => import('@/components/general/MobileMenu'));
 const Navbar = () => {
   const t = useTranslations("navbar");
   return (
-    <nav className="absolute flex flex-col max-w-full w-full z-20 bg-green-950 bg-opacity-60 backdrop-blur-sm border-b border-orange-400">
+    <nav className="absolute flex flex-col max-w-full w-full z-20 bg-gradient-to-b from-green-200  bg-opacity-15 backdrop-opacity-50">
       <div className="px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 sm:h-20 md:h-24 lg:h-28">
         <Link href="/" className="flex items-center">
           <Image
@@ -26,7 +26,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center space-x-3 text-white font-medium">
+        <div className="hidden lg:flex items-center space-x-3 text-gray-950 font-medium">
           <Link href="/" className="hover:text-orange-400 flex items-center gap-1">
             <FaHome />{t("home")}
           </Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
 
 
         {/* Social Media Icons - Desktop */}
-        <div className="flex items-center space-x-4 text-white">
+        <div className="flex items-center space-x-4 text-black">
           <LocaleSwitcher />
           <Link href="https://www.facebook.com/justcostaricatravel" aria-label="Facebook" target="_blank" className="hover:text-blue-500 transition">
             <FaFacebook className="w-5 h-5" />

@@ -15,7 +15,7 @@ export default function ToursDropdown() {
         <div className="relative">
             <button
                 onClick={handleToursClick}
-                className="text-white hover:text-orange-300 px-3 py-2 flex items-center"
+                className="text-gray-950 hover:text-orange-300 px-3 py-2 flex items-center"
             >
                 {t("tours")}
                 {isToursOpen ? (

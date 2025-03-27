@@ -14,7 +14,7 @@ const MobileMenu = () => {
             {/* Hamburger button */}
             <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-white p-2 focus:outline-none"
+                className="text-gray-950 p-2 focus:outline-none"
                 aria-label="Toggle mobile menu"
             >
                 <svg
