@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaFacebook, FaInstagram, FaTwitter, FaTiktok, FaArrowRight } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaArrowRight } from 'react-icons/fa';
 import { useTranslations } from 'next-intl';
 
 export default function Footer() {
@@ -65,12 +65,12 @@ export default function Footer() {
           <Link href="https://www.instagram.com/just_c.r_travel_com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer" className="hover:text-pink-600 transition-colors">
             <FaInstagram className="w-6 h-6" />
           </Link>
-          <Link href="https://www.x.com" aria-label="Twitter/X" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">
+          {/* <Link href="https://www.x.com" aria-label="Twitter/X" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">
             <FaTwitter className="w-6 h-6" />
           </Link>
           <Link href="https://www.tiktok.com" aria-label="TikTok" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">
             <FaTiktok className="w-6 h-6" />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </footer>
