@@ -33,6 +33,7 @@ export default function Destinations() {
 
                     <div className="mt-4">
                         <div className="max-w-full flex flex-col items-center ">
+                        <div className="w-full" style={{ aspectRatio: "2.02" }}>
                             <Image
                                 src={`/${t(`${key}.image`)}`}
                                 alt={t(`${key}.title`)}
@@ -41,6 +42,7 @@ export default function Destinations() {
                                 className="w-full h-auto rounded shadow-m"
                                 priority
                             />
+                            </div>
                         </div>
                         <p className="mt-1 text-justify whitespace-pre-line text-base font-thin ">
                             {t(`${key}.description`)}

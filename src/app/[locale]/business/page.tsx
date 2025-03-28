@@ -37,6 +37,7 @@ export default function Business() {
 
           {/* Imagen derecha */}
           <div className="md:w-1/2 w-full flex flex-col justify-center items-center">
+          <div className="w-full" style={{ aspectRatio: "4" }}>
             <Image
               src={imgsrc}
               alt={t("altImage")}
@@ -45,6 +46,7 @@ export default function Business() {
               className="w-full h-auto rounded shadow-md"
               priority
             />
+            </div>
           </div>
         </div>
       </div>

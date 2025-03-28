@@ -45,6 +45,7 @@ export default function Marine() {
                                                 ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}
                                 >
                                     <div className="max-w-full w-full md:w-1/2 pt-2 flex flex-col items-center ">
+                                    <div className="w-full" style={{ aspectRatio: "1.31" }}>
                                         <Image
                                             src={adventure.image}
                                             alt={t(`${adventure.key}.name`)}
@@ -52,6 +53,7 @@ export default function Marine() {
                                             height={400}
                                             className="w-full h-auto rounded shadow-m"
                                         />
+                                        </div>
                                     </div>
 
                                     <div className="md:w-1/2 md:px-8">

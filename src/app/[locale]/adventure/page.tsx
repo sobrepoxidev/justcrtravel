@@ -3,8 +3,6 @@ import Navbar from "@/components/general/NavBar";
 import Footer from "@/components/general/Footer";
 import WhatsAppButton from "@/components/general/WhatsAppButton";
 import { useTranslations } from 'next-intl';
-import Loading from "@/components/LoadingImageAdventure";
-import { Suspense } from "react";
 
 export default function Adventure() {
     const t = useTranslations("adventure");
@@ -63,15 +61,13 @@ export default function Adventure() {
                                     {/* Imagen */}
                                     <div className="max-w-full w-full md:w-1/2 pt-2 flex flex-col items-center ">
                                         <div className="w-full" style={{ aspectRatio: "1.31" }}>
-                                            <Suspense fallback={<Loading />}>
-                                                <Image
-                                                    src={adventure.image}
-                                                    alt={t(`${adventure.key}.name`)}
-                                                    width={570}
-                                                    height={436}
-                                                    className="w-full h-auto rounded shadow-md"
-                                                />
-                                            </Suspense>
+                                            <Image
+                                                src={adventure.image}
+                                                alt={t(`${adventure.key}.name`)}
+                                                width={570}
+                                                height={436}
+                                                className="w-full h-auto rounded shadow-md"
+                                            />
                                         </div>
                                     </div>
 
