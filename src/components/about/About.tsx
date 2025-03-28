@@ -24,10 +24,6 @@ export default function About() {
   return (
     <div className="max-w-6xl mx-auto px-4 pt-20 sm:pt-36 ">
 
-
-
-
-
       <div className="flex flex-col md:flex-row items-start ga">
         {/* Texto izquierda */}
         <div className="md:w-1/2">
@@ -56,7 +52,7 @@ export default function About() {
             alt={t("altCover")}
             width={800}
             height={600}
-            className="w-full h-auto rounded shadow-md"
+            className="w-full h-auto rounded shadow-md aspect-video"
             priority
           />
         </div>
