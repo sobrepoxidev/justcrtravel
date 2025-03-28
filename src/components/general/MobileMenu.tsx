@@ -44,8 +44,8 @@ const MobileMenu = () => {
 
             {/* Mobile menu overlay */}
             {isMenuOpen && (
-                <div className="fixed min-h-screen inset-0 bg-black/95 z-50 flex flex-col">
-                    <div className="flex justify-start pl-4 pt-4">
+                <div className="fixed top-0 left-0 w-full bg-black/95 z-50 flex flex-col max-w-full overflow-hidden">
+                    <div className="flex justify-start pl-1 pt-2">
                         <button
                             onClick={() => setIsMenuOpen(false)}
                             className="text-white"
@@ -84,12 +84,12 @@ const MobileMenu = () => {
 
                         {/* Mobile Tours Section */}
                         <div className="mobile-dropdown w-full text-left ">
-                            <div className="text-white hover:text-orange-300 pl-24 text-xl ">
+                            <div className="text-white hover:text-orange-300 pl-5 text-xl ">
                                 {t("tours")}
                             </div>
 
 
-                            <div className="flex flex-col items-left pl-28  text-gray-300 text-lg">
+                            <div className="flex flex-col items-left pl-8  text-gray-300 text-lg">
                                 <Link
                                     href="/adventure"
                                     className="hover:text-orange-300 py-0"
@@ -116,7 +116,7 @@ const MobileMenu = () => {
 
                         <Link
                             href="/destinations"
-                            className="text-white hover:text-orange-300 pl-24 text-start text-xl"
+                            className="text-white hover:text-orange-300 pl-5 text-start text-xl"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             {t("destinations")}
@@ -125,11 +125,11 @@ const MobileMenu = () => {
                         {/* Mobile Services Section */}
                         <div className="mobile-dropdown w-full text-left">
                             <div
-                                className="text-white hover:text-orange-300  pl-24 text-xl"
+                                className="text-white hover:text-orange-300  pl-5 text-xl"
                             >
                                 {t("services")}
                             </div>
-                            <div className="flex flex-col items-left pl-28 text-gray-300 text-lg">
+                            <div className="flex flex-col items-left pl-8 text-gray-300 text-lg">
                                 <Link
                                     href="/rentals"
                                     className="hover:text-orange-300"
@@ -163,7 +163,7 @@ const MobileMenu = () => {
 
                         <Link
                             href="/about-us"
-                            className="text-white hover:text-orange-300 pl-24  text-xl"
+                            className="text-white hover:text-orange-300 pl-5  text-xl"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             {t("about")}
@@ -171,7 +171,7 @@ const MobileMenu = () => {
 
                         <Link
                             href="/payments"
-                            className="text-white hover:text-orange-300 pl-24  text-xl"
+                            className="text-white hover:text-orange-300 pl-5  text-xl"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             {t("payments")}
@@ -179,7 +179,7 @@ const MobileMenu = () => {
 
                         <Link
                             href="/contact"
-                            className="text-white hover:text-orange-300 pl-24 pb-9 text-xl"
+                            className="text-white hover:text-orange-300 pl-5 pb-9 text-xl"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             {t("contact")}
