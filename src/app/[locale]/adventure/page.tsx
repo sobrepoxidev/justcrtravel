@@ -65,7 +65,7 @@ export default function Adventure() {
                                             alt={t(`${adventure.key}.name`)}
                                             width={600}
                                             height={0}
-                                            className="w-full h-auto rounded shadow-m"
+                                            className="w-full h-auto rounded shadow-m aspect-auto"
                                         />
                                     </div>
 
