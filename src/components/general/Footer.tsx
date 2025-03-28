@@ -13,11 +13,11 @@ export default function Footer() {
           {/* Logo section */}
           <div className="flex justify-center md:justify-start">
             <Image
-              src="/home/logo-just-costarica-travel.png"
+              src="/mainlogonav.svg"
               alt="Just Costa Rica Travel"
               width={90}
               height={90}
-              className="rounded-full"
+              className="rounded-full bg-white"
               priority
             />
           </div>
