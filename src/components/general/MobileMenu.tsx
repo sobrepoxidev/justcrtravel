@@ -85,7 +85,14 @@ const MobileMenu = () => {
                         {/* Mobile Tours Section */}
                         <div className="mobile-dropdown w-full text-left ">
                             <div className="text-white hover:text-orange-300 pl-5 text-xl ">
-                                {t("tours")}
+                                <Link
+                                    href="/adventure"
+
+                                    onClick={() => setIsMenuOpen(false)}
+                                >
+
+                                    {t("tours")}
+                                </Link>
                             </div>
 
 
@@ -127,7 +134,15 @@ const MobileMenu = () => {
                             <div
                                 className="text-white hover:text-orange-300  pl-5 text-xl"
                             >
-                                {t("services")}
+                                <Link
+                                    href="/rentals"
+
+                                    onClick={() => setIsMenuOpen(false)}
+                                >
+
+                                    {t("services")}
+                                </Link>
+
                             </div>
                             <div className="flex flex-col items-left pl-8 text-gray-300 text-lg">
                                 <Link
