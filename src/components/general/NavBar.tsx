@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="px-2 sm:px-6 lg:px-8 flex items-center justify-between h-16 sm:h-20 md:h-24">
         <Link href="/" className="flex items-center pt-1">
           <Image
-            src="/whiteicon.svg"
+            src="/mainlogonav1.png"
             alt="Just Costa Rica Travel"
             width={60}
             height={60}
