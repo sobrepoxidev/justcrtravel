@@ -41,7 +41,7 @@ const DestinationGallery = () => {
         {destinations.map((destination, index) => (
           <div 
             key={index} 
-            className={`max-w-full w-full sm:w-1/2 md:w-80 p-1 sm:p-0 md:mx-4 z-10 transition-transform duration-300 hover:scale-105 ${
+            className={`max-w-full w-full max-sm:mb-1 sm:w-1/2 md:w-80 p-1 sm:p-0 md:mx-4 z-10 transition-transform duration-300 hover:scale-105 ${
               index % 2 !== 0 ? 'mt-0 sm:mt-16' : ''
             }`}
           >
