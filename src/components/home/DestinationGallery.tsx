@@ -7,7 +7,7 @@ const DestinationGallery = () => {
 
   const destinations = [
     {
-      src: '/home/destination1.jpeg',
+      src: '/home/destination1.webp',
       alt: t("destination1.alt"),
       label: t("destination1.label")
     },
@@ -17,30 +17,31 @@ const DestinationGallery = () => {
       label: t("destination2.label")
     },
     {
-      src: '/home/destination3.jpeg',
+      src: '/home/destination3.webp',
       alt: t("destination3.alt"),
       label: t("destination3.label")
     },
     {
-      src: '/home/destination4.jpeg',
+      src: '/home/destination4.webp',
       alt: t("destination4.alt"),
       label: t("destination4.label")
     },
   ];
 
   return (
-    <div className="py-12 px-4 md:px-6 bg-white">
-      <div className="mb-10 md:mb-16 text-center max-w-5xl mx-auto">
+    <div className="py-6 px-4 md:px-6 bg-white">
+
+      <div className="mb-8 text-center max-w-5xl mx-auto ">
         <h2 className="text-2xl md:text-3xl font-light text-gray-700 leading-relaxed">
           {t("heading")}
         </h2>
       </div>
       
-      <div className="flex flex-wrap justify-center items-start relative">
+      <div className="flex flex-wrap justify-center items-start relative ">
         {destinations.map((destination, index) => (
           <div 
             key={index} 
-            className={`w-full sm:w-1/2 md:w-64 p-3 md:mx-4 z-10 transition-transform duration-300 hover:scale-105 ${
+            className={`max-w-full w-full sm:w-1/2 md:w-80 p-1 sm:p-0 md:mx-4 z-10 transition-transform duration-300 hover:scale-105 ${
               index % 2 !== 0 ? 'mt-0 sm:mt-16' : ''
             }`}
           >
@@ -48,8 +49,8 @@ const DestinationGallery = () => {
               <Image
                 src={destination.src}
                 alt={destination.alt}
-                width={300}
-                height={300}
+                width={1920}
+                height={0}
                 className="w-full h-auto object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 p-3">
