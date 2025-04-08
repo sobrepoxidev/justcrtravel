@@ -19,7 +19,7 @@ export default function Home() {
       <div
         className="fixed inset-0 w-full h-full bg-cover bg-center bg-no-repeat z-0"
         style={{
-          backgroundImage: "url('/home/bg.jpeg')",
+          backgroundImage: "url('/home/bg.webp')",
           backgroundAttachment: "fixed"
         }}
       />
