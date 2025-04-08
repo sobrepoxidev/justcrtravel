@@ -9,7 +9,7 @@ const BuildVacation = () => {
     <div className="relative h-80 md:h-96 lg:h-[32rem] bg-blue-500 overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/home/barmar.jpeg"
+          src="/home/barmar.webp"
           alt={t("imageAlt")}
           className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
           loading="lazy"

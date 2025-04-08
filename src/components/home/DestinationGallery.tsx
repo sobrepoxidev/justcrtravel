@@ -12,7 +12,7 @@ const DestinationGallery = () => {
       label: t("destination1.label")
     },
     {
-      src: '/home/destination2.jpeg',
+      src: '/home/destination2.webp',
       alt: t("destination2.alt"),
       label: t("destination2.label")
     },

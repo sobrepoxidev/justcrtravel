@@ -3,11 +3,11 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 const images = [
-  '/home/carrucel1.jpg',
-  '/home/carrucel2.jpg',
-  '/home/carrucel3.jpg',
-  '/home/carrucel4.jpg',
-  '/home/carrucel5.jpg',
+  '/home/carrucel1.webp',
+  '/home/carrucel2.webp',
+  '/home/carrucel3.webp',
+  '/home/carrucel4.webp',
+  '/home/carrucel5.webp',
 ];
 
 const Hero = () => {
