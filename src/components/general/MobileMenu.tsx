@@ -5,17 +5,34 @@ import { FaHome } from "react-icons/fa";
 import LocaleSwitcher from '../locale/LocaleSwitcher';
 import { useTranslations } from 'next-intl';
 
-
+/**
+ * MobileMenu Component
+ * 
+ * A responsive mobile navigation menu that includes:
+ * - Hamburger toggle button
+ * - Fullscreen overlay with navigation links
+ * - Home link with icon
+ * - Language switcher
+ * - Dropdown sections for Tours and Services
+ * - Other main navigation links
+ * 
+ * @returns {JSX.Element} The mobile menu component
+ */
 const MobileMenu = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const t = useTranslations("navbar");
+
+    // Handler to close menu and navigate
+    const handleNavigation = () => setIsMenuOpen(false);
+
     return (
         <div>
-            {/* Hamburger button */}
+            {/* Hamburger toggle button */}
             <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-gray-950 p-2 focus:outline-none"
+                className="p-2 text-gray-950 focus:outline-none"
                 aria-label="Toggle mobile menu"
+                aria-expanded={isMenuOpen}
             >
                 <svg
                     className="w-6 h-6"
@@ -23,6 +40,7 @@ const MobileMenu = () => {
                     stroke="currentColor"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
                 >
                     {isMenuOpen ? (
                         <path
@@ -44,10 +62,15 @@ const MobileMenu = () => {
 
             {/* Mobile menu overlay */}
             {isMenuOpen && (
-                <div className="fixed top-0 left-0 w-full bg-black/95 z-50 flex flex-col max-w-full overflow-hidden">
+                <nav 
+                    className="fixed top-0 left-0 z-50 flex flex-col w-full max-w-full overflow-hidden bg-black/95"
+                    role="navigation"
+                    aria-label="Mobile navigation"
+                >
+                    {/* Close button */}
                     <div className="flex justify-start pl-1 pt-2">
                         <button
-                            onClick={() => setIsMenuOpen(false)}
+                            onClick={handleNavigation}
                             className="text-white"
                             aria-label="Close mobile menu"
                         >
@@ -57,6 +80,7 @@ const MobileMenu = () => {
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true"
                             >
                                 <path
                                     strokeLinecap="round"
@@ -68,140 +92,130 @@ const MobileMenu = () => {
                         </button>
                     </div>
 
+                    {/* Mobile menu content */}
                     <div className="flex flex-col items-left mt-1 space-y-2">
-                        <div className="flex flex-row items-center justify-center space-x-6 ">
+                        {/* Home and Language Switcher Row */}
+                        <div className="flex flex-row items-center justify-center space-x-6">
                             <Link
                                 href="/"
-                                className="text-white hover:text-orange-300 flex  text-xl "
-                                onClick={() => setIsMenuOpen(false)}
+                                className="flex text-xl text-white hover:text-orange-300"
+                                onClick={handleNavigation}
                             >
-                                <FaHome className="mr-1 justify-center text-center mt-1" /> {t("home")}
+                                <FaHome className="mt-1 mr-1 text-center" aria-hidden="true" /> 
+                                <span>{t("home")}</span>
                             </Link>
 
                             <LocaleSwitcher />
                         </div>
 
-
-                        {/* Mobile Tours Section */}
-                        <div className="mobile-dropdown w-full text-left ">
-                            <div className="text-white hover:text-orange-300 pl-5 text-xl ">
-                                <Link
-                                    href="/adventure"
-
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-
+                        {/* Tours Section with Nested Links */}
+                        <section className="w-full text-left" aria-labelledby="tours-heading">
+                            <h2 id="tours-heading" className="pl-5 text-xl text-white hover:text-orange-300">
+                                <Link href="/adventure" onClick={handleNavigation}>
                                     {t("tours")}
                                 </Link>
-                            </div>
+                            </h2>
 
-
-                            <div className="flex flex-col items-left pl-8  text-gray-300 text-lg">
+                            <div className="flex flex-col items-left pl-8 text-lg text-gray-300">
                                 <Link
                                     href="/adventure"
-                                    className="hover:text-orange-300 py-0"
-                                    onClick={() => setIsMenuOpen(false)}
+                                    className="py-0 hover:text-orange-300"
+                                    onClick={handleNavigation}
                                 >
                                     {t("adventure")}
                                 </Link>
                                 <Link
                                     href="/cultural"
-                                    className="hover:text-orange-300 py-0"
-                                    onClick={() => setIsMenuOpen(false)}
+                                    className="py-0 hover:text-orange-300"
+                                    onClick={handleNavigation}
                                 >
                                     {t("cultural")}
                                 </Link>
                                 <Link
                                     href="/marine"
-                                    className="hover:text-orange-300 py-0"
-                                    onClick={() => setIsMenuOpen(false)}
+                                    className="py-0 hover:text-orange-300"
+                                    onClick={handleNavigation}
                                 >
                                     {t("marine")}
                                 </Link>
                             </div>
-                        </div>
+                        </section>
 
+                        {/* Destinations Link */}
                         <Link
                             href="/destinations"
-                            className="text-white hover:text-orange-300 pl-5 text-start text-xl"
-                            onClick={() => setIsMenuOpen(false)}
+                            className="pl-5 text-xl text-white text-start hover:text-orange-300"
+                            onClick={handleNavigation}
                         >
                             {t("destinations")}
                         </Link>
 
-                        {/* Mobile Services Section */}
-                        <div className="mobile-dropdown w-full text-left">
-                            <div
-                                className="text-white hover:text-orange-300  pl-5 text-xl"
-                            >
-                                <Link
-                                    href="/rentals"
-
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-
+                        {/* Services Section with Nested Links */}
+                        <section className="w-full text-left" aria-labelledby="services-heading">
+                            <h2 id="services-heading" className="pl-5 text-xl text-white hover:text-orange-300">
+                                <Link href="/rentals" onClick={handleNavigation}>
                                     {t("services")}
                                 </Link>
-
-                            </div>
-                            <div className="flex flex-col items-left pl-8 text-gray-300 text-lg">
+                            </h2>
+                            
+                            <div className="flex flex-col items-left pl-8 text-lg text-gray-300">
                                 <Link
                                     href="/rentals"
                                     className="hover:text-orange-300"
-                                    onClick={() => setIsMenuOpen(false)}
+                                    onClick={handleNavigation}
                                 >
                                     {t("rentals")}
                                 </Link>
                                 <Link
                                     href="/transportation"
                                     className="hover:text-orange-300"
-                                    onClick={() => setIsMenuOpen(false)}
+                                    onClick={handleNavigation}
                                 >
                                     {t("transportation")}
                                 </Link>
                                 <Link
                                     href="/business"
                                     className="hover:text-orange-300"
-                                    onClick={() => setIsMenuOpen(false)}
+                                    onClick={handleNavigation}
                                 >
                                     {t("business")}
                                 </Link>
                                 <Link
                                     href="/others-services"
                                     className="hover:text-orange-300"
-                                    onClick={() => setIsMenuOpen(false)}
+                                    onClick={handleNavigation}
                                 >
                                     {t("otherServices")}
                                 </Link>
                             </div>
-                        </div>
+                        </section>
 
+                        {/* Other Main Navigation Links */}
                         <Link
                             href="/about-us"
-                            className="text-white hover:text-orange-300 pl-5  text-xl"
-                            onClick={() => setIsMenuOpen(false)}
+                            className="pl-5 text-xl text-white hover:text-orange-300"
+                            onClick={handleNavigation}
                         >
                             {t("about")}
                         </Link>
 
                         <Link
                             href="/payments"
-                            className="text-white hover:text-orange-300 pl-5  text-xl"
-                            onClick={() => setIsMenuOpen(false)}
+                            className="pl-5 text-xl text-white hover:text-orange-300"
+                            onClick={handleNavigation}
                         >
                             {t("payments")}
                         </Link>
 
                         <Link
                             href="/contact"
-                            className="text-white hover:text-orange-300 pl-5 pb-9 text-xl"
-                            onClick={() => setIsMenuOpen(false)}
+                            className="pl-5 pb-9 text-xl text-white hover:text-orange-300"
+                            onClick={handleNavigation}
                         >
                             {t("contact")}
                         </Link>
-
                     </div>
-                </div>
+                </nav>
             )}
         </div>
     );
