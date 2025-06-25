@@ -34,14 +34,17 @@ const Navbar = () => {
       <div className="flex items-center justify-between h-16 sm:h-20 md:h-24 px-2 sm:px-6 lg:px-8">
         {/* Logo with Home Link */}
         <Link href="/" className="flex items-center pt-1" aria-label="Home">
-          <Image
-            src="/mainlogonav1.webp"
-            alt="Just Costa Rica Travel"
-            width={60}
-            height={60}
-            className="w-16 lg:w-24 h-16 lg:h-24 rounded-full object-contain bg-white"
-            priority
-          />
+          <div className="relative w-16 h-16 lg:w-24 lg:h-24">
+            <Image
+              src="/mainlogonav1.webp"
+              alt="Just Costa Rica Travel"
+              fill
+              sizes="(max-width: 1024px) 4rem, 6rem"
+              className="rounded-full object-contain bg-white"
+              quality={100}
+              priority
+            />
+          </div>
         </Link>
 
         {/* Desktop Navigation - Hidden on mobile */}

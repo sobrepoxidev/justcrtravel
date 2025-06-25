@@ -37,7 +37,7 @@ export default function Footer() {
             <p className="max-w-xs mx-auto md:ml-auto md:mr-0">
               {t("rights")} © 2025. {t("builtBy")}{' '}
               <Link
-                href="https://sobrepoxi.vercel.app"
+                href="https://sobrepoxi.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline text-orange-500"
@@ -49,7 +49,7 @@ export default function Footer() {
               {t("office")}: <a href="tel:+50685850000" className="hover:underline">(+506) 8585-0000</a>
             </p>
             <p className="max-w-xs mx-auto md:ml-auto md:mr-0">
-              WhatsApp: <a href="https://wa.me/50672966451" className="hover:underline">(+506) 7296-6451</a>
+              WhatsApp: <a href="https://wa.me/50660252461" className="hover:underline">(+506) 6025 2461</a>
             </p>
             <p className="max-w-xs mx-auto md:ml-auto md:mr-0">
               {t("tollFree")}: <a href="tel:8663196020" className="hover:underline">866-319-6020</a>
