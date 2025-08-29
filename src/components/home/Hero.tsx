@@ -89,22 +89,22 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 pointer-events-none" />
 
       {/* Hero Content */}
-      <div className="absolute inset-0 flex items-center justify-center z-50 pointer-events-auto">
+      <div className="absolute inset-0 flex items-center justify-center z-40 pointer-events-none">
         <div
           className={`text-center px-6 max-w-6xl transition-all duration-500 h-[60%] transform ${
             contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-1 leading-tight">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-1 leading-tight pointer-events-auto">
             <span className="bg-gradient-to-r from-white via-blue-100 to-green-100 bg-clip-text text-transparent">
               {images[currentIndex].title}
             </span>
           </h1>
-          <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-6 font-light leading-relaxed">
+          <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-6 font-light leading-relaxed pointer-events-auto">
             {images[currentIndex].subtitle}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pointer-events-auto">
             <Link
               href="/destinations"
               className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl relative z-30"
@@ -165,7 +165,7 @@ const Hero = () => {
       </div>
 
       {/* Play/Pause Button */}
-      <div className="absolute top-14 right-3 z-40 pointer-events-auto">
+      <div className="absolute top-14 sm:top-20 right-3 z-40 pointer-events-auto">
         <button
           onClick={togglePlayPause}
           className="group p-1 rounded-full bg-white/5 hover:bg-white/10 transition-all duration-300 backdrop-blur-md border border-white/10 hover:border-white/30"
