@@ -141,8 +141,8 @@ const Hero = () => {
           <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-6 font-light leading-relaxed">
             {images[currentIndex].subtitle}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="/destinations" className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center relative z-20">
+            <Link href="/destinations" className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl relative z-30">
               <span className="flex items-center gap-2">
                 {t('exploreButton')}
                 <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -150,7 +150,7 @@ const Hero = () => {
                 </svg>
               </span>
             </Link>
-            <Link href="/build-your-vacation" className="px-8 py-4 border-2 border-white/30 hover:border-white/60 text-white font-semibold rounded-full transition-all duration-300 backdrop-blur-sm hover:bg-white/10">
+            <Link href="/build-your-vacation" className="px-8 py-4 border-2 border-white/30 hover:border-white/60 text-white font-semibold rounded-full transition-all duration-300 backdrop-blur-sm hover:bg-white/10 relative z-30">
               {t('learnMore')}
             </Link>
           </div>
