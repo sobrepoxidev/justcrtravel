@@ -3,7 +3,7 @@
 import { useEffect, useState, useCallback } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 
 /**
  * Hero Component:
@@ -216,7 +216,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-8 animate-bounce">
+      <div className="absolute bottom-14 left-8 animate-bounce">
         <div className="flex flex-col items-center text-white/70">
           <span className="text-sm font-light mb-2">{t('scrollDown')}</span>
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
