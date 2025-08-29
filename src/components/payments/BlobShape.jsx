@@ -1,5 +1,5 @@
 // components/BlobShape.jsx
-import React from 'react';
+'use client';
 
 const BlobShape = () => {
   return (

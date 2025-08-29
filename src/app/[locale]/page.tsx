@@ -64,7 +64,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         {/* White divider with explicit height and opacity-100 to ensure it's visible */}
-        <div className="py-3 bg-white h-4 w-full opacity-100" />
+        
         <LazyBuildVacation />
         <LazyDestinationGallery />
         <LazyExploreCR />

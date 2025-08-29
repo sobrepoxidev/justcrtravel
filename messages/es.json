@@ -15,41 +15,129 @@
     "business": "Negocios",
     "otherServices": "Otros Servicios"
   },
+  "hero": {
+    "slide1": {
+      "title": "Descubre Costa Rica",
+      "subtitle": "Paraíso natural donde la aventura y la tranquilidad se encuentran"
+    },
+    "slide2": {
+      "title": "Playas Paradisíacas",
+      "subtitle": "Costas vírgenes bañadas por aguas cristalinas del Pacífico y Caribe"
+    },
+    "slide3": {
+      "title": "Selvas Tropicales",
+      "subtitle": "Biodiversidad única en bosques lluviosos llenos de vida silvestre"
+    },
+    "slide4": {
+      "title": "Volcanes Majestuosos",
+      "subtitle": "Paisajes volcánicos que despiertan los sentidos y el alma aventurera"
+    },
+    "slide5": {
+      "title": "Cultura Auténtica",
+      "subtitle": "Tradiciones costarricenses que enriquecen cada experiencia de viaje"
+    },
+    "exploreButton": "Explorar Destinos",
+    "learnMore": "Conoce Más",
+    "scrollDown": "Desliza"
+  },
   "LocaleSwitcher": {
     "label": "Cambiar idioma",
     "locale": "{locale, select, es {🇪🇸 Español} en {🇺🇸 Inglés} other {Desconocido}}"
   },
   "buildvacation": {
-    "title": "Crea tus Vacaciones",
-    "description": "Diseña tu paquete vacacional perfecto adaptado a tus preferencias",
-    "cta": "Comenzar",
-    "ariaLabel": "Empieza a construir tu paquete vacacional",
-    "imageAlt": "Aguas del océano"
+    "badge": "Experiencias Únicas",
+    "title": "Construye tus vacaciones perfectas",
+    "subtitle": "Diseña la aventura de tus sueños con nuestros expertos locales",
+    "description": "Desde playas paradisíacas hasta aventuras en la selva tropical, creamos experiencias únicas que se adaptan perfectamente a tus gustos y presupuesto.",
+    "cta": "Construir mi viaje",
+    "viewPackages": "Ver paquetes",
+    "imageAlt": "Hermosa playa de Costa Rica para construir vacaciones",
+    "ariaLabel": "Ir a la página de construcción de vacaciones personalizadas",
+    "feature1": {
+      "title": "Planificación rápida",
+      "description": "En 24 horas tendrás tu itinerario"
+    },
+    "feature2": {
+      "title": "100% personalizado",
+      "description": "Adaptado a tus gustos y presupuesto"
+    },
+    "feature3": {
+      "title": "Soporte local",
+      "description": "Guías expertos durante todo tu viaje"
+    }
   },
   "destinationGallery": {
-    "heading": "¡Garantizamos los precios más atractivos y diversión! Contáctanos para más información y crea tu paquete personalizado.",
+    "badge": "Destinos Únicos",
+    "heading": "Descubre los destinos más increíbles de Costa Rica",
+    "subtitle": "Desde playas paradisíacas hasta volcanes activos, cada destino te ofrece una experiencia única e inolvidable",
+    "exploreText": "Explorar destino",
+    "learnMore": "Más info",
+    "viewAllDestinations": "Ver todos los destinos",
     "destination1": {
-      "alt": "Cascada en Costa Rica",
-      "label": "Cascada en Costa Rica"
+      "alt": "Playa Manuel Antonio",
+      "label": "Manuel Antonio",
+      "description": "Playas de arena blanca, vida silvestre exótica y aventuras en la selva tropical"
     },
     "destination2": {
-      "alt": "Playa tropical en Costa Rica",
-      "label": "Playa tropical en Costa Rica"
+      "alt": "Volcán Arenal",
+      "label": "Arenal",
+      "description": "Volcán activo, aguas termales naturales y canopy tours emocionantes"
     },
     "destination3": {
-      "alt": "Palmeras al atardecer",
-      "label": "Palmeras al atardecer"
+      "alt": "Bosque nuboso Monteverde",
+      "label": "Monteverde",
+      "description": "Bosque nuboso místico, biodiversidad única y puentes colgantes"
     },
     "destination4": {
-      "alt": "Atardecer oceánico en Costa Rica",
-      "label": "Atardecer oceánico en Costa Rica"
+      "alt": "Playas de Guanacaste",
+      "label": "Guanacaste",
+      "description": "Playas doradas, atardeceres espectaculares y cultura auténtica"
     }
   },
   "exploreCR": {
-    "title": "¡Queremos que explores Costa Rica y crees una relación de viaje con nosotros!",
-    "description": "Descubre las maravillas naturales y experiencias únicas que te esperan.",
-    "cta": "Comienza a Explorar",
-    "ariaLabel": "Empieza a construir tu paquete vacacional"
+    "badge": "Destino #1 en Centroamérica",
+    "title": "¿Listo para Explorar Costa Rica?",
+    "subtitle": "Vive la Pura Vida en el paraíso tropical más biodiverso del mundo",
+    "description": "Desde playas vírgenes hasta volcanes activos, desde selvas tropicales hasta culturas auténticas. Costa Rica te espera con experiencias únicas que transformarán tu perspectiva del mundo.",
+    "cta": "Construye tu Vacación",
+    "exploreDestinations": "Explorar Destinos",
+    "ariaLabel": "Ir a la página de construcción de vacaciones",
+    "feature1": {
+      "title": "Aventuras Únicas",
+      "description": "Experiencias auténticas en la naturaleza más pura"
+    },
+    "feature2": {
+      "title": "Hospitalidad Tica",
+      "description": "Calidez humana que hace la diferencia en cada viaje"
+    },
+    "feature3": {
+      "title": "Biodiversidad Increíble",
+      "description": "5% de la biodiversidad mundial en un solo país"
+    }
+  },
+  "gridImage": {
+    "badge": "Galería Visual",
+    "title": "Descubre la Belleza Natural",
+    "subtitle": "Explora los paisajes más impresionantes de Costa Rica a través de nuestra colección de imágenes que capturan la esencia de este paraíso tropical.",
+    "image1Alt": "Playa paradisíaca de Costa Rica",
+    "image1Title": "Playas Vírgenes",
+    "image1Description": "Costas de arena blanca bañadas por aguas cristalinas del Pacífico y Caribe.",
+    "image2Alt": "Bosque tropical exuberante",
+    "image2Title": "Selva Tropical",
+    "image2Description": "Bosques primarios llenos de vida silvestre y biodiversidad única.",
+    "image3Alt": "Volcán activo humeante",
+    "image3Title": "Volcanes Activos",
+    "image3Description": "Majestuosos volcanes que moldean el paisaje costarricense.",
+    "image4Alt": "Cascada en medio de la naturaleza",
+    "image4Title": "Cascadas Místicas",
+    "image4Description": "Caídas de agua espectaculares escondidas en la selva.",
+    "image5Alt": "Fauna silvestre en su hábitat",
+    "image5Title": "Vida Silvestre",
+    "image5Description": "Encuentros únicos con la fauna más diversa del planeta.",
+    "image6Alt": "Aventura en canopy",
+    "image6Title": "Aventuras Extremas",
+    "image6Description": "Experiencias llenas de adrenalina en medio de la naturaleza.",
+    "viewMore": "Ver Más Destinos"
   },
   "specialties": {
     "mainImageAlt": "Especialidad principal de Costa Rica",
@@ -92,8 +180,16 @@
     }
   },
   "flightSearch": {
-    "title": "Búsqueda de Vuelos",
-    "description": "Si deseas comprar tus vuelos directamente en Skyscanner, haz clic en el enlace a continuación. Luego regresa a",
+    "badge": "Búsqueda de Vuelos",
+    "title": "Encuentra tu Vuelo Perfecto",
+    "description": "Descubre las mejores ofertas de vuelos a Costa Rica con nuestro socio de confianza Skyscanner. Compara precios, horarios y aerolíneas para encontrar la opción perfecta para tu viaje.",
+    "feature1Title": "Mejores Precios",
+    "feature1Description": "Compara precios de múltiples aerolíneas para encontrar las mejores ofertas.",
+    "feature2Title": "Búsqueda Global",
+    "feature2Description": "Accede a vuelos desde cualquier parte del mundo hacia Costa Rica.",
+    "feature3Title": "Reserva Segura",
+    "feature3Description": "Proceso de reserva confiable y seguro con garantía de mejor precio.",
+    "searchFlights": "Buscar Vuelos Ahora",
     "descriptionSuffix": "para más ofertas.",
     "cta": "Comprar vuelos en Skyscanner",
     "ariaLabel": "Comprar vuelos en Skyscanner"

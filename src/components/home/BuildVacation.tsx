@@ -1,67 +1,138 @@
-// components/BuildVacation.tsx
+'use client';
 
 import Link from 'next/link';
-import Image from 'next/image'; // Import next/image
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import React from 'react'; // Import React for React.memo
+import { memo } from 'react';
 
 /**
  * BuildVacation Component:
- * A promotional section encouraging users to build their custom vacation package.
- * Features a background image with an overlay, title, description, and a call-to-action button.
- * Optimized with next/image for lazy loading and image optimization, and React.memo.
+ * Modern promotional section encouraging users to build their custom vacation package.
+ * Features dynamic gradients, parallax effects, and engaging animations.
+ * Optimized with next/image and React.memo for performance.
  */
 const BuildVacation = () => {
-  // Hook to get translation functions based on the current locale
   const t = useTranslations('buildvacation');
 
   return (
-    // Main container: Sets height (responsive), background color as fallback, hides overflow
-    <div className="relative h-80 md:h-96 lg:h-[32rem] bg-blue-500 overflow-hidden">
-      {/* Background Image and Overlay Container */}
-      <div className="absolute inset-0">
-        {/* Optimized Image using next/image */}
+    <section className="relative h-[600px] md:h-[700px] lg:h-[800px] overflow-hidden">
+      {/* Background Image with Parallax Effect */}
+      <div className="absolute inset-0 scale-110">
         <Image
-          src="/home/barmar.webp" // Image source
-          alt={t('imageAlt')} // Alt text from translations
-          fill // Makes the image cover the parent div (absolute inset-0)
-          sizes="100vw" // Responsive size hint (adjust if layout is more constrained)
-          style={{ objectFit: 'cover' }} // Ensures image covers without distortion (used by fill)
-          className="transition-transform duration-700 hover:scale-105" // Keep visual effects
-          loading="lazy" // Explicitly set lazy loading (default for next/image without priority)
-          // No 'priority' prop, ensuring it doesn't block initial page load
+          src="/home/barmar.webp"
+          alt={t('imageAlt')}
+          fill
+          sizes="100vw"
+          style={{ objectFit: 'cover' }}
+          className="transition-transform duration-1000 hover:scale-105"
+          loading="lazy"
+          quality={85}
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
         />
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-black bg-opacity-30" aria-hidden="true"></div>
       </div>
 
-      {/* Text Content and Call-to-Action */}
-      {/* Positioned above the background/overlay (z-10) and centered */}
-      <div className="relative flex flex-col items-center justify-center h-full text-white text-center px-4 z-10">
-        {/* Title */}
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4 drop-shadow-lg">
-          {t('title')}
+      {/* Modern gradient overlays */}
+      <div className="absolute inset-0 bg-gradient-to-r from-purple-900/70 via-blue-900/60 to-teal-900/70" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-purple-500/20 to-blue-500/30" />
+
+      {/* Floating decorative elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-white/5 rounded-full blur-2xl animate-pulse" />
+        <div className="absolute top-40 right-20 w-24 h-24 bg-blue-300/10 rounded-full blur-xl animate-bounce" style={{animationDelay: '1s'}} />
+        <div className="absolute bottom-32 left-1/4 w-40 h-40 bg-purple-300/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}} />
+        <div className="absolute bottom-20 right-1/3 w-28 h-28 bg-teal-300/10 rounded-full blur-2xl animate-bounce" style={{animationDelay: '3s'}} />
+      </div>
+
+      {/* Main content */}
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-6">
+        {/* Badge */}
+        <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm font-medium mb-8 border border-white/20">
+          <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
+          </svg>
+          {t('badge')}
+        </div>
+
+        {/* Main title with gradient text */}
+        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+          <span className="bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent">
+            {t('title')}
+          </span>
         </h2>
+
+        {/* Subtitle */}
+        <p className="text-xl md:text-2xl text-white/90 mb-6 max-w-3xl leading-relaxed font-light">
+          {t('subtitle')}
+        </p>
+
         {/* Description */}
-        <p className="text-lg md:text-xl mb-4 md:mb-6 max-w-md drop-shadow-md">
+        <p className="text-lg text-white/80 mb-10 max-w-2xl leading-relaxed">
           {t('description')}
         </p>
-        {/* Call-to-Action Button (Link) */}
-        <Link
-          href="/build-your-vacation" // Link destination
-          className="border-2 border-white hover:bg-white hover:text-blue-600 focus:bg-white focus:text-blue-600 transition-colors duration-300 px-6 md:px-8 py-2 md:py-3 rounded-md font-medium transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
-          aria-label={t('ariaLabel')} // Accessibility label from translations
-        >
-          {t('cta')}
-        </Link>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Link
+            href="/build-your-vacation"
+            className="group px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center gap-2"
+            aria-label={t('ariaLabel')}
+          >
+            {t('cta')}
+            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </Link>
+          
+          <Link
+            href="/packages"
+            className="px-8 py-4 border-2 border-white/30 hover:border-white/60 text-white font-semibold rounded-full transition-all duration-300 backdrop-blur-sm hover:bg-white/10"
+          >
+            {t('viewPackages')}
+          </Link>
+        </div>
+
+        {/* Features */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 max-w-4xl">
+          <div className="text-center">
+            <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-3 border border-white/20">
+              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 className="text-sm font-semibold text-white mb-1">{t('feature1.title')}</h3>
+            <p className="text-white/70 text-xs">{t('feature1.description')}</p>
+          </div>
+          
+          <div className="text-center">
+            <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-3 border border-white/20">
+              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 className="text-sm font-semibold text-white mb-1">{t('feature2.title')}</h3>
+            <p className="text-white/70 text-xs">{t('feature2.description')}</p>
+          </div>
+          
+          <div className="text-center">
+            <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-3 border border-white/20">
+              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </div>
+            <h3 className="text-sm font-semibold text-white mb-1">{t('feature3.title')}</h3>
+            <p className="text-white/70 text-xs">{t('feature3.description')}</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
 // Export the component wrapped in React.memo for performance optimization.
 // This prevents re-renders if the component's props (or dependencies like the 't' function reference) haven't changed.
-export default React.memo(BuildVacation);
+export default memo(BuildVacation);
 
 /*
  * --- How to Lazy Load the Entire Component ---

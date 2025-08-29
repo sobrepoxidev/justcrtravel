@@ -1,236 +1,230 @@
-// Indicates that this component needs to run on the client side (uses React hooks)
 'use client';
 
 import { useEffect, useState, useCallback } from 'react';
 import Image from 'next/image';
-
-// Array of image paths for the carousel slides
-const images = [
-  '/home/hero/carrucel1Resize.webp',
-  '/home/hero/carrucel2Resize.webp',
-  '/home/hero/carrucel3Resize.webp',
-  '/home/hero/carrucel4Resize.webp',
-  '/home/hero/carrucel5Resize.webp',
-];
-
-// Constant for the slideshow interval duration in milliseconds
-const SLIDESHOW_INTERVAL = 3000; // 3 seconds
+import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 /**
- * Hero Component: Renders a full-screen background image carousel
- * with automatic playback, manual navigation, indicators, and pause/play controls.
+ * Hero Component:
+ * A modern full-screen carousel showcasing beautiful images of Costa Rica.
+ * Features automatic slideshow, dynamic content overlay, and smooth animations.
+ * Optimized with next/image for performance and accessibility.
  */
 const Hero = () => {
-  // State to track the index of the currently displayed image
+  const t = useTranslations('hero');
+  
+  // Array of image paths for the carousel with descriptions
+  const images = [
+    {
+      src: '/home/hero/carrucel1Resize.webp',
+      title: t('slide1.title'),
+      subtitle: t('slide1.subtitle')
+    },
+    {
+      src: '/home/hero/carrucel2Resize.webp',
+      title: t('slide2.title'),
+      subtitle: t('slide2.subtitle')
+    },
+    {
+      src: '/home/hero/carrucel3Resize.webp',
+      title: t('slide3.title'),
+      subtitle: t('slide3.subtitle')
+    },
+    {
+      src: '/home/hero/carrucel4Resize.webp',
+      title: t('slide4.title'),
+      subtitle: t('slide4.subtitle')
+    },
+    {
+      src: '/home/hero/carrucel5Resize.webp',
+      title: t('slide5.title'),
+      subtitle: t('slide5.subtitle')
+    },
+  ];
+
+  // Slideshow interval (in milliseconds)
+  const SLIDESHOW_INTERVAL = 6000;
+
+  // State for current slide index
   const [currentIndex, setCurrentIndex] = useState(0);
-  // State to track whether the automatic slideshow is paused
+  // State for slideshow play/pause
   const [isPaused, setIsPaused] = useState(false);
+  // State for content animation
+  const [contentVisible, setContentVisible] = useState(true);
 
-  // Effect to handle the automatic slideshow interval
+  // Effect to handle the automatic slideshow interval with content animation
   useEffect(() => {
-    let timer: NodeJS.Timeout | null = null;
-
-    // Start the interval only if the slideshow is not paused
     if (!isPaused) {
-      timer = setInterval(() => {
-        // Update the current index, looping back to 0 from the last image
-        setCurrentIndex((prevIndex) =>
-          prevIndex === images.length - 1 ? 0 : prevIndex + 1
-        );
+      const interval = setInterval(() => {
+        setContentVisible(false);
+        setTimeout(() => {
+          setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+          setContentVisible(true);
+        }, 300);
       }, SLIDESHOW_INTERVAL);
-    }
 
-    // Cleanup function: Clear the interval when the component unmounts
-    // or when the dependencies (isPaused, images.length) change.
-    return () => {
-      if (timer) clearInterval(timer);
-    };
-    // Dependencies: The effect should re-run if the paused state changes
-    // or if the number of images changes.
+      return () => clearInterval(interval);
+    }
   }, [isPaused, images.length]);
 
-  // Memoized callback function to navigate to the previous slide
-  const goToPrevious = useCallback(() => {
-    setCurrentIndex((prevIndex) =>
-      // If current index is 0, loop to the last image, otherwise decrement
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  }, [images.length]); // Depends on the number of images
+  // Function to go to the next slide with animation
+  const nextSlide = useCallback(() => {
+    setContentVisible(false);
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setContentVisible(true);
+    }, 300);
+  }, [images.length]);
 
-  // Memoized callback function to navigate to the next slide
-  const goToNext = useCallback(() => {
-    setCurrentIndex((prevIndex) =>
-      // If current index is the last image, loop to 0, otherwise increment
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  }, [images.length]); // Depends on the number of images
+  // Function to go to the previous slide with animation
+  const prevSlide = useCallback(() => {
+    setContentVisible(false);
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+      setContentVisible(true);
+    }, 300);
+  }, [images.length]);
 
-  // Memoized callback function to toggle the paused state of the slideshow
-  const togglePause = useCallback(() => {
+  // Function to go to a specific slide with animation
+  const goToSlide = useCallback((index: number) => {
+    if (index !== currentIndex) {
+      setContentVisible(false);
+      setTimeout(() => {
+        setCurrentIndex(index);
+        setContentVisible(true);
+      }, 300);
+    }
+  }, [currentIndex]);
+
+  // Function to toggle play/pause
+  const togglePlayPause = useCallback(() => {
     setIsPaused((prev) => !prev);
-  }, []); // No dependencies, as setIsPaused is stable
+  }, []);
 
   return (
-    // Main container: Relative positioning, full screen height, hides overflow, enables group-hover state
-    <div className="relative h-screen overflow-hidden group">
-      {/* Image container: Absolutely positioned to fill the parent */}
-      <div className="absolute inset-0">
-        {/* Map through the images array to render each slide */}
-        {images.map((src, index) => (
-          <div
-            key={index}
-            className={`
-              absolute inset-0 transition-opacity duration-1000 ease-in-out
-              ${/* Control visibility based on the current index */''}
-              ${index === currentIndex ? 'opacity-100 z-0' : 'opacity-0 z-0'}
-            `}
-            // Consider adding aria-hidden={index !== currentIndex} for accessibility
-            // if the opacity transition alone isn't sufficient for screen readers.
-          >
-            <Image
-              src={src}
-              alt={`Slide ${index + 1}`} // Descriptive alt text
-              fill // Makes the image fill the parent div
-              sizes="100vw" // Informs Next.js about the image size relative to viewport width
-              style={{ objectFit: 'cover', objectPosition: 'center' }} // Ensures image covers the area without distortion
-              priority={index === 0} // Prioritize loading the first image
-              quality={90} // Set image quality (adjust as needed)
-              loading={index === 0 ? 'eager' : 'lazy'} // Eager loading for first image, lazy loading for others
-            />
-          </div>
-        ))}
+    <section className="relative w-full h-screen overflow-hidden">
+      {/* Background Images */}
+      {images.map((image, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
+            index === currentIndex ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
+          }`}
+        >
+          <Image
+            src={image.src}
+            alt={`${image.title} - Costa Rica`}
+            fill
+            className="object-cover"
+            priority={index === 0}
+            quality={85}
+            sizes="100vw"
+          />
+        </div>
+      ))}
 
-        {/* Decorative bouncing down arrow indicator */}
-        <div className="absolute bottom-16 sm:bottom-10 left-1/2 transform -translate-x-1/2 flex justify-center z-10">
-          <svg
-            className="w-8 h-8 sm:w-10 sm:h-10 animate-bounce text-white drop-shadow-lg"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true" // Hide decorative element from screen readers
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M19 14l-7 7m0 0l-7-7m7 7V3"
-            />
-          </svg>
+      {/* Modern gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-transparent to-black/60" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+
+      {/* Hero Content */}
+      <div className="absolute inset-0 flex items-center justify-center ">
+        <div className={`text-center px-6 max-w-6xl transition-all duration-500 h-[60%] transform ${
+          contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+        }`}>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-1 leading-tight">
+            <span className="bg-gradient-to-r from-white via-blue-100 to-green-100 bg-clip-text text-transparent">
+              {images[currentIndex].title}
+            </span>
+          </h1>
+          <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-6 font-light leading-relaxed">
+            {images[currentIndex].subtitle}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link href="/destinations" className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+              <span className="flex items-center gap-2">
+                {t('exploreButton')}
+                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </span>
+            </Link>
+            <Link href="/build-your-vacation" className="px-8 py-4 border-2 border-white/30 hover:border-white/60 text-white font-semibold rounded-full transition-all duration-300 backdrop-blur-sm hover:bg-white/10">
+              {t('learnMore')}
+            </Link>
+          </div>
         </div>
       </div>
 
-      {/* Slide Indicators (Dots) */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+      {/* Navigation Controls */}
+      <div className="absolute inset-0 flex items-center justify-between px-0.5 md:px-6">
+        <button
+          onClick={prevSlide}
+          className="group p-1 rounded-full bg-white/5 hover:bg-white/15 transition-all duration-300 backdrop-blur-md border border-white/15 hover:border-white/30"
+          aria-label="Previous image"
+        >
+          <svg className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <button
+          onClick={nextSlide}
+          className="group p-1 rounded-full bg-white/5 hover:bg-white/15 transition-all duration-300 backdrop-blur-md border border-white/15 hover:border-white/30"
+          aria-label="Next image"
+        >
+          <svg className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+      {/* Modern Slide Indicators */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
           <button
             key={index}
-            onClick={() => setCurrentIndex(index)} // Go to the clicked slide index
-            className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ease-in-out ${
-              // Style the active indicator differently
+            onClick={() => goToSlide(index)}
+            className={`transition-all duration-300 rounded-full ${
               index === currentIndex
-                ? 'bg-white w-6' // Active indicator is wider
-                : 'bg-white/60 hover:bg-white/80' // Inactive indicators
+                ? 'w-12 h-3 bg-white shadow-lg'
+                : 'w-3 h-3 bg-white/50 hover:bg-white/75'
             }`}
-            aria-label={`Go to slide ${index + 1}`} // Accessibility label
+            aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>
 
-      {/* Carousel Controls (Previous/Next Buttons) */}
-      {/* Container for controls, appears on hover over the main container */}
-      <div className="absolute inset-0 flex items-center justify-between px-2 sm:px-4 z-10">
-        {/* Previous Button */}
+      {/* Play/Pause Button */}
+      <div className="absolute top-14 right-3">
         <button
-          onClick={goToPrevious}
-          className="p-1 sm:p-2 rounded-full bg-black/30 text-white hover:bg-black/50 focus:bg-black/50 transition-all opacity-0 group-hover:opacity-100 focus:opacity-100 focus:outline-none"
-          aria-label="Previous slide" // Accessibility label
+          onClick={togglePlayPause}
+          className="group p-1 rounded-full bg-white/5 hover:bg-white/10 transition-all duration-300 backdrop-blur-md border border-white/10 hover:border-white/30"
+          aria-label={isPaused ? 'Play slideshow' : 'Pause slideshow'}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-6 h-6 sm:w-8 sm:h-8"
-            aria-hidden="true" // Icon is decorative, label is on the button
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15.75 19.5L8.25 12l7.5-7.5"
-            />
-          </svg>
-        </button>
-
-        {/* Next Button */}
-        <button
-          onClick={goToNext}
-          className="p-1 sm:p-2 rounded-full bg-black/30 text-white hover:bg-black/50 focus:bg-black/50 transition-all opacity-0 group-hover:opacity-100 focus:opacity-100 focus:outline-none"
-          aria-label="Next slide" // Accessibility label
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-6 h-6 sm:w-8 sm:h-8"
-            aria-hidden="true" // Icon is decorative, label is on the button
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M8.25 4.5l7.5 7.5-7.5 7.5"
-            />
-          </svg>
+          {isPaused ? (
+            <svg className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          ) : (
+            <svg className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+            </svg>
+          )}
         </button>
       </div>
 
-      {/* Play/Pause Button */}
-      {/* Positioned at the bottom right, appears on hover */}
-      <button
-        onClick={togglePause}
-        className="absolute bottom-16 right-4 sm:bottom-14 sm:right-6 p-1.5 sm:p-2 rounded-full bg-black/30 text-white hover:bg-black/50 focus:bg-black/50 transition-all opacity-0 group-hover:opacity-100 focus:opacity-100 focus:outline-none z-10"
-        aria-label={isPaused ? 'Play slideshow' : 'Pause slideshow'} // Dynamic accessibility label
-      >
-        {/* Conditionally render Play or Pause icon based on isPaused state */}
-        {isPaused ? (
-          // Play Icon
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-6 h-6 sm:w-7 sm:h-7"
-            aria-hidden="true" // Icon is decorative, label is on the button
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347c-.75.412-1.667-.13-1.667-.986V5.653z"
-            />
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-8 animate-bounce">
+        <div className="flex flex-col items-center text-white/70">
+          <span className="text-sm font-light mb-2">{t('scrollDown')}</span>
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
-        ) : (
-          // Pause Icon
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-6 h-6 sm:w-7 sm:h-7"
-            aria-hidden="true" // Icon is decorative, label is on the button
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15.75 5.25v13.5m-7.5-13.5v13.5"
-            />
-          </svg>
-        )}
-      </button>
-    </div>
+        </div>
+      </div>
+    </section>
   );
 };
 

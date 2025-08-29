@@ -19,37 +19,125 @@
     "label": "Change language",
     "locale": "{locale, select, es {🇪🇸 Español} en {🇺🇸 English} other {Unknown}}"
   },
+  "hero": {
+    "slide1": {
+      "title": "Discover Costa Rica",
+      "subtitle": "Natural paradise where adventure and tranquility meet"
+    },
+    "slide2": {
+      "title": "Paradise Beaches",
+      "subtitle": "Pristine coastlines bathed by crystal-clear Pacific and Caribbean waters"
+    },
+    "slide3": {
+      "title": "Tropical Rainforests",
+      "subtitle": "Unique biodiversity in lush rainforests teeming with wildlife"
+    },
+    "slide4": {
+      "title": "Majestic Volcanoes",
+      "subtitle": "Volcanic landscapes that awaken the senses and adventurous spirit"
+    },
+    "slide5": {
+      "title": "Authentic Culture",
+      "subtitle": "Costa Rican traditions that enrich every travel experience"
+    },
+    "exploreButton": "Explore Destinations",
+    "learnMore": "Learn More",
+    "scrollDown": "Scroll"
+  },
   "buildvacation": {
-    "title": "Build Your Vacation",
-    "description": "Design your perfect package holiday tailored to your preferences",
-    "cta": "Get Started",
-    "ariaLabel": "Start building your vacation package",
-    "imageAlt": "Ocean waters"
+    "badge": "Unique Experiences",
+    "title": "Build Your Perfect Vacation",
+    "subtitle": "Design your dream adventure with our local experts",
+    "description": "From pristine beaches to tropical rainforest adventures, we create unique experiences perfectly tailored to your tastes and budget.",
+    "cta": "Build My Trip",
+    "viewPackages": "View Packages",
+    "imageAlt": "Beautiful Costa Rica beach for building vacations",
+    "ariaLabel": "Go to custom vacation building page",
+    "feature1": {
+      "title": "Quick Planning",
+      "description": "Get your itinerary in 24 hours"
+    },
+    "feature2": {
+      "title": "100% Customized",
+      "description": "Tailored to your tastes and budget"
+    },
+    "feature3": {
+      "title": "Local Support",
+      "description": "Expert guides throughout your journey"
+    }
   },
   "destinationGallery": {
-    "heading": "We guarantee the most attractive prices and fun!.... Contact us for more information and for your own personalized package!",
+    "badge": "Unique Destinations",
+    "heading": "Discover Costa Rica's most incredible destinations",
+    "subtitle": "From pristine beaches to active volcanoes, each destination offers you a unique and unforgettable experience",
+    "exploreText": "Explore destination",
+    "learnMore": "Learn more",
+    "viewAllDestinations": "View all destinations",
     "destination1": {
-      "alt": "Waterfall in Costa Rica",
-      "label": "Waterfall in Costa Rica"
+      "alt": "Manuel Antonio Beach",
+      "label": "Manuel Antonio",
+      "description": "White sand beaches, exotic wildlife and tropical rainforest adventures"
     },
     "destination2": {
-      "alt": "Tropical beach in Costa Rica",
-      "label": "Tropical beach in Costa Rica"
+      "alt": "Arenal Volcano",
+      "label": "Arenal",
+      "description": "Active volcano, natural hot springs and thrilling canopy tours"
     },
     "destination3": {
-      "alt": "Palm trees at sunset",
-      "label": "Palm trees at sunset"
+      "alt": "Monteverde Cloud Forest",
+      "label": "Monteverde",
+      "description": "Mystical cloud forest, unique biodiversity and hanging bridges"
     },
     "destination4": {
-      "alt": "Ocean sunset in Costa Rica",
-      "label": "Ocean sunset in Costa Rica"
+      "alt": "Guanacaste Beaches",
+      "label": "Guanacaste",
+      "description": "Golden beaches, spectacular sunsets and authentic culture"
     }
   },
   "exploreCR": {
-    "title": "We want you to explore Costa Rica and create a travel relationship with us!",
-    "description": "Discover the natural wonders and unique experiences waiting for you.",
-    "cta": "Start Exploring",
-    "ariaLabel": "Start building your vacation package"
+    "badge": "#1 Destination in Central America",
+    "title": "Ready to Explore Costa Rica?",
+    "subtitle": "Experience Pura Vida in the world's most biodiverse tropical paradise",
+    "description": "From pristine beaches to active volcanoes, from tropical rainforests to authentic cultures. Costa Rica awaits you with unique experiences that will transform your perspective of the world.",
+    "cta": "Build Your Vacation",
+    "exploreDestinations": "Explore Destinations",
+    "ariaLabel": "Go to vacation builder page",
+    "feature1": {
+      "title": "Unique Adventures",
+      "description": "Authentic experiences in the purest nature"
+    },
+    "feature2": {
+      "title": "Tico Hospitality",
+      "description": "Human warmth that makes the difference in every trip"
+    },
+    "feature3": {
+      "title": "Incredible Biodiversity",
+      "description": "5% of the world's biodiversity in a single country"
+    }
+  },
+  "gridImage": {
+    "badge": "Visual Gallery",
+    "title": "Discover Natural Beauty",
+    "subtitle": "Explore Costa Rica's most breathtaking landscapes through our image collection that captures the essence of this tropical paradise.",
+    "image1Alt": "Pristine Costa Rican beach",
+    "image1Title": "Virgin Beaches",
+    "image1Description": "White sand coasts bathed by crystal-clear Pacific and Caribbean waters.",
+    "image2Alt": "Lush tropical rainforest",
+    "image2Title": "Tropical Rainforest",
+    "image2Description": "Primary forests full of wildlife and unique biodiversity.",
+    "image3Alt": "Active smoking volcano",
+    "image3Title": "Active Volcanoes",
+    "image3Description": "Majestic volcanoes that shape the Costa Rican landscape.",
+    "image4Alt": "Waterfall in nature",
+    "image4Title": "Mystical Waterfalls",
+    "image4Description": "Spectacular waterfalls hidden deep in the jungle.",
+    "image5Alt": "Wildlife in natural habitat",
+    "image5Title": "Wildlife",
+    "image5Description": "Unique encounters with the planet's most diverse fauna.",
+    "image6Alt": "Canopy adventure",
+    "image6Title": "Extreme Adventures",
+    "image6Description": "Adrenaline-filled experiences in the heart of nature.",
+    "viewMore": "View More Destinations"
   },
   "specialties": {
     "mainImageAlt": "Costa Rica main specialty",
@@ -92,9 +180,16 @@
     }
   },
   "flightSearch": {
-    "title": "Flight Search",
-    "description": "If you wish to purchase your flights directly on Skyscanner, click the link below. Then return to",
-    "descriptionSuffix": "for more deals.",
+    "badge": "Flight Search",
+    "title": "Find Your Perfect Flight",
+    "description": "Discover the best flight deals to Costa Rica with our trusted partner Skyscanner. Compare prices, schedules, and airlines to find the perfect option for your trip.",
+    "feature1Title": "Best Prices",
+    "feature1Description": "Compare prices from multiple airlines to find the best deals.",
+    "feature2Title": "Global Search",
+    "feature2Description": "Access flights from anywhere in the world to Costa Rica.",
+    "feature3Title": "Secure Booking",
+    "feature3Description": "Reliable and secure booking process with best price guarantee.",
+    "searchFlights": "Search Flights Now",
     "cta": "Buy flights on Skyscanner",
     "ariaLabel": "Buy flights on Skyscanner"
   },

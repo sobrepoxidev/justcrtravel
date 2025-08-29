@@ -5,11 +5,20 @@ import WhatsAppButton from "@/components/general/WhatsAppButton";
 
 export default function DestinationsPage() {
   return (
-    <main className="relative min-h-screen bg-gradient-to-br from-blue-50 to-white ">
-      <Navbar />
+    <main className="relative min-h-screen">
+      {/* Fixed Navbar */}
+      <div className="fixed top-0 left-0 right-0 z-50">
+        <Navbar />
+      </div>
+      
+      {/* Main content */}
       <Destinations />
+      
+      {/* Footer */}
       <Footer />
+      
+      {/* WhatsApp Button */}
       <WhatsAppButton />
     </main>
   );
-};
+}
