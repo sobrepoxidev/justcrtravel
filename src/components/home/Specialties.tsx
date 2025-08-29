@@ -102,7 +102,7 @@ export default function Specialties() {
                 whileInView="visible"
                 viewport={{ once: true }}
               >
-                {specialtiesKeys.map((key, index) => (
+                {specialtiesKeys.map((key, _) => (
                   <motion.div 
                     key={key} 
                     className="group p-6 bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-white/50 hover:border-blue-200/50 hover:-translate-y-2"
@@ -173,7 +173,7 @@ export default function Specialties() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            {justKeys.map((key, index) => (
+            {justKeys.map((key, _) => (
               <motion.div 
                 key={key} 
                 className="group p-8 bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-white/50 hover:border-emerald-200/50 hover:-translate-y-2"

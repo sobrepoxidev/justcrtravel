@@ -3,13 +3,13 @@
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 
 export default function Destinations() {
     const t = useTranslations('destinations');
     const [openItems, setOpenItems] = useState<Set<string>>(new Set(['arenal']));
     
-    const keys = [
+    const keys = useMemo(() => [
         'arenal',
         'jaco',
         'malpais',
@@ -21,7 +21,7 @@ export default function Destinations() {
         'puertoViejo',
         'samara',
         'tamarindo'
-    ];
+    ], []);
 
     const locale = useLocale();
 
