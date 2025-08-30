@@ -302,6 +302,7 @@
   },
   "marine": {
     "title": "Marine",
+    "waButton": "Consulta WhatsApp",
     "diving": {
       "name": "Diving and Catamaran",
       "description": "We offer a very popular sailing, snorkel and sunset tour from both Tamarindo and Coco Beach, where you can eat, drink, relax, enjoy the nature and if its dolphin and whale season sail with this incredible and kind animals, just beautiful. Our tours include: Snorkeling – Kayaking – Diving – Fishing or Just plain relaxing – Open bar."
@@ -474,11 +475,100 @@
     "buyButton": "Buy Now"
   },
   "payments": {
-    "title": "Enjoy Your Costa Rican Adventure",
-    "subtitle": "Pay directly through PayPal or Card",
-    "help": {
-      "title": "Need Help with Payments?",
-      "description": "Our team is ready to assist you with any payment-related questions. We support multiple payment methods to make your booking process smooth and hassle-free."
+    "badge": "Personalized Vacations",
+    "title": "Build Your Trip",
+    "titleHighlight": "Your Way",
+    "subtitle": "We don't sell fixed packages. Each experience is designed specifically for you, adapting to your tastes, budget and travel dreams.",
+    "designButton": "Design My Trip",
+    "whatsappButton": "WhatsApp Consultation",
+    "features": {
+      "title": "Why Choose Personalized Packages?",
+      "subtitle": "Every traveler is unique, and your Costa Rica experience should be too",
+      "items": {
+        "personalized": {
+          "title": "100% Personalized",
+          "description": "Each trip is designed specifically according to your tastes, budget and needs"
+        },
+        "budget": {
+          "title": "Flexible Budget",
+          "description": "We adapt the package to your budget, from economical options to luxury experiences"
+        },
+        "destinations": {
+          "title": "Unique Destinations",
+          "description": "Access to exclusive destinations and authentic experiences that only locals know"
+        },
+        "support": {
+          "title": "24/7 Support",
+          "description": "Complete accompaniment from planning to the end of your trip"
+        }
+      }
+    },
+    "packageTypes": {
+      "title": "Types of Experiences We Create",
+      "subtitle": "From extreme adventures to relaxation retreats, we design the perfect experience for you",
+      "adventure": {
+        "type": "Adventure",
+        "description": "Canopy, rafting, volcanoes, hiking",
+        "example1": "ATV Tours",
+        "example2": "Canyoning",
+        "example3": "Hiking",
+        "example4": "Rafting"
+      },
+      "beach": {
+        "type": "Beach & Relax",
+        "description": "Paradise beaches, snorkel, catamaran",
+        "example1": "Catamaran",
+        "example2": "Snorkeling",
+        "example3": "Beach Resorts",
+        "example4": "Spa"
+      },
+      "culture": {
+        "type": "Culture & Nature",
+        "description": "Cultural tours, coffee, chocolate, wildlife",
+        "example1": "Coffee Tours",
+        "example2": "Wildlife",
+        "example3": "Cultural Sites",
+        "example4": "Local Food"
+      },
+      "business": {
+        "type": "Business & Events",
+        "description": "Corporate retreats, events, weddings",
+        "example1": "Corporate Retreats",
+        "example2": "Weddings",
+        "example3": "Team Building",
+        "example4": "Conferences"
+      },
+      "consultButton": "Consult"
+    },
+    "howItWorks": {
+      "title": "How It Works?",
+      "subtitle": "Simple and transparent process to create your perfect experience",
+      "step1": {
+        "title": "Tell Us Your Dreams",
+        "description": "Share your interests, budget and dates. Our local experts listen to every detail."
+      },
+      "step2": {
+        "title": "We Design Your Itinerary",
+        "description": "We create a personalized plan with activities, accommodations and unique experiences just for you."
+      },
+      "step3": {
+        "title": "Live Your Adventure",
+        "description": "Enjoy your trip with 24/7 support and the peace of mind of having local experts taking care of every detail."
+      }
+    },
+    "finalCta": {
+      "title": "Ready to Create Your Perfect Adventure?",
+      "subtitle": "Don't wait any longer. Start designing your dream Costa Rica experience today.",
+      "startButton": "Start Now",
+      "expertButton": "Talk to Expert"
+    },
+    "whatsappMessages": {
+      "general": "Hello, I'm interested in creating a personalized travel package to Costa Rica",
+      "adventure": "Hello, I'm interested in creating a personalized adventure package in Costa Rica",
+      "beach": "Hello, I'm interested in creating a personalized beach & relax package in Costa Rica",
+      "culture": "Hello, I'm interested in creating a personalized culture & nature package in Costa Rica",
+      "business": "Hello, I'm interested in creating a personalized business & events package in Costa Rica",
+      "expert": "Hello, I want information about how to create a personalized travel package to Costa Rica"
     }
   },
   "contact": {

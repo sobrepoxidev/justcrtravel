@@ -35,7 +35,7 @@ export default function Adventure() {
 
                 {/* Adventures Grid */}
                 <div className="space-y-6">
-                    {adventures.map((adventure, index) => (
+                    {adventures.map((adventure) => (
                         <div key={adventure.key} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                             <div className="flex flex-col md:flex-row">
                                 {/* Image */}

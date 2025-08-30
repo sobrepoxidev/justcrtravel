@@ -33,7 +33,7 @@ const Navbar = () => {
     <nav className="absolute flex flex-col w-full max-w-full z-50">
       <div className="flex items-center justify-between h-16 sm:h-20 md:h-24 px-2 sm:px-6 lg:px-8">
         {/* Logo with Home Link */}
-        <Link href="/" className="flex items-center pt-1" aria-label="Home">
+        <Link href="/" className="flex items-center py-1" aria-label="Home">
           <div className="relative w-16 h-16 lg:w-24 lg:h-24">
             <Image
               src="/mainlogonav1.webp"
