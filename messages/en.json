@@ -21,98 +21,98 @@
   },
   "hero": {
     "slide1": {
-      "title": "Discover Costa Rica",
-      "subtitle": "Natural paradise where adventure and tranquility meet"
+      "title": "Costa Rica Travel Adventures",
+      "subtitle": "Discover the ultimate tropical vacation destination with eco-tours and wildlife experiences"
     },
     "slide2": {
-      "title": "Paradise Beaches",
-      "subtitle": "Pristine coastlines bathed by crystal-clear Pacific and Caribbean waters"
+      "title": "Costa Rica Beach Vacations",
+      "subtitle": "Experience pristine Pacific and Caribbean beaches with luxury resorts and water sports"
     },
     "slide3": {
-      "title": "Tropical Rainforests",
-      "subtitle": "Unique biodiversity in lush rainforests teeming with wildlife"
+      "title": "Rainforest Tours Costa Rica",
+      "subtitle": "Explore biodiversity hotspots with guided nature tours and wildlife photography"
     },
     "slide4": {
-      "title": "Majestic Volcanoes",
-      "subtitle": "Volcanic landscapes that awaken the senses and adventurous spirit"
+      "title": "Volcano Tours Costa Rica",
+      "subtitle": "Adventure travel to active volcanoes with hiking tours and hot springs experiences"
     },
     "slide5": {
-      "title": "Authentic Culture",
-      "subtitle": "Costa Rican traditions that enrich every travel experience"
+      "title": "Costa Rica Cultural Tours",
+      "subtitle": "Authentic Pura Vida experiences with local communities and traditional cuisine"
     },
-    "exploreButton": "Explore Destinations",
-    "learnMore": "Learn More",
-    "scrollDown": "Scroll"
+    "exploreButton": "Explore Costa Rica Destinations",
+    "learnMore": "Plan Your Costa Rica Trip",
+    "scrollDown": "Discover More"
   },
   "buildvacation": {
-    "badge": "Unique Experiences",
-    "title": "Build Your Perfect Vacation",
-    "subtitle": "Design your dream adventure with our local experts",
-    "description": "From pristine beaches to tropical rainforest adventures, we create unique experiences perfectly tailored to your tastes and budget.",
-    "cta": "Build My Trip",
-    "viewPackages": "View Packages",
-    "imageAlt": "Beautiful Costa Rica beach for building vacations",
-    "ariaLabel": "Go to custom vacation building page",
+    "badge": "Custom Costa Rica Vacation Packages",
+    "title": "Build Your Perfect Costa Rica Vacation",
+    "subtitle": "Design your dream Costa Rica travel package with our local tourism experts",
+    "description": "From pristine Costa Rica beaches to tropical rainforest eco-tours, we create unique vacation packages perfectly tailored to your travel preferences and budget.",
+    "cta": "Build My Costa Rica Trip",
+    "viewPackages": "View Costa Rica Packages",
+    "imageAlt": "Beautiful Costa Rica beaches for personalized vacation packages - Custom tours and travel experiences",
+    "ariaLabel": "Go to custom Costa Rica vacation building page",
     "feature1": {
-      "title": "Quick Planning",
-      "description": "Get your itinerary in 24 hours"
+      "title": "Quick Trip Planning",
+      "description": "Get your Costa Rica itinerary in 24 hours"
     },
     "feature2": {
-      "title": "100% Customized",
-      "description": "Tailored to your tastes and budget"
+      "title": "100% Customized Tours",
+      "description": "Tailored Costa Rica experiences to your preferences"
     },
     "feature3": {
-      "title": "Local Support",
-      "description": "Expert guides throughout your journey"
+      "title": "Local Costa Rica Guides",
+      "description": "Expert local guides throughout your journey"
     }
   },
   "destinationGallery": {
-    "badge": "Unique Destinations",
-    "heading": "Discover Costa Rica's most incredible destinations",
-    "subtitle": "From pristine beaches to active volcanoes, each destination offers you a unique and unforgettable experience",
-    "exploreText": "Explore destination",
-    "learnMore": "Learn more",
-    "viewAllDestinations": "View all destinations",
+    "badge": "Top Costa Rica Travel Destinations",
+    "heading": "Discover Costa Rica's Best Tourist Destinations",
+    "subtitle": "From pristine Costa Rica beaches to active volcano tours, each destination offers unique vacation experiences and adventure travel opportunities",
+    "exploreText": "Explore Costa Rica destination",
+    "learnMore": "Learn more about tours",
+    "viewAllDestinations": "View all Costa Rica destinations",
     "destination1": {
-      "alt": "Manuel Antonio Beach",
-      "label": "Manuel Antonio",
-      "description": "White sand beaches, exotic wildlife and tropical rainforest adventures"
+      "alt": "Manuel Antonio Beach Costa Rica - Best beach destination for vacation packages",
+      "label": "Manuel Antonio Beach Tours",
+      "description": "White sand beaches, exotic wildlife tours and tropical rainforest adventures in Costa Rica's premier beach destination"
     },
     "destination2": {
-      "alt": "Arenal Volcano",
-      "label": "Arenal",
-      "description": "Active volcano, natural hot springs and thrilling canopy tours"
+      "alt": "Arenal Volcano Costa Rica - Adventure tours and hot springs experiences",
+      "label": "Arenal Volcano Tours",
+      "description": "Active volcano tours, natural hot springs and thrilling canopy adventures in Costa Rica's most famous volcanic region"
     },
     "destination3": {
-      "alt": "Monteverde Cloud Forest",
-      "label": "Monteverde",
-      "description": "Mystical cloud forest, unique biodiversity and hanging bridges"
+      "alt": "Monteverde Cloud Forest Costa Rica - Eco-tours and biodiversity experiences",
+      "label": "Monteverde Cloud Forest Tours",
+      "description": "Mystical cloud forest eco-tours, unique biodiversity experiences and hanging bridges adventures in Costa Rica's conservation area"
     },
     "destination4": {
-      "alt": "Guanacaste Beaches",
-      "label": "Guanacaste",
-      "description": "Golden beaches, spectacular sunsets and authentic culture"
+      "alt": "Guanacaste Beaches Costa Rica - Beach vacations and cultural tours",
+      "label": "Guanacaste Beach Vacations",
+      "description": "Golden beach vacations, spectacular Pacific sunsets and authentic Costa Rican cultural experiences in Guanacaste province"
     }
   },
   "exploreCR": {
-    "badge": "#1 Destination in Central America",
-    "title": "Ready to Explore Costa Rica?",
-    "subtitle": "Experience Pura Vida in the world's most biodiverse tropical paradise",
-    "description": "From pristine beaches to active volcanoes, from tropical rainforests to authentic cultures. Costa Rica awaits you with unique experiences that will transform your perspective of the world.",
-    "cta": "Build Your Vacation",
-    "exploreDestinations": "Explore Destinations",
-    "ariaLabel": "Go to vacation builder page",
+    "badge": "#1 Costa Rica Travel Destination in Central America",
+    "title": "Ready to Explore Costa Rica Tourism?",
+    "subtitle": "Experience Pura Vida in Costa Rica - the world's most biodiverse tropical vacation paradise",
+    "description": "From pristine Costa Rica beaches to active volcano tours, from tropical rainforest eco-tours to authentic cultural experiences. Costa Rica travel awaits you with unique vacation packages that will transform your perspective of adventure tourism.",
+    "cta": "Build Your Costa Rica Vacation",
+    "exploreDestinations": "Explore Costa Rica Destinations",
+    "ariaLabel": "Go to Costa Rica vacation builder page",
     "feature1": {
-      "title": "Unique Adventures",
-      "description": "Authentic experiences in the purest nature"
+      "title": "Unique Costa Rica Adventures",
+      "description": "Authentic eco-tourism experiences in pristine nature"
     },
     "feature2": {
-      "title": "Tico Hospitality",
-      "description": "Human warmth that makes the difference in every trip"
+      "title": "Authentic Tico Hospitality",
+      "description": "Costa Rican warmth that makes the difference in every vacation"
     },
     "feature3": {
-      "title": "Incredible Biodiversity",
-      "description": "5% of the world's biodiversity in a single country"
+      "title": "Incredible Costa Rica Biodiversity",
+      "description": "5% of the world's biodiversity in one tropical paradise destination"
     }
   },
   "gridImage": {
@@ -140,7 +140,7 @@
     "viewMore": "View More Destinations"
   },
   "specialties": {
-    "mainImageAlt": "Costa Rica main specialty",
+    "mainImageAlt": "Costa Rica tourism specialties - Adventure, eco-tourism and unique biodiversity",
     "titlePrefix": "In addition to a great trip to our country",
     "titleSuffix": "we offer other specialties of our company.",
     "justTitle": "offered tourism focused on health and wellness.",
@@ -384,7 +384,7 @@
     "description": "We offer you condos and apartments for your family or private getaway on the best sites at Costa Rica.",
     "locations": "Ask for your favorite location at: Tamarindo – Conchal – Papagayo area – Flamingo beach – Jaco beach – Puerto Viejo beach – Playa Chiquita - Manzanillo beach",
     "moreInfo": "More Info",
-    "altImage": "Car rental",
+    "altImage": "Car rental Costa Rica - Transportation for tours and vacations",
     "waButton": "WhatsApp Consult"
   },
   "transportation": {
@@ -397,7 +397,7 @@
       "Local Flights"
     ],
     "moreInfo": "More Info",
-    "altImage": "Transportation services"
+    "altImage": "Costa Rica transportation services - Airport transfers and tours"
   },
   "business": {
     "title": "Business",
@@ -406,24 +406,24 @@
     "description2": "Our associates are designed to help actual business people work and relax while gaining energy. We guarantee you a professional treatment according to your company or personal requirements.",
     "description3": "Quote here your group and event. Choose beach, mountain, or city location. Transportation included.",
     "moreInfo": "More Info",
-    "altImage": "Business event"
+    "altImage": "Business events Costa Rica - Corporate tourism and incentives"
   },
   "otherServices": {
     "moreInfo": "More Info",
     "students": {
       "title": "Students",
       "description": "If you are a student and you need or want to learn Spanish and know our beautiful Costa Rica places, this is your best option. You can choose a university exchange or stay with a local family.",
-      "altImage": "Student Exchange"
+      "altImage": "Student exchange Costa Rica - Educational and cultural tourism"
     },
     "eventPlanning": {
       "title": "Event Planning",
       "description": "We organize your events in Costa Rica with excellence and professionalism. Weddings, corporate events, or social gatherings at stunning locations. Everything tailored to your needs and budget.",
-      "altImage": "Event Planning"
+      "altImage": "Event planning Costa Rica - Weddings and celebrations in tropical paradise"
     },
     "shopProducts": {
       "title": "Shop Products Made in Costa Rica",
       "description": "Elemental Herbs Costa Rica. Made for Costa Rican yoga, martial arts instructors, and alternative medicine lovers.\n\nGreat for your healthcare and your daily work.",
-      "altImage": "Costa Rican products"
+      "altImage": "Authentic Costa Rican products - Local souvenirs and crafts"
     }
   },
   "othersServices": {
@@ -432,11 +432,11 @@
     "description2": "Our specialized team handles student accommodations, corporate events, weddings, and authentic Costa Rican product sales. Each service is designed with attention to detail and personalized care.",
     "description3": "Whether you're planning a special celebration, need academic support, or want to take home authentic Costa Rican products, we're here to make it happen with excellence and professionalism.",
     "moreInfo": "More Info",
-    "altImage": "Other services",
+    "altImage": "Other Costa Rica tourism services - Personalized experiences",
     "waButton": "WhatsApp Consult"
   },
   "about": {
-    "altCover": "About us",
+    "altCover": "About us - Travel agency specialized in Costa Rica tourism",
     "buildVacations": "Build Your Vacation",
    
     "title": "About the company",
@@ -475,27 +475,41 @@
     "buyButton": "Buy Now"
   },
   "payments": {
+    "seo": {
+      "title": "Custom Costa Rica Vacation Packages | Tailored Travel Experiences | Unique Tours",
+      "description": "Design your perfect Costa Rica trip with 100% customized packages. Adventure, beach, culture and nature. Unique tours, volcanoes, Manuel Antonio, Monteverde. Free consultation!",
+      "keywords": "Costa Rica vacation packages, custom Costa Rica travel, Costa Rica tours, tailored trips, Costa Rica adventure, Costa Rica beaches, personalized tourism, Costa Rica travel agency, Manuel Antonio, Monteverde, Arenal volcano, Guanacaste, Costa Rica volcano tours, eco-tourism Costa Rica, Costa Rica biodiversity, pura vida",
+      "openGraph": {
+        "title": "🌴 Custom Costa Rica Vacation Packages | Unique Travel Experiences",
+        "description": "✈️ Design your perfect Costa Rica trip with 100% customized packages. 🏖️ Adventure, beach, volcanoes & nature. 🦋 Unique biodiversity. Free consultation!",
+        "imageAlt": "Custom Costa Rica vacation packages - Adventure, beach and nature tours"
+      },
+      "twitter": {
+        "title": "🌴 Custom Costa Rica Vacations | Unique Tours",
+        "description": "✈️ Design your perfect Costa Rica trip 🏖️ Adventure, beach, volcanoes 🦋 Unique biodiversity Free consultation!"
+      }
+    },
     "badge": "Personalized Vacations",
     "title": "Build Your Trip",
     "titleHighlight": "Your Way",
-    "subtitle": "We don't sell fixed packages. Each experience is designed specifically for you, adapting to your tastes, budget and travel dreams.",
+    "subtitle": "We don't sell fixed packages. Each experience is designed specifically for you, adapting to your tastes, budget and travel dreams in Costa Rica's natural paradise.",
     "designButton": "Design My Trip",
     "whatsappButton": "WhatsApp Consultation",
     "features": {
-      "title": "Why Choose Personalized Packages?",
-      "subtitle": "Every traveler is unique, and your Costa Rica experience should be too",
+      "title": "Why Choose Custom Costa Rica Vacation Packages?",
+      "subtitle": "Every traveler is unique, and your Costa Rica experience should be too. Discover biodiversity, adventure and Tico culture your way.",
       "items": {
         "personalized": {
-          "title": "100% Personalized",
-          "description": "Each trip is designed specifically according to your tastes, budget and needs"
+          "title": "100% Personalized Tours",
+          "description": "Each trip is designed specifically according to your tastes, budget and needs. Unique Costa Rica experiences."
         },
         "budget": {
           "title": "Flexible Budget",
           "description": "We adapt the package to your budget, from economical options to luxury experiences"
         },
         "destinations": {
-          "title": "Unique Destinations",
-          "description": "Access to exclusive destinations and authentic experiences that only locals know"
+          "title": "Unique Costa Rica Destinations",
+          "description": "Access to exclusive destinations like Corcovado, Tortuguero, and authentic experiences that only locals know"
         },
         "support": {
           "title": "24/7 Support",
@@ -631,5 +645,21 @@
     "builtBy": "Built by",
     "office": "Office",
     "tollFree": "US/Canada Toll Free"
+  },
+  "home": {
+    "seo": {
+      "title": "Costa Rica Travel Agency | Custom Vacation Packages & Tours | Just Costa Rica Travel",
+      "description": "Discover Costa Rica with Just Costa Rica Travel - Your trusted local travel agency. Custom vacation packages, adventure tours, beach getaways, eco-tourism, and authentic experiences. Manuel Antonio, Arenal, Monteverde, Guanacaste destinations. Book your dream Costa Rica vacation today!",
+      "keywords": "Costa Rica travel, Costa Rica vacation packages, Costa Rica tours, Costa Rica travel agency, Manuel Antonio, Arenal volcano, Monteverde cloud forest, Guanacaste beaches, eco-tourism Costa Rica, adventure tours, beach vacations, custom travel packages, Costa Rica destinations, tropical paradise, biodiversity, pura vida, rainforest tours, volcano tours, wildlife watching, zip line, white water rafting, snorkeling, surfing, coffee tours, cultural experiences, honeymoon Costa Rica, family vacations, group travel, corporate retreats",
+      "openGraph": {
+        "title": "🌴 Costa Rica Travel Agency | Custom Vacation Packages & Tours",
+        "description": "✈️ Discover Costa Rica with local experts! Custom vacation packages, adventure tours, pristine beaches & authentic experiences. Manuel Antonio • Arenal • Monteverde • Guanacaste 🏖️🌋",
+        "imageAlt": "Costa Rica travel agency - Beautiful beaches, volcanoes and rainforests for custom vacation packages"
+      },
+      "twitter": {
+        "title": "🌴 Costa Rica Travel Agency | Custom Vacation Packages & Tours",
+        "description": "✈️ Discover Costa Rica with local experts! Custom vacation packages, adventure tours, pristine beaches & authentic experiences 🏖️🌋 #CostaRica #Travel"
+      }
+    }
   }
 }

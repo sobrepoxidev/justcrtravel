@@ -17,53 +17,53 @@
   },
   "hero": {
     "slide1": {
-      "title": "Descubre Costa Rica",
-      "subtitle": "Paraíso natural donde la aventura y la tranquilidad se encuentran"
+      "title": "Turismo Costa Rica Aventuras",
+      "subtitle": "Descubre el destino tropical perfecto para vacaciones con eco-tours y experiencias de vida silvestre"
     },
     "slide2": {
-      "title": "Playas Paradisíacas",
-      "subtitle": "Costas vírgenes bañadas por aguas cristalinas del Pacífico y Caribe"
+      "title": "Vacaciones Playas Costa Rica",
+      "subtitle": "Experimenta playas vírgenes del Pacífico y Caribe con resorts de lujo y deportes acuáticos"
     },
     "slide3": {
-      "title": "Selvas Tropicales",
-      "subtitle": "Biodiversidad única en bosques lluviosos llenos de vida silvestre"
+      "title": "Tours Bosque Lluvioso Costa Rica",
+      "subtitle": "Explora puntos de biodiversidad con tours de naturaleza guiados y fotografía de vida silvestre"
     },
     "slide4": {
-      "title": "Volcanes Majestuosos",
-      "subtitle": "Paisajes volcánicos que despiertan los sentidos y el alma aventurera"
+      "title": "Tours Volcanes Costa Rica",
+      "subtitle": "Turismo de aventura a volcanes activos con tours de senderismo y experiencias de aguas termales"
     },
     "slide5": {
-      "title": "Cultura Auténtica",
-      "subtitle": "Tradiciones costarricenses que enriquecen cada experiencia de viaje"
+      "title": "Tours Culturales Costa Rica",
+      "subtitle": "Experiencias auténticas de Pura Vida con comunidades locales y gastronomía tradicional"
     },
-    "exploreButton": "Explorar Destinos",
-    "learnMore": "Conoce Más",
-    "scrollDown": "Desliza"
+    "exploreButton": "Explorar Destinos Costa Rica",
+    "learnMore": "Planifica tu Viaje a Costa Rica",
+    "scrollDown": "Descubre Más"
   },
   "LocaleSwitcher": {
     "label": "Cambiar idioma",
     "locale": "{locale, select, es {🇪🇸 Español} en {🇺🇸 Inglés} other {Desconocido}}"
   },
   "buildvacation": {
-    "badge": "Experiencias Únicas",
-    "title": "Construye tus vacaciones perfectas",
-    "subtitle": "Diseña la aventura de tus sueños con nuestros expertos locales",
-    "description": "Desde playas paradisíacas hasta aventuras en la selva tropical, creamos experiencias únicas que se adaptan perfectamente a tus gustos y presupuesto.",
-    "cta": "Construir mi viaje",
-    "viewPackages": "Ver paquetes",
-    "imageAlt": "Hermosa playa de Costa Rica para construir vacaciones",
-    "ariaLabel": "Ir a la página de construcción de vacaciones personalizadas",
+    "badge": "Paquetes Vacaciones Costa Rica Personalizados",
+    "title": "Construye tus Vacaciones Perfectas en Costa Rica",
+    "subtitle": "Diseña tu paquete turístico Costa Rica ideal con nuestros expertos locales en turismo",
+    "description": "Desde playas paradisíacas de Costa Rica hasta eco-tours en la selva tropical, creamos paquetes vacacionales únicos que se adaptan perfectamente a tus preferencias de viaje y presupuesto.",
+    "cta": "Construir mi Viaje a Costa Rica",
+    "viewPackages": "Ver Paquetes Costa Rica",
+    "imageAlt": "Hermosas playas de Costa Rica para paquetes vacacionales personalizados - Tours y experiencias turísticas únicas",
+    "ariaLabel": "Ir a la página de construcción de vacaciones personalizadas en Costa Rica",
     "feature1": {
-      "title": "Planificación rápida",
-      "description": "En 24 horas tendrás tu itinerario"
+      "title": "Planificación Rápida de Viajes",
+      "description": "En 24 horas tendrás tu itinerario de Costa Rica"
     },
     "feature2": {
-      "title": "100% personalizado",
-      "description": "Adaptado a tus gustos y presupuesto"
+      "title": "100% Tours Personalizados",
+      "description": "Experiencias Costa Rica adaptadas a tus preferencias"
     },
     "feature3": {
-      "title": "Soporte local",
-      "description": "Guías expertos durante todo tu viaje"
+      "title": "Guías Locales Costa Rica",
+      "description": "Guías expertos locales durante todo tu viaje"
     }
   },
   "destinationGallery": {
@@ -140,7 +140,7 @@
     "viewMore": "Ver Más Destinos"
   },
   "specialties": {
-    "mainImageAlt": "Especialidad principal de Costa Rica",
+    "mainImageAlt": "Especialidades turísticas Costa Rica - Aventura, ecoturismo y biodiversidad única",
     "titlePrefix": "Además de un gran viaje a nuestro país",
     "titleSuffix": "ofrecemos otras especialidades de nuestra empresa.",
     "justTitle": "ofrece turismo enfocado en salud y bienestar.",
@@ -376,7 +376,7 @@
     "description": "Ofrecemos condominios y apartamentos para tu familia o escapada privada en los mejores sitios de Costa Rica.",
     "locations": "Consulta por tu ubicación favorita en: Tamarindo – Conchal – Área de Papagayo – Playa Flamingo – Playa Jacó – Playa Puerto Viejo – Playa Chiquita – Playa Manzanillo",
     "moreInfo": "Más información",
-    "altImage": "Automóvil de alquiler",
+    "altImage": "Alquiler de automóviles Costa Rica - Transporte para tours y vacaciones",
     "waButton": "Consulta WhatsApp"
   },
   "transportation": {
@@ -389,7 +389,7 @@
       "Vuelos locales"
     ],
     "moreInfo": "Más información",
-    "altImage": "Servicios de transporte"
+    "altImage": "Servicios de transporte turístico Costa Rica - Traslados aeropuerto y tours"
   },
   "business": {
     "title": "Negocios",
@@ -398,24 +398,24 @@
     "description2": "Nuestros asociados están enfocados en ayudar a los empresarios a trabajar y relajarse al mismo tiempo que recuperan energías. Le garantizamos un trato profesional según los requerimientos de su empresa o personales.",
     "description3": "Cotice aquí su grupo y evento. Elija ubicación en playa, montaña o ciudad. Transporte incluido.",
     "moreInfo": "Más información",
-    "altImage": "Evento de negocios"
+    "altImage": "Eventos de negocios Costa Rica - Turismo corporativo y incentivos"
   },
   "otherServices": {
     "moreInfo": "Más información",
     "students": {
       "title": "Estudiantes",
       "description": "Si eres estudiante y necesitas o quieres aprender español mientras conoces los hermosos lugares de Costa Rica, esta es tu mejor opción. Puedes elegir un intercambio universitario o hospedarte con una familia local.",
-      "altImage": "Intercambio estudiantil"
+      "altImage": "Intercambio estudiantil Costa Rica - Turismo educativo y cultural"
     },
     "eventPlanning": {
       "title": "Planificación de Eventos",
       "description": "Organizamos tus eventos en Costa Rica con excelencia y profesionalismo. Bodas, eventos corporativos o reuniones sociales en lugares impresionantes. Todo adaptado a tus necesidades y presupuesto.",
-      "altImage": "Planificación de eventos"
+      "altImage": "Planificación de eventos Costa Rica - Bodas y celebraciones en paraíso tropical"
     },
     "shopProducts": {
       "title": "Compra productos hechos en Costa Rica",
       "description": "Elemental Herbs Costa Rica. Hechos para costarricenses amantes del yoga, instructores de artes marciales y la medicina alternativa.\n\nIdeales para tu salud y bienestar diario.",
-      "altImage": "Productos costarricenses"
+      "altImage": "Productos costarricenses auténticos - Souvenirs y artesanías locales"
     }
   },
   "othersServices": {
@@ -424,11 +424,11 @@
     "description2": "Nuestro equipo especializado maneja alojamientos estudiantiles, eventos corporativos, bodas y venta de productos auténticos costarricenses. Cada servicio está diseñado con atención al detalle y cuidado personalizado.",
     "description3": "Ya sea que estés planeando una celebración especial, necesites apoyo académico o quieras llevarte productos auténticos de Costa Rica, estamos aquí para hacerlo realidad con excelencia y profesionalismo.",
     "moreInfo": "Más Información",
-    "altImage": "Otros servicios",
+    "altImage": "Otros servicios turísticos Costa Rica - Experiencias personalizadas",
     "waButton": "Consulta WhatsApp"
   },
   "about": {
-    "altCover": "Sobre nosotros",
+    "altCover": "Sobre nosotros - Agencia de viajes especializada en turismo Costa Rica",
     "buildVacations": "Crea tus Vacaciones",
     "title": "Sobre la compañía",
     "description": {
@@ -466,27 +466,41 @@
     "buyButton": "Comprar Ahora"
   },
   "payments": {
+    "seo": {
+      "title": "Paquetes Turísticos Personalizados Costa Rica | Vacaciones a Medida | Tours Únicos",
+      "description": "Diseña tu viaje perfecto a Costa Rica con paquetes 100% personalizados. Aventura, playa, cultura y naturaleza. Tours únicos, volcanes, Manuel Antonio, Monteverde. ¡Consulta gratis!",
+      "keywords": "paquetes turísticos Costa Rica, vacaciones personalizadas Costa Rica, tours Costa Rica, viajes a medida, aventura Costa Rica, playas Costa Rica, turismo personalizado, agencia viajes Costa Rica, Manuel Antonio, Monteverde, Arenal, Guanacaste, tours volcanes Costa Rica, ecoturismo Costa Rica, biodiversidad Costa Rica",
+      "openGraph": {
+        "title": "🌴 Paquetes Turísticos Personalizados Costa Rica | Vacaciones Únicas",
+        "description": "✈️ Diseña tu viaje perfecto a Costa Rica con paquetes 100% personalizados. 🏖️ Aventura, playa, volcanes y naturaleza. 🦋 Biodiversidad única. ¡Consulta gratis!",
+        "imageAlt": "Paquetes turísticos personalizados Costa Rica - Aventura, playa y naturaleza"
+      },
+      "twitter": {
+        "title": "🌴 Vacaciones Personalizadas Costa Rica | Tours Únicos",
+        "description": "✈️ Diseña tu viaje perfecto a Costa Rica 🏖️ Aventura, playa, volcanes 🦋 Biodiversidad única ¡Consulta gratis!"
+      }
+    },
     "badge": "Vacaciones Personalizadas",
     "title": "Construye Tu Viaje",
     "titleHighlight": "A Tu Medida",
-    "subtitle": "No vendemos paquetes fijos. Cada experiencia se diseña específicamente para ti, adaptándose a tus gustos, presupuesto y sueños de viaje.",
+    "subtitle": "No vendemos paquetes fijos. Cada experiencia se diseña específicamente para ti, adaptándose a tus gustos, presupuesto y sueños de viaje en el paraíso natural de Costa Rica.",
     "designButton": "Diseñar Mi Viaje",
     "whatsappButton": "Consulta WhatsApp",
     "features": {
-      "title": "¿Por Qué Elegir Paquetes Personalizados?",
-      "subtitle": "Cada viajero es único, y tu experiencia en Costa Rica también debería serlo",
+      "title": "¿Por Qué Elegir Paquetes Turísticos Personalizados en Costa Rica?",
+      "subtitle": "Cada viajero es único, y tu experiencia en Costa Rica también debería serlo. Descubre la biodiversidad, aventura y cultura tica a tu manera.",
       "items": {
         "personalized": {
-          "title": "100% Personalizado",
-          "description": "Cada viaje se diseña específicamente según tus gustos, presupuesto y necesidades"
+          "title": "Tours 100% Personalizados",
+          "description": "Cada viaje se diseña específicamente según tus gustos, presupuesto y necesidades. Experiencias únicas en Costa Rica."
         },
         "budget": {
           "title": "Presupuesto Flexible",
           "description": "Adaptamos el paquete a tu presupuesto, desde opciones económicas hasta experiencias de lujo"
         },
         "destinations": {
-          "title": "Destinos Únicos",
-          "description": "Acceso a destinos exclusivos y experiencias auténticas que solo los locales conocen"
+          "title": "Destinos Únicos de Costa Rica",
+          "description": "Acceso a destinos exclusivos como Corcovado, Tortuguero, y experiencias auténticas que solo los locales conocen"
         },
         "support": {
           "title": "Soporte 24/7",
@@ -616,10 +630,26 @@
     "submitting": "Enviando..."
   },
   "footer": {
-    "buildVacation": "Crea tus Vacaciones",
+    "buildVacation": "Arma Tu Vacación",
     "rights": "Just Costa Rica Travel",
-    "builtBy": "Desarrollado por",
+    "builtBy": "Construido por",
     "office": "Oficina",
     "tollFree": "Llamada gratuita desde EE.UU./Canadá"
+  },
+  "home": {
+    "seo": {
+      "title": "Agencia de Viajes Costa Rica | Paquetes Vacacionales Personalizados | Just Costa Rica Travel",
+      "description": "Descubre Costa Rica con Just Costa Rica Travel - Tu agencia de viajes local de confianza. Paquetes vacacionales personalizados, tours de aventura, escapadas a la playa, ecoturismo y experiencias auténticas. Destinos Manuel Antonio, Arenal, Monteverde, Guanacaste. ¡Reserva tus vacaciones de ensueño en Costa Rica hoy!",
+      "keywords": "viajes Costa Rica, paquetes vacacionales Costa Rica, tours Costa Rica, agencia viajes Costa Rica, Manuel Antonio, volcán Arenal, bosque nuboso Monteverde, playas Guanacaste, ecoturismo Costa Rica, tours aventura, vacaciones playa, paquetes viaje personalizados, destinos Costa Rica, paraíso tropical, biodiversidad, pura vida, tours bosque lluvioso, tours volcanes, observación vida silvestre, canopy, rafting aguas blancas, snorkeling, surf, tours café, experiencias culturales, luna miel Costa Rica, vacaciones familiares, viajes grupos, retiros corporativos",
+      "openGraph": {
+        "title": "🌴 Agencia Viajes Costa Rica | Paquetes Vacacionales Personalizados",
+        "description": "✈️ ¡Descubre Costa Rica con expertos locales! Paquetes vacacionales personalizados, tours aventura, playas vírgenes y experiencias auténticas. Manuel Antonio • Arenal • Monteverde • Guanacaste 🏖️🌋",
+        "imageAlt": "Agencia de viajes Costa Rica - Hermosas playas, volcanes y bosques lluviosos para paquetes vacacionales personalizados"
+      },
+      "twitter": {
+        "title": "🌴 Agencia Viajes Costa Rica | Paquetes Vacacionales Personalizados",
+        "description": "✈️ ¡Descubre Costa Rica con expertos locales! Paquetes vacacionales personalizados, tours aventura, playas vírgenes y experiencias auténticas 🏖️🌋 #CostaRica #Viajes"
+      }
+    }
   }
 }
