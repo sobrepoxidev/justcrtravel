@@ -38,7 +38,7 @@ export default function HomeStructuredData({ locale }: HomeStructuredDataProps):
         "url": baseUrl,
         "logo": {
           "@type": "ImageObject",
-          "url": `${baseUrl}/logo.png`,
+          "url": `${baseUrl}/mainlogonav1.png`,
           "width": 300,
           "height": 100
         },
@@ -73,8 +73,8 @@ export default function HomeStructuredData({ locale }: HomeStructuredDataProps):
         ],
         "sameAs": [
           "https://www.facebook.com/justcostaricatravel",
-          "https://www.instagram.com/justcostaricatravel",
-          "https://www.tripadvisor.com/justcostaricatravel"
+          "https://www.instagram.com/just_c.r_travel_com?igsh=d3diMnJqd3VpYzc4",
+       
         ],
         "serviceArea": {
           "@type": "Country",
