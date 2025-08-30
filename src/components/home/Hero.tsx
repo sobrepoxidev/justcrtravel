@@ -89,18 +89,18 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 pointer-events-none" />
 
       {/* Hero Content */}
-      <div className="absolute inset-0 flex items-center justify-center z-40 pointer-events-none">
+      <div className="absolute inset-0 flex items-start justify-center pt-24 z-40 pointer-events-none">
         <div
           className={`text-center px-6 max-w-6xl transition-all duration-500 h-[60%] transform ${
             contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-1 leading-tight pointer-events-auto">
+          <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold text-gray-400  leading-tight pointer-events-auto">
             <span className="bg-gradient-to-r from-white via-blue-100 to-green-100 bg-clip-text text-transparent">
               {images[currentIndex].title}
             </span>
           </h1>
-          <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-6 font-light leading-relaxed pointer-events-auto">
+          <p className="text-lg md:text-2xl lg:text-3xl text-white/95 mb-6 font-light leading-relaxed pointer-events-auto">
             {images[currentIndex].subtitle}
           </p>
 
