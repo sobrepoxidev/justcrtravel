@@ -7,7 +7,7 @@ const WhatsAppButton = () => {
   const t = useTranslations("WAButton");
   return (
     <Link 
-      href="https://wa.me/50685850000" 
+      href="https://wa.me/50660252461" 
       target="_blank"
       rel="noopener noreferrer"
       className="fixed flex bottom-14 sm:bottom-4 right-6 bg-green-500 text-white p-1 rounded-full shadow-lg hover:bg-green-600 transition-colors z-50"

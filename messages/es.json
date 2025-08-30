@@ -375,10 +375,12 @@
     "description": "Ofrecemos condominios y apartamentos para tu familia o escapada privada en los mejores sitios de Costa Rica.",
     "locations": "Consulta por tu ubicación favorita en: Tamarindo – Conchal – Área de Papagayo – Playa Flamingo – Playa Jacó – Playa Puerto Viejo – Playa Chiquita – Playa Manzanillo",
     "moreInfo": "Más información",
-    "altImage": "Automóvil de alquiler"
+    "altImage": "Automóvil de alquiler",
+    "waButton": "Consulta WhatsApp"
   },
   "transportation": {
-    "title": "TRANSPORTE",
+    "title": "Transporte",
+    "waButton": "Consulta WhatsApp",
     "services": [
       "Vehículo privado con guía turístico y conductor.",
       "Renta de vehículos con nuestros socios de alto estándar.",
@@ -390,6 +392,7 @@
   },
   "business": {
     "title": "Negocios",
+    "waButton": "Consulta WhatsApp",
     "description1": "Para su empresa le ofrecemos las mejores ubicaciones y alojamientos según las necesidades de su organización, a los mejores precios del mercado actual.",
     "description2": "Nuestros asociados están enfocados en ayudar a los empresarios a trabajar y relajarse al mismo tiempo que recuperan energías. Le garantizamos un trato profesional según los requerimientos de su empresa o personales.",
     "description3": "Cotice aquí su grupo y evento. Elija ubicación en playa, montaña o ciudad. Transporte incluido.",
@@ -414,9 +417,18 @@
       "altImage": "Productos costarricenses"
     }
   },
+  "othersServices": {
+    "title": "Otros Servicios",
+    "description1": "Ofrecemos servicios adicionales integrales para complementar tu experiencia costarricense. Desde programas de intercambio estudiantil hasta planificación de eventos, tenemos todo lo que necesitas.",
+    "description2": "Nuestro equipo especializado maneja alojamientos estudiantiles, eventos corporativos, bodas y venta de productos auténticos costarricenses. Cada servicio está diseñado con atención al detalle y cuidado personalizado.",
+    "description3": "Ya sea que estés planeando una celebración especial, necesites apoyo académico o quieras llevarte productos auténticos de Costa Rica, estamos aquí para hacerlo realidad con excelencia y profesionalismo.",
+    "moreInfo": "Más Información",
+    "altImage": "Otros servicios",
+    "waButton": "Consulta WhatsApp"
+  },
   "about": {
     "altCover": "Sobre nosotros",
-    "buidVacations": "Crea tus Vacaciones",
+    "buildVacations": "Crea tus Vacaciones",
     "title": "Sobre la compañía",
     "description": {
       "part1": "Somos simplemente dos ticos que tuvimos una idea hace algunos años: mostrar nuestro país a viajeros. En ese momento no teníamos la experiencia ni la preparación que tenemos ahora.",

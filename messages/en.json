@@ -383,10 +383,12 @@
     "description": "We offer you condos and apartments for your family or private getaway on the best sites at Costa Rica.",
     "locations": "Ask for your favorite location at: Tamarindo – Conchal – Papagayo area – Flamingo beach – Jaco beach – Puerto Viejo beach – Playa Chiquita - Manzanillo beach",
     "moreInfo": "More Info",
-    "altImage": "Car rental"
+    "altImage": "Car rental",
+    "waButton": "WhatsApp Consult"
   },
   "transportation": {
     "title": "Transportation",
+    "waButton": "WhatsApp Consult",
     "services": [
       "Private car with tour guide and driver.",
       "Rent a car with our high standard associates.",
@@ -398,6 +400,7 @@
   },
   "business": {
     "title": "Business",
+    "waButton": "WhatsApp Consult",
     "description1": "For your companies we offer you the best locations and accommodations for your organization necessities at the best prices on the actual market.",
     "description2": "Our associates are designed to help actual business people work and relax while gaining energy. We guarantee you a professional treatment according to your company or personal requirements.",
     "description3": "Quote here your group and event. Choose beach, mountain, or city location. Transportation included.",
@@ -422,9 +425,18 @@
       "altImage": "Costa Rican products"
     }
   },
+  "othersServices": {
+    "title": "Other Services",
+    "description1": "We offer comprehensive additional services to complement your Costa Rican experience. From student exchange programs to event planning, we have everything you need.",
+    "description2": "Our specialized team handles student accommodations, corporate events, weddings, and authentic Costa Rican product sales. Each service is designed with attention to detail and personalized care.",
+    "description3": "Whether you're planning a special celebration, need academic support, or want to take home authentic Costa Rican products, we're here to make it happen with excellence and professionalism.",
+    "moreInfo": "More Info",
+    "altImage": "Other services",
+    "waButton": "WhatsApp Consult"
+  },
   "about": {
     "altCover": "About us",
-    "destination1": "Build Your Vacation",
+    "buildVacations": "Build Your Vacation",
    
     "title": "About the company",
     "description": {
