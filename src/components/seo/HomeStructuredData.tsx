@@ -11,19 +11,12 @@
 import { useTranslations } from 'next-intl';
 
 
-interface HomeStructuredDataProps {
-  locale: string;
-}
+type HomeStructuredDataProps = Promise<{ locale: string }>;
 
 /**
- * Home page structured data component
- * Generates JSON-LD structured data for better SEO
- * 
- * @component
- * @param {HomeStructuredDataProps} props - Component props
- * @returns {JSX.Element} Script tag with JSON-LD structured data
+ * Internal component that handles the actual structured data generation
  */
-export default function HomeStructuredData({ locale }: HomeStructuredDataProps): React.ReactElement {
+function HomeStructuredDataInternal({ locale }: { locale: string }): React.ReactElement {
   const t = useTranslations('home.seo');
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://justcostaricatravel.com';
   
@@ -38,7 +31,7 @@ export default function HomeStructuredData({ locale }: HomeStructuredDataProps):
         "url": baseUrl,
         "logo": {
           "@type": "ImageObject",
-          "url": `${baseUrl}/mainlogonav1.png`,
+          "url": `${baseUrl}/logo.png`,
           "width": 300,
           "height": 100
         },
@@ -73,8 +66,8 @@ export default function HomeStructuredData({ locale }: HomeStructuredDataProps):
         ],
         "sameAs": [
           "https://www.facebook.com/justcostaricatravel",
-          "https://www.instagram.com/just_c.r_travel_com?igsh=d3diMnJqd3VpYzc4",
-       
+          "https://www.instagram.com/justcostaricatravel",
+          "https://www.tripadvisor.com/justcostaricatravel"
         ],
         "serviceArea": {
           "@type": "Country",
@@ -151,43 +144,33 @@ export default function HomeStructuredData({ locale }: HomeStructuredDataProps):
           "width": 300,
           "height": 100
         },
-        "foundingDate": "2015",
-        "founders": [
+        "description": t('description'),
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CR",
+          "addressLocality": "San José",
+          "addressRegion": "San José Province"
+        },
+        "contactPoint": [
           {
-            "@type": "Person",
-            "name": "Local Costa Rican Entrepreneurs"
+            "@type": "ContactPoint",
+            "telephone": "+1-866-319-6020",
+            "contactType": "customer service",
+            "areaServed": ["US", "CA"],
+            "availableLanguage": ["English"]
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "+506-8585-0000",
+            "contactType": "customer service",
+            "areaServed": "CR",
+            "availableLanguage": ["Spanish", "English"]
           }
         ],
-        "numberOfEmployees": {
-          "@type": "QuantitativeValue",
-          "minValue": 5,
-          "maxValue": 15
-        },
-        "areaServed": {
-          "@type": "Country",
-          "name": "Costa Rica"
-        },
-        "knowsAbout": [
-          "Costa Rica Tourism",
-          "Adventure Tours",
-          "Eco-Tourism",
-          "Beach Vacations",
-          "Cultural Experiences",
-          "Wildlife Watching",
-          "Volcano Tours",
-          "Rainforest Tours"
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": `${baseUrl}/#breadcrumb`,
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": `${baseUrl}/${locale}`
-          }
+        "sameAs": [
+          "https://www.facebook.com/justcostaricatravel",
+          "https://www.instagram.com/justcostaricatravel",
+          "https://www.tripadvisor.com/justcostaricatravel"
         ]
       }
     ]
@@ -197,8 +180,21 @@ export default function HomeStructuredData({ locale }: HomeStructuredDataProps):
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
-        __html: JSON.stringify(structuredData, null, 0),
+        __html: JSON.stringify(structuredData, null, 2)
       }}
     />
   );
+}
+
+/**
+ * Home page structured data component
+ * Generates JSON-LD structured data for better SEO
+ * 
+ * @component
+ * @param {HomeStructuredDataProps} props - Component props
+ * @returns {JSX.Element} Script tag with JSON-LD structured data
+ */
+export default async function HomeStructuredData(params: HomeStructuredDataProps): Promise<React.ReactElement> {
+  const { locale } = await params;
+  return <HomeStructuredDataInternal locale={locale} />;
 }

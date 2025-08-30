@@ -20,19 +20,15 @@ import dynamic from 'next/dynamic';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 
-interface HomePageProps {
-  params: {
-    locale: string;
-  };
-}
+type tParams = Promise<{ locale: string }>;
 
 /**
  * Generates metadata for the home page with SEO optimization
  * @param params - Page parameters including locale
  * @returns Metadata object with optimized SEO tags
  */
-export async function generateMetadata({ params }: HomePageProps): Promise<Metadata> {
-  const { locale } = params;
+export async function generateMetadata({ params }: { params: tParams }): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'home.seo' });
   
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://justcostaricatravel.com';
@@ -129,8 +125,7 @@ const LazyExploreCR = dynamic(() => import('@/components/home/ExploreCR'), {
  * // Rendering in the application
  * <Home params={{ locale: 'en' }} />
  */
-export default function Home({ params }: HomePageProps) {
-  const { locale } = params;
+export default async function Home({ params }: { params: tParams }) {
   return (
     <main className="relative min-h-screen">
       {/* Fixed background that covers the entire page */}
@@ -159,7 +154,7 @@ export default function Home({ params }: HomePageProps) {
       </div>
       
       {/* SEO Structured Data */}
-      <HomeStructuredData locale={locale} />
+      <HomeStructuredData {...params} />
     </main>
   );
 };
